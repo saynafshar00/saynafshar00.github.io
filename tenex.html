@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayena Einafshar - UX Design Portfolio Tenex Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="branding/favicon.png" sizes="16x16" type="image/png">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
+</head>
+<body id="tenex">
+    <header> 
+        <div class="wrapper-header">
+            <a href="index.html"><img class="logo" src="imgs/branding/Logo.jpg" alt="Personal Branding, Triangular Shaped Logo"></a>
+
+            <nav id="main-nav">
+            <button id="menu-button">
+                <span class="visually-hidden">Menu</span>
+                <img class="menu-icon" src="imgs/branding/menu-icon.svg" alt="">
+            </button>
+            
+            <div id="menu">
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="https://saynafshar.com/#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button id="close"><span class="visually-hidden">close</span><img class="menu-icon" src="imgs/branding/close.svg" alt=""></button></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main>
+        <div class="wrapper-body">
+
+            <div class="avatar">
+                <img class="small" src="imgs/tenex-avatar.jpg" alt="">
+                <h1><a href="https://www.figma.com/proto/ibwTu0plcnFqFcVLweeGB0/Portfolio?page-id=183%3A7230&node-id=183%3A7358&viewport=241%2C48%2C0.08&scaling=scale-down&starting-point-node-id=183%3A7358&show-proto-sidebar=1">Tenex</a></h1>
+            </div>
+
+    <!-- CONTENT -->
+            <div class="tab">
+                <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
+                <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
+                <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
+                <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button>
+            </div>
+
+
+    <!-- OVERVIEW -->
+            <div id="overview" class="tabcontent" style="display:block;">
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#t-problem">Problem Statement</a></li>
+                        <li><a href="#t-problem">Problem</a></li>
+                        <li><a href="#t-solution">Solution</a></li>
+                        <li><a href="#t-features">Features</a></li>
+                        <li><a href="#t-analysis">Competitive Analysis</a></li>
+                        <li><a href="#t-system-arch">System Architecture</a></li>
+                        <li><a href="#t-database-structure">Database Structure</a></li>
+                        <li><a href="#t-design-tech">Design Technology</a></li>
+                        <li><a href="#t-dev-tech">Design Technology</a></li>
+                        <li><a href="#t-roadmap">Roadmap</a></li>
+
+                    </ul>
+                </nav>
+
+                <section class="introduction two">
+                    <div class="expand">
+                        <h2>Project Overview</h2>
+                        <p>Progressive web app that eases communication between tenants, building managers, and landlords. MVP will only focus on the tenant side of the app. WordPress website for marketing and branding purposes.</p>
+                        <br>
+                    </div>
+                    <article id="t-problem">
+                        <h3>Problem Statement</h3>
+                        <p>Tenants in apartments and condos need a better way to communicate with building managers because current communication methods can be cumbersome. Residents in apartments and condos can have a hard time communicating with building management to solve issues with their homes, neighbors, and the building.</p>
+                    </article>
+                    <article id="t-solution">
+                        <h3>Recommended Solution</h3>
+                        <p>Create an app that eases communication between residents and building management with functionalities such as requesting services and maintenance, filing complaints, receiving notifications (elevator maintenance, electrical outage, exterior cleaning etc.), showing building policies, forum for tenants, and booking building amenities.</p>
+                    </article>
+                </section>
+
+                <section id="t-features" class="three">
+                        <h2 class="expand">The supporting features</h2>
+                        <div class="spacing">
+                            <img class="half" src="tenex/notif.png" alt="">
+                            <h3>Alerts & Notifications</h3>
+                            <p>Receive the latest updates and alerts within the building via Tenex!!</p>
+                        </div>
+
+                        <div class="spacing">
+                            <img class="half" src="tenex/booking.png" alt="">
+                            <h3>Request & Booking</h3>
+                            <p>Track upcoming or old notifications, booking and request via our calendar!</p>
+                        </div>
+
+                        <div class="spacing">
+                            <img class="half" src="tenex/calendar.png" alt="">
+                            <h3>Calendar</h3>
+                            <p>Send requests to your building manager and follow up via our in-app chat box.</p>
+                        </div>
+                </section>
+
+                <section id="t-analysis">
+                    <h2 class="expand">Competitive Analysis</h2>
+                    <br>
+                    <img src="tenex/competetive.svg" alt="">
+                </section>
+
+                <section id="t-system-arch">
+                    <h2>Work Breakdown Structure (Design)</h2>
+                    <!-- <p>Our front-end (including React and SASS) and back-end (including NodeJS and ExpressJS) repositories are posted on Github and we are hosting both on Heroku. We are using MongoDB for database and Amazon S3 for image storage. We are using SendGrid for emails and Auth0 for authentication. We chose this tech stack so that we could focus on building upon the best tools for our MVP</p> -->
+                    <img src="tenex/info-architecture.svg" alt="System Architecture">
+                </section>
+  
+                
+                <section id="t-database-structure">
+                    <h2>Work Breakdown Structure (Development)</h2>
+                    <img src="tenex/database-structure.svg" alt="Data Structure">
+
+                </section>
+
+                <section id="t-design-tech" class="two">
+                    <h2 class="expand">Design Technology</h2>
+                    <div>
+                        <img src="tenex/PMTechnology.svg" alt="PM Tech Image">
+                        <p>We used Google Suite to create a cloud share of all documentations (from ideation to execution), and Asana to keep track of work packages and deliverables.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="tenex/Design Technology.svg" alt="PM Tech Image">
+                        <p>e used Figma to collaborate on UI and UX design tasks (information architecture, user flow, wireframes, mockups), Adobe Illustrator and Photoshop to create UI assets, and Adobe Indesign to draft the project proposal.</p>
+                    </div>
+                </section> 
+
+                <section id="t-dev-tech" class="two">
+                    <h2 class="expand">Development Technology</h2>
+                    <img src="tenex/DevTechnology.svg" alt="PM Tech Image">
+                    <div>
+                        <p>We utilized Html5, CSS3 and JavaScript for front-end development languages, Sass styling language, Firebase app development software to create the responsive web application</p>
+                        <br>
+                        <p>We utilized VS code to manage the codes, cascaded the ordPress website and PHP language to retrive data from the database.
+                        </p>
+                        <br>
+                        <p>Our database was created on MongoDB management system, hosted via Plesk and GitHub to track version control.</p>
+                        <br>
+                        <p>Firebase Cloud Messaging (service requests, filing complaints, forum for tenants). Firebase Authentication (user account). Firebase Cloud Firestore (showing building policies, booking building amenities). Broadcast Channel API (Building announcements and notifications). Image Capture API (taking photos when requesting services).
+                        </p>
+                    </div>
+                </section>
+                
+            </div>
+
+
+    <!-- USER EXPERIENCE -->
+            <!-- <div id="userExperience" class="tabcontent">
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#t-research">Research</a></li>
+                        <li><a href="#t-sitemap">Site Map</a></li>
+                        <li><a href="#t-userflow">UserFlow</a></li>
+                        <li><a href="#t-test">Usability Test</a></li>
+                        <li><a href="#t-issues">Major & Minor Issues</a></li>
+                    </ul>
+                </nav>
+                <section class="introduction">
+                    <h2>User Experience</h2>
+                    <p>The design team collaborated on designing for the user experience aspect of this project closely with the development team, iterating and eliminating non-essential steps as we go through. For this project we also conducted 5 usability tests, helping us detect the flaws having our prospect users opinion taken into consideration.</p>
+                </section>
+
+                <section id="t-research" class="two">
+                    <h2 class="expand">Online Survey</h2>
+                    <img class="half" src="tenex/chart.png" alt="">
+                    <p>Our team conducted two online surveys, one at the beginning of the project to understand what are the most common issue people face while contacting the building management and what is the dysfunctional method of communication they currently are using (emails, text messages, phone calls, etc.). The second survey was conducted to classify and priorities theses common pain points and clarify our focus area.</p>
+                    <div class="expand three">
+                        <p><span class="text-bold">33%</span>of our participants complained about the uncertainty of whether the Voicemail, Message or Email was received or read.</p>
+                        <p><span class="text-bold">37%</span>were unclear about the status or the progress of certain requests sent previously.</p>
+                        <p><span class="text-bold">24%</span>find searching for certain Messages, Emails, Records or Past calls very difficult and cumbersome.</p>
+                    </div>
+                </section>
+
+                <section id="t-sitemap">
+                    <h2>Sitemap</h2>
+                    <img src="tenex/sitemap.svg" alt="Sitemap">
+                </section>
+
+
+                <section id="t-userflow" class="two">
+                    <h2 class="expand">Userflow</h2>
+                    <p>Our platform is consisted of two sides of the task flow, tenants-side and the building manager-side. During team conversations we even anticipated the landlord-side as well, for those properties that require landlords permission on appliances or general maintenances or interior fixing services.</p>
+                    <p>Due to time and resources constraints, and the scope of our MVP, we chose to design and develop the client's side as displayed here.</p>
+                    <img class="expand" src="tenex/Userflow.png" alt="">
+                </section>
+
+                <section id="t-test">
+                    <h2>Usability Test</h2>
+                    <p>We intended to conduct 4 usability tests in total. As the lead designer, I took the responsibility of designing the test script, and moderated 2 usability tests online. The following are the test script and the second iteration of the wireframes based on the addressed issues during each usability test.</p>
+
+                    <div class="script gap">
+                        <h3>Usability Test Script</h3>
+                        <ul>
+                            <li>Greeting the participant
+                                <p>Thank you for taking part in this usability test. My name is # and I am a team member of the Tenex team.</p>
+                            </li>
+                            <li>Introducing the app to the participant
+                                <p>Tenants in apartments and condos need a better way to communicate with building managers because current communication methods can be cumbersome. According to conducted surveys, many tenants struggle with:</p>
+                                <ol>
+                                    <li>Unclarity about the status of certain requests or complaints</li>
+                                    <li>Difficulty to find past records of complaints they have made to the manager</li>
+                                    <li>Or, They are unclear whether the voicemail/message/mail was received or read</li>
+                                </ol>
+                                <p>The tenex app will create an efficient method of communication between the tenant and the manager.</p>
+                            </li>
+                            <li>Ask for consent for recording
+                                <p>Our team would also like to ask for your permission to record this session for further examination purposes. We keep your information private and your identity anonymous. Please let me know if you wish not to answer any questions, and we can skip it. 
+                                    <br>Shall we start?</p>
+                            </li>
+                            <li>Pre-test questions to get to know more about the user
+                                <ol>
+                                    <li>What is your age group?
+                                        <ul>
+                                            <li>20 - 29</li>
+                                            <li>30 - 39</li>
+                                            <li>40 - 49</li>
+                                        </ul>
+                                    </li>
+                                    <li>How comfortable are you with using a mobile app?</li>
+                                    <li>What communication method are you currently using to communicate with the building manager?
+                                        <ul>
+                                            <li>Email</li>
+                                            <li>Messages</li>
+                                            <li>Phone call</li>
+                                        </ul>
+                                    </li>
+                                    <li>What are some pain points that you faced when corresponding with the building manager?</li>
+                                    <li>May I ask, what is your favourite app? Why?</li>
+                                </ol>
+                            </li>
+                            <li>Instructions about the test
+                                <p>I would like to give you an overview of how this test will take place. There are # tasks that I will ask you to complete via the Tenex app. Please try to think out loud while completing these tasks. I would also appreciate it if you could describe your thoughts on each section that you encounter. Please feel comfortable to share your thoughts on issues that you might face while doing these tasks as well. Our team is greatly appreciative of your critical insights, which will only help us to improve our app.</p>
+                            </li>
+                            <li>Tasks:
+                                <ol>
+                                    <li>Login: 
+                                        <br>For security reasons, the username and password are created by the manager for the new users/tenants joining this app. This information will be provided by the manager.
+                                        <br>Please login to the Tenex app.
+                                    </li>
+                                        
+                                    <li>Change Password:
+                                        <br>For ensured security, the first thing we suggest is to change your password.</li>
+        
+                                    <li>Notification:
+                                        <br>
+                                        <ul>
+                                            <li>Try to find the page where you can access the notifications and alarms.</li>
+                                            <li>Please view the latest Notification created by the manager.</li>
+                                            <li>Please read the latest alert created by the manager.</li>
+                                            <li>Please find a notification about Fire Alarm Inspection in the notifications archive created on 10th of January?</li>
+                                        </ul>
+                                        
+                                    </li>
+        
+                                    <li>Request:
+                                        <br>Please create a new booking request for the meeting room on Monday 15th of February at 12:00-14:00 pm.</li>
+        
+                                    <li>Calendar:
+                                        <br>Please find the fire alarm inspection notification created on 10th of January (you viewed on the notification page) on the calendar.</li>
+        
+                                    <li>Request Update:
+                                        <br>You already requested a booking for the meeting room. Now you realize that the meeting  needs to be in the morning. You need to change the time you have booked. Please update the existing meeting room booking to 9:30-11:30am.</li>
+        
+                                    <li>FAQs and Regulations:
+                                        <br>You previously created a request asking about the Fob prices to the manager. He suggests that you read about the Fob prices in the FAQs. You can also find information related to your residential building in the regulations and policies. 
+                                        <ul>
+                                            <li>Please find the FAQ</li>
+                                            <li>Please find the Regulations and policies</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Closing:
+                                <br>That’s all for this usability test. You have given us a great perspective to improve our application. Thank you for your time. The tenex team appreciates your participation and cooperation.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="t-issues">
+                    <h2>Major & Minor Issues</h2>
+                    <p>The following step after conducting the test, was to discuss our findings as a team, create a list of severe problems and prioritized them based on repetition of the issues. We then distinguished  severe problems into two categories of major and minor for further development.</p>
+                    <div class="two gap">
+                        <h3 class="expand green">Major issue 01</h3>
+                        <img class="expand" src="tenex/09 Usability Test Result.jpg" alt="">
+                        <p>Expired Notifications section not needed on Home page</p>
+                        <p class="align">Replaced expired notifications section with Request Updates section</p>
+                    </div>
+                    <div class="two gap">
+                        <h3 class="expand green">Major issue 02</h3>
+                        <img class="expand" src="tenex/10 Usability Test Result.png" alt="">
+                        <p>Too many taps needed to select booking time slot and needed manager’s approval</p>
+                        <p class="align">Modified booking time slot selection UI to reduce users’ taps and manager’s workload</p>
+                    </div>
+                    <div class="two gap">
+                        <h3 class="expand green">Major issue 03</h3>
+                        <img class="expand" src="tenex/11 Usability Test Result.png" alt="">
+                        <p>New request categories unclear</p>
+                        <p class="align">Merged Ticketing and General into Request</p>
+                    </div>
+                    <div class="two gap">
+                        <h3 class="expand green">Minor issue 01</h3>
+                        <img class="expand" src="tenex/12 Usability Test Result.png" alt="">
+                        <p>Manager’s approval for new booking is unnecessary</p>
+                        <p class="align">New booking will be approved automatically </p>
+                    </div>
+                    <div class="two gap">
+                        <h3 class="expand green">Minor issue 02</h3>
+                        <img class="expand" src="tenex/13 Usability Test Result.png" alt="">
+                        <p>Inbox filter not needed - Cards layout couldn’t recognize the status rapidly</p>
+                        <p class="align">Changed filter tags categories & Renamed the Inbox to TenexBox - Redesigned the cards’ layout</p>
+                    </div>
+                </section>
+            </div> -->
+
+        
+
+
+    <!-- INTERFACE -->
+            <!-- <div id="userInterface" class="tabcontent">
+                <div class="intro two">
+                    <h2 class="expand">User Interface</h2>
+                    <p>The design team designed and executed wireframes for the responsive web app and  the promotional WordPress website. The complexity of this step of the project was  to make the right design decisions when implimenting color on wireframes.</p>
+                    <p>Initialliy, we chose to color code the types of alerts and notifications, requests and booking for users to recognize the catogeries. We also planned corresponding illustrations and iconography as a more descriptive yet visual approach.</p>
+                </div>
+                
+                <section id="branding">
+                    <h2>Branding</h2>
+                    <p>Design team chose to start the branding process by designing the logo. The final result of 10 days of sketching is the displayed logo. The concept behind the logo is to demonstrate our emphasize on the ease of Communication within your residential environment, hence having the communication iconic symbol combined with the initial letter of Tenex, the letter "T". The overall shape represents an enclosed environment that is created from efficient communication.</p>
+                    <img class="gap" src="tenex/Logo explained.png" alt="">
+                </section>
+
+            </div> -->
+
+
+    <!-- TEAM MEMBERS -->
+            <!-- <div id="teamMembers" class="tabcontent">
+                <h2>Team Members</h2>
+                <section class="team-member">
+                    <img class="half" src="tenex/m.jpg" alt="">
+                    <h4>Sayena Einafshar</h4>
+                    <p>Lead Designer</p>
+                </section>
+
+                <section class="team-member">
+                    <img class="half" src="tenex/v.jpg" alt="">
+                    <h4>Victor Jianto</h4>
+                    <p>Project Manager & Developer</p>
+                </section>
+
+                <section class="team-member">
+                    <img class="half" src="tenex/b.jpg" alt="">
+                    <h4>Chun-Mei Lin</h4>
+                    <p>Designer</p>
+                </section>
+
+                <section class="team-member">
+                    <img class="half" src="tenex/a.jpg" alt="">
+                    <h4>Sinae Bak</h4>
+                    <p>Designer</p>
+                </section>
+
+                <section class="team-member">
+                    <img class="half" src="tenex/s.jpg" alt="">
+                    <h4>Sumeet Kumar</h4>
+                    <p>Lead Developer</p>
+                </section>
+
+                <section class="team-member">
+                    <img class="half" src="tenex/k.jpg" alt="">
+                    <h4>Kamaljit Kaur</h4>
+                    <p>Developer</p>
+                </section>
+            </div> -->
+
+            <div class="w-i-p">
+                <h2>Work In Progress...</h2>
+                <img src="/imgs/work-in-progress.svg" alt="">
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <nav id="footer-nav">
+            <ul>                
+                <li><a href="mailto:saynafshar@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span class="visually-hidden">Email</span></a></li>
+                <li><a href="https://www.linkedin.com/in/einafshar/"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="visually-hidden">linked-in</span></a></li>
+                <li><a href="https://www.behance.net/einafshar/"><i class="fab fa-behance-square" aria-hidden="true"></i><span class="visually-hidden">Behance</span></a></li>
+            </ul>
+        </nav>
+        <p>Ⓒ 2020 All Rights Reserved.</p>
+        <p>Designed & Coded by Sayena Einafshar</p>
+    </footer>
+    
+</body>
+</html>

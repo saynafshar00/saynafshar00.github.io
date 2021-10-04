@@ -1,0 +1,52 @@
+#tenex main {
+    background-image: url(../../../imgs/tenex.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-y: 5rem;
+    background-repeat: no-repeat;
+    padding-top: 16rem;
+}
+
+#tenex h1 a
+// ,  .wrapper-projects a[href="tenex.html"] h2 
+{
+    font-family: "Futura", sans-serif;
+    color: #81B7AE;
+}
+
+#tenex #userExperience ul li{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: .9rem;
+    padding: .5rem 0;
+}
+
+#tenex h4 {
+    color: #81B7AE;
+}
+
+
+@media screen and (min-width:768px) {
+
+    #tenex main {
+        background-size: 50%;
+        padding-top: 16rem;
+        background-position-x: 50%;
+        background-color: #D7EAE8;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    #tenex main {
+        background-size: 50%;
+        padding-top: 22rem;
+        background-position-x: 50%;
+        background-position-y: 4rem;
+    }
+    
+}

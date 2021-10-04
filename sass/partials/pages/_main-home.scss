@@ -1,0 +1,53 @@
+
+// **********************************
+// ASIDE
+// **********************************
+aside {
+    background-color: #001f33;
+    color: #F4F3F0;
+    box-shadow: inset 0 3px 4px #000000bb;
+    // margin-bottom: 2rem;
+}
+
+
+
+// **********************************
+// TABLET
+// **********************************
+@media screen and (min-width:768px) {
+
+    header, footer, aside {
+        grid-column: 1 / -1;
+    }
+ 
+    h1, p {
+        margin: 0;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    aside  {
+        border-bottom: 1px solid #BDC6CD;
+        padding: 2rem 0;
+    }
+}
+
+
+
+
+
+// **********************************
+// Desktop
+// **********************************
+@media screen and (min-width:1024px) {
+
+    p {
+        font-size: .9rem;        
+    }
+    
+    section {
+        margin: 5rem auto;
+    }
+}
+
+

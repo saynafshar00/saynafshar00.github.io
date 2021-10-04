@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayena Einafshar - DimpleDesk Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="branding/favicon.png" sizes="16x16" type="image/png">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
+</head>
+<body id="dimpledesk">
+    <header> 
+        <div class="wrapper-header">
+            <a href="index.html"><img class="logo" src="imgs/branding/Logo.jpg" alt="Personal Branding, Triangular Shaped Logo"></a>
+
+            <nav id="main-nav">
+            <button id="menu-button">
+                <span class="visually-hidden">Menu</span>
+                <img class="menu-icon" src="imgs/branding/menu-icon.svg" alt="">
+            </button>
+            
+            <div id="menu">
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="https://saynafshar.com/#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button id="close"><span class="visually-hidden">close</span><img class="menu-icon" src="imgs/branding/close.svg" alt=""></button></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="wrapper-body">
+            <div class="avatar">
+                <img class="small" src="imgs/dimpledesk-avatar.jpg" alt="">
+                <h1><a href="https://www.dimpledesk.com/">DimpleDesk</a></h1>
+            </div>
+        <!-- CONTENT -->
+
+
+            <div class="tab">
+                <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
+                <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
+                <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
+                <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button>
+            </div>
+
+    <!-- OVERVIEW -->
+            <div id="overview" class="tabcontent" style="display:block;">
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#problem">Problem</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="#features">Suporting Features</a></li>
+                        <li><a href="#analysis">Competitive Analysis</a></li>
+                        <li><a href="#design">Design Schedule</a></li>
+                        <li><a href="#development">Development Schedule</a></li>
+                        <li><a href="#system-arch">System Architecture</a></li>
+                        <li><a href="#data-driven-feature">Data-driven Feature</a></li>
+                        <li><a href="#database-structure">Database Structure</a></li>
+                        <li><a href="#design-tech">Design Technology</a></li>
+                        <li><a href="#persona">User Persona</a></li>
+                        <li><a href="#userflow">Userflow</a></li>
+                        <li><a href="#business">Business Plan</a></li>
+                        <li><a href="#marketing">Marketing Strategy</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+                </nav>
+                <section class="introduction two">
+                    <div class="expand two">
+                        <h2 class="expand m-bott-non">Project Overview</h2>
+                        <p>DimpleDesk is a web platform that enables hosts to list workspaces and tenants to find and rent workspaces efficiently. This project was initiated and developed within 12 weeks, from concept ideation to execution.</p>
+                        <p>DimpleDesk is a responsive data-driven web application. Our team is consisted of 3 designers and 4 developers. You can find the team members information on the Members Tab above.</p>
+                    </div>
+                    <article id="problem">
+                        <h3>Problem</h3>
+                        <p>We will be solving two main problems: First, people want to rent out extra workspace in their homes during business hours for additional income. This enables privacy during non-working hours. Secondly, people want a dedicated workspace away from home when their workspace at home does not meet their needs.</p>
+                    </article>
+                    <article id="solution">
+                        <h3>Solution</h3>
+                        <p>We will be solving these two problems by creating a web platform that enables hosts to list workspaces and tenants to find and rent workspaces that suit their needs easily. We will be focusing on designing and developing the tenant side of the platform for MVP.</p>
+                    </article>
+                </section>
+                <section id="features" class="three low-gap">
+                        <h2>Supporting Features</h2>
+                        <div class="search">
+                            <img class="half" src="dimpledesk/Search Listing Illustration.png" alt="Illustration demonstrating user searching workspaces">
+                            <h3>Search Listings</h3>
+                            <p>Our extensive collection of listings enables users to search and view workspaces from almost anywhere.</p>
+                            <br>
+                            <p>This feature provides people without ideal workspaces a way to find personal workspaces for rent and homeowners to showcase their extra home workspaces. For tenants, this solves their problem of not having ideal workspaces at home by providing affordable alternatives. The listings will be created by homeowners who have underutilized workspaces at home. Listing creation is scoped out of the MVP version of the platform.
+                            </p>
+                        </div>
+                        <div class="contact">
+                            <img class="half" src="dimpledesk/Contact Host Illustration.png" alt="Illustration demonstrating user contacting host">
+                            <h3>Contact Host</h3>
+                            <p>As a call-to-action, users may contact hosts directly from a given listing’s details page.</p>
+                            <br>
+                            <p>This feature provides a method for potential tenants to contact the host of a workspace listing. When a potential tenant contacts the host, the system will send out an email to the host (tenant’s profile information, interested listing, and interested dates) and another email to the potential tenant (contacted host confirmation, interested listing, and interested dates). Potential tenants will be able to see this contacted list on the “contacted”.
+                            </p>
+                        </div>
+                        <div class="filter">
+                            <img class="half" src="dimpledesk/Filter Listing Illustration.png" alt="Illustration demonstrating filtering option">
+                            <h3>Workspace Listing Filtering</h3>
+                            <p>We make it easy for users to find workspaces and filter based on desirable amenities.</p>
+                            <br>
+                            <p>This feature allows potential tenants to quickly browse through and find listings that meet their needs. Potential tenants will be able to search through listings by filtering down the options by workspace type (private or shared), rental terms (daily / weekly / monthly), amenities, and professional interests. This solves the potential tenants’ problem of not being able to find workspace listings that meet their needs quickly.
+                            </p>
+                        </div>
+                </section>
+                <section id="analysis">
+                    <h2>Competitive Analysis</h2>
+                    <img class="third" src="dimpledesk/Competitive Analysis.png" alt="Competitive analysis charts">
+                </section>
+                <section id="design" class="two">
+                        <h2 class="expand">Design Schedule</h2>
+                        <img src="dimpledesk/Design Schedule.png" alt="Design Schedule Image">
+                        <div>
+                            <p class="m-top-non">We developed our design concept from the Ideation phase to Project Launch within 12 weeks. To specify context of use, our team conducted extensive market research to plan, define scope, and lockdown features.</p> <br>
+                            <p>During ideation, and within the span of 4 weeks, we collaborated on design and iterations of wireframes and visual assets on platforms such as Figma and Creative Cloud. Development of each iteration was built on bi-weekly sprints, which helped us manage tasks and maintain design integrity.
+                            </p>
+                        </div>
+                </section>
+                <section id="development" class="two">
+                        <h2 class="expand">Development Schedule</h2>
+                        <img src="dimpledesk/Development Schedule.png" alt="Development Schedule Image">
+                        <p class="m-top-non">During the week 1-2, we  planned on the features and conducted research. During weeks 3-4 we setup the development environment and by week 5 untill week 7 we started the development process. By week 8 we started the Alpha build testing, week 11 code freeze and week 12 (final) presentation preparation and rehearsal.</p>
+                </section>
+                <section id="system-arch">
+                    <h2>System Architecture</h2>
+                    <p>Our front-end (including React and SASS) and back-end (including NodeJS and ExpressJS) repositories are posted on Github and we are hosting both on Heroku. We are using MongoDB for database and Amazon S3 for image storage. We are using SendGrid for emails and Auth0 for authentication. We chose this tech stack so that we could focus on building upon best tools for our MVP</p>
+                    <img src="dimpledesk/System Architecture.jpg" alt="System Architecture">
+                </section>
+                <section id="data-driven-feature" class="two">
+                    <h2 class="expand m-bott-non">Data Driven Feature</h2>
+                <!-- User Engagement -->
+                    <article>
+                        <h3>User Engagement</h3>
+                        <p>Users may search for listings by 
+                            inputting a city, postal code, or specific 
+                            address.They can then filter upon the 
+                            results, bookmark a set of listings, 
+                            and contact the host from within each 
+                            listing. As the user takes these actions 
+                            (bookmark and contact), listings are 
+                            attached to their profile in the database 
+                            for later retrieval.</p>
+                    </article>
+                <!-- Sources -->
+                    <article>
+                        <h3>Sources</h3>
+                        <p>Our users collection is made up of 
+                            dummy data with names and emails 
+                            generated by Mockaroo, images 
+                            sourced from Pexels, and remaining 
+                            attributes created by the team and 
+                            randomized across the dataset Our 
+                            listings collection is made up of 
+                            attributes generated by the team and 
+                            randomized across the dataset. Images 
+                            were sourced from within the team and 
+                            Pinterest.</p>
+                    </article>
+                    <!-- Interactive Interface -->
+                    <article>
+                        <h3>Interactive Interface</h3>
+                        <p>Users can manipulate their profile information, which directly impacts data sent to a host upon a booking request.</p>
+                    </article>
+                <!-- Relevant Information -->
+                    <article>
+                        <h3>Relevant Information</h3>
+                        <p>Listing locations are accurate to 
+                            their searched criteria (to the nearest 
+                            city). Listings that are closest to the 
+                            searched location will be displayed first 
+                            in the search results.</p>
+                    </article>
+                <!-- Data Visualization -->
+                    <article class="three expand">
+                        <h3 class="expand">Data Visualization</h3>
+                        <p><span class="text-bold blue">Listings</span><br>Data is rendered based on location search. The returned data is sorted by workspace listings that are nearest to the searched location.</p>
+                        <p><span class="text-bold blue">Email</span><br>Emails sent to hosts include interested rental dates and tenant’s profile information. Emails sent to tenants include host’s name and a link to the original listing.</p>
+                        <p><span class="text-bold blue">User Profile</span><br>Data is visible and editable by the user.</p>
+                    </article>
+                </section>
+                <section id="database-structure" class="two">
+                    <h2 class="expand">Database Structure</h2>
+                    <img class="expand" src="dimpledesk/Data Structure Listings.png" alt="Data Structure (Listing) chart">
+                    <img src="dimpledesk/Data Structure Users.png" alt="Data Structure (User) chart">
+                    <div  class="right">
+                        <article>
+                            <h3>Our Database</h3>
+                            <p class="m-top-non">We created two databases, one for the users collection (shown in the diagram on page 17) and the other for the listings collection (shown in the diagram on current page).</p>
+                        </article>
+                        <br>
+                        <article>
+                            <h3>User Collection</h3>
+                            <p class="m-top-non">Our users collection includes attributes of users (dummy and real) that have profiles within DimpleDesk (hosts and tenants). User attributes from login (retrieved from Auth0): given_name, family_name, email, imageURL. User attributes provided by user (editable by user on the platform UI): title, field, industry, isVaccinated, phone, intro.</p>
+                        </article>   
+                        <br>
+                        <article>
+                            <h3>Listings Collection</h3>
+                            <p class="m-top-non">Our listings collection includes data specific to a given property and it’s workspaces. Each listing is tied to a user (the host), and data between the two are intersected with a listing is rendered, and a user contacts a host. Listing attributes: Property Title, Listing Title, Rate per term, Amenities, Business utilities, Shared spaces, Rules.</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="design-tech" class="two">
+                    <h2 class="expand">Design Technology</h2>
+                    <img src="dimpledesk/Design Technology Image.png" alt="Design Tech Image">
+                    <article>
+                        <h3>Softwares and Tools</h3>
+                        <p>We used Asana to keep track of work packages and deliverables, Figma to collaborate on UI and UX design tasks (information architecture, user flow, wireframes, mockups), Adobe Illustrator and Photoshop to create UI assets, and Adobe Indesign to draft the project proposal.
+                        </p>
+                    </article>
+                </section>
+                <section id="business" class="two">
+                    <h2 class="expand">Business Strategy</h2>
+                    <div class="box">
+                        <img class="half" src="dimpledesk/Monetization Illustration.png" alt="Monetization">
+                        <h3>Monetization</h3>
+                        <p>We will be monetizing the platform by collecting a 10% transaction fee at the time of each booking at the expense of the host.</p>
+                    </div>
+                    <div class="box">
+                        <img class="half" src="dimpledesk/Business Model Illustration.png" alt="Business Model">
+                        <h3>Business Model</h3>
+                        <p>Our current business model will be 
+                            focusing on C2C with hosts creating 
+                            workspace listings on our platform 
+                            and tenants renting the workspaces 
+                            through our platform</p>
+                    </div>
+                </section>
+                <section id="marketing" class="two">
+                    <h2 class="expand">Marketing Strategy</h2>
+                    <div class="box">
+                        <img class="half" src="dimpledesk/Refferal Program Image.png" alt="">
+                        <h3>Referral Program</h3>
+                        <p>Our referral program entitles the referee $25 toward their first monthly booking, and the referrer receives $25 toward their next monthly booking upon the referee’s booking.</p>
+                    </div>
+                    <div class="box">
+                        <img class="half" src="dimpledesk/Affiliate Partner Program.png" alt="">
+                        <h3>Affiliate Partner Program</h3>
+                        <p>Our referral program entitles the referee $25 toward their first monthly booking, and the referrer receives $25 toward their next monthly booking upon the referee’s booking.</p>
+                    </div>
+                </section>
+                <section id="roadmap" class="two">
+                    <h2 class="expand">Future Roadmap</h2>
+                    <img src="dimpledesk/Future Roadmap.png" alt="Future Roadmap">
+                </section>
+            </div>
+
+    <!-- USER EXPERIENCE -->
+            <div id="userExperience" class="tabcontent">
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#blue-print">UX Strategy Blueprint</a></li>
+                        <li><a href="#persona">User Persona</a></li>
+                        <li><a href="#info-arch">Information Architecture</a></li>
+                        <li><a href="#userflow">User Task Flow</a></li>
+                        <li><a href="#affinity-diagram">Affinity Diagram</a></li>
+                        <li><a href="#prototyping">Prototyping</a></li>
+                        <li><a href="#wireframes">Hi-fiedility Wireframes</a></li>
+                        <li><a href="#login">Sign Up</a></li>
+                        <li><a href="#home-page">Home Page</a></li>
+                        <li><a href="#listing">Listing Page</a></li>
+                    </ul>
+                </nav>
+                <section class="introduction two">
+                    <h2 class="expand m-bott-non">User Experience</h2>
+                    <p>The concept of the project due to the limited timeline (10 weeks) only focuses on the client-side, where user inputs location and gets access to a variety of listngs. The Host-side and how they can create listing is set for the future roadmap. We anticipated to allow regular users the ability to convert and upgrade their User profile to Host via a button. By providing more detailed information about themselves, property and workspace, they can start creating listings.</p>
+                    <p>The following steps we took during the defining phase of the project to learn more about our prospect user's pain points, needs and how they can navigation through our platform to accomplish their desired goal. The flowing documentation are collaborative effort divided equally between the team of 3 designers. As the Lead designer, I was responsible to guide towards cohisiveness of the project, branding and meeting deadlines efficiently. All the design team members participate on the early stages of defining the concept.</p>
+                    <div>
+                        <h4 class="m-bott-non">UX Blueprint</h4>
+                        <p>To define the concept, feature lockdown and plan for the steps required to create the features.</p>
+                    </div>
+                    <div>
+                        <h4 class="m-bott-non">User Persona</h4>
+                        <p>To create an imaginarty profile for our prospect users, taking their pain points, needs and goals into consideration. </p>
+                    </div>
+                    <div>
+                        <h4 class="m-bott-non">Information Architecture</h4>
+                        <p>To distinguish the data and dedicate sections and subsections to them in the most intuitive format to create higher engagement within the platform.</p>
+                    </div>
+                    <div>
+                        <h4 class="m-bott-non">Userflow</h4>
+                        <p>Contains detailed information about the user navigation through this web app from login process to the final steps after contacting the host.</p>
+                    </div>
+                </section>
+                <section id="blue-print">
+                    <h2>UX Strategy Blueprint</h2>
+                    <img src="dimpledesk/Blue-print.jpg" alt="">
+                </section>
+                <section id="persona" class="two">
+                    <div class="expand two">
+                        <h2 class="expand">User Persona</h2>
+                        <p>The design team collaborated on conducting market research, refining the data and created two fictional personas that would describe our prospect users clearly. We created 3 user personas, one described the demographics of a user who would use this platform to list their properties.</p>
+                        <p>Since the MVP of this project covered the client-side of the concept, we chose to showcase the following personas. The remaining user personas, which are displayed here, are the descriptions of prospect users that would refer to our platform to find appropriate workspaces.</p>
+                        <img class="m-persona" src="dimpledesk/User Persona - Alice Wu.jpg" alt="User persona">
+                        <img class="m-persona" src="dimpledesk/User Persona - Marina Moore.jpg" alt="User persona">
+                    </div>
+                </section>
+                <section id="info-arch">
+                    <h2>Information Architecture</h2>
+                    <!-- <p>Here is the breakdown of the information architecture of this platform. As displayed, the main sections of the platform are now more clear. User can access the following subsection depending on their desired task. In the following section each feature has been explained with more detail.</p> -->
+                    <img class="m-top" src="dimpledesk/Information Architecture.jpg" alt="Information Architecture">
+                    <div class="two">                                               
+                        <div class="sub">
+                            <h3>Home Page</h3>
+                            <p>Our home page is the very first screen the users will see after typing our URL on the browser, regardless of them being signed-in or logged-in. Our intention was to get the user to their desired data output as soon as possible. Therefore the content provided on the Home Page are mainly introductionary. To list the sections on the home page:</p>
+                            <!-- <ul>
+                                <li>How DimpleDesk Works</li>
+                                <li>Team Information</li>
+                                <li>Contact Us Form</li>
+                            </ul> -->
+                        </div>
+                        <div class="sub">
+                            <h3>Search Listings</h3>
+                            <p>User is able to search for their desired listings by inputting location keywords in the search bar and view the results as listing card/s. The listing cards display information about the workspace name, workspace type, distance from the users location, listing view number, industry type, rental price (based on the activated rental term filter option - Daily/Weekly/Monthly).</p>
+                            <!-- <p>By utilizing provided filters on this platform, the user can refine and narrow down their search results to find more specific listing.</p> -->
+                            <!-- <ul>
+                                <li>Search Result Listing</li>
+                                <li>Search Result Filters</li>
+                            </ul> -->
+                        </div>
+                        <div class="sub">
+                            <h3>Bookmarked</h3>
+                            <p>Dimpledesk users can bookmark and restore the listing they find relevant. The purpose is to allow user bookmark listing to review or access listings later. The UI indicator for Bookmarked listings is the Bookmark button (visibale on every listing card) in active state, highlighted with the red accent color.</p>
+                            <p>The Bookmarked tab can be found on the bottom navigation for mobile device users, and top right of the website for des on the bottom navigation for mobile devices and top navigation on desktop users.</p>
+                        </div>
+                        <div class="sub">
+                            <h3>Contacted</h3>
+                            <p>Listings contacted by the user required to get stored in their seperate section, for users to track a history of contacted listings, or re-rent the most recent listings by acessing the data in Bookedmarked tab. Another distinguishing UI element to help users identify the coontacted listings, the listing cards that have been contacted will get the accent red color, low opacity tag on the top left corner of the cards.</p>
+                            <p>Similar to Bookmarked tab, Contacted tab also can be found on the bottom navigation on mobile, or top right on Desktop.</p>
+                            <!-- <img src="dimpledesk/Mockup Listing Detail Image.png" alt=""> -->
+                        </div>
+                        <div class="sub expand">
+                            <h3>Profile</h4>
+                            <p>User is able to search for listings without having to register an account. However, main functionalities such as Contacting the host or Bookmarking listings require completed and registered profile. How come? becuase the information provided by the user on profile will be shared with the host and a privacy permission pop-up will be displayed once the user chooses to click on "Contact Host".</p>
+                            <p>Information such as full name, professional role, industry or field, etc. can be found, and edited, in profile. The mentioned data will also be shared with the Host statically and in a form of an email, due to scoped out MVP of this project.</p>
+                        </div>
+                    </div>
+ 
+                </section>
+                <section id="userflow" class="two">
+                    <h2 class="expand m-bott-non">User Task Flow</h3>
+                    <p>The flow of the app begins from the home page, where the user can choose to search for listings prior to logging-in or even signing-up. The intension was to navigate the user to the search results quickly. Furthermore, this platform doesnt require onboarding, since user is able to use the web app and search for listings by inputting location keywords.</p>
+                    <p>Collaborating on the UserFlow within the design team members, we were able to focus on segments of the flow and combine them, refine and finalize it as a team. The final UserFlow is the result of 5 iterations, having the input and the constraints set by the developers taken into affect.</p>
+                    <img class="expand m-top" src="dimpledesk/User Flow V3.svg" alt="UserFlow">
+
+                </section>
+                <section id="affinity-diagram" class="two">
+                    <h2 class="expand m-bott-non">Affinity Diagram <span class="lighter">(Amenity Options)</span></h3>
+                    <p class="expand">Our platform created a massive inventory of amenity options, considering many aspects of efficient workspace required amenities. As the result of affinity diagramming the amenity options, 3 main categories of Business Utilities, Facilities and Common Area. We then utilized this classification to grup the amenity filter options. We also planned to design customized icons for each amenity options.</p>
+                    <img class="expand m-top" src="dimpledesk/Listing Data Affinity Diagram.png" alt="">
+                </section>
+                <section id="prototyping">
+                    <h2>Prototype & Feature UX</h2>
+                    <p>Now lets get more specific with the Feature user experience design. Dimpledesk layout is designed on a 6 column-grid and 12 column-grid for desktop sizes. The intention was to reserve as much white space on the interface for the user to be able read through the content much faster and more efficiently.</p>
+                    <div class="gap">
+                        <img src="dimpledesk/Wireframe Search Results.jpg" alt="">
+                        <h3 class="blue">Listing result page</h3>
+                    </div>
+                    <div class="gap">
+                        <img src="dimpledesk/Wireframe Listing Detail.jpg" alt="">
+                        <h3 class="blue">Listing page</h3>
+                    </div>
+
+
+                </section>
+                <section id="wireframes">
+                    <h2>Hi-fiedility Wireframes</h2>
+                    <p>The wireframes showcased in the following section are for both Mobile (375px width) and Desktop(1080px width) sizes, following by description about each design decision. The Mock-ups with implimented visuall assets can be found in the User Interface tab of this online portfolio.</p>
+                    
+                    <div id="login" class="divider">  
+                        <div class="one-third divider">
+                            <h3 class="expand m-bott-non blue">Sign Up</h3>
+                            <p class="expand">The sign up process is consisted of 5 steps, starting by using the third party API to login from the user's linekd-in, Google or Facebook accounts. The information retrieved from these accounts, such as name, profession, etc. will be saved in the user profile.</p>
+                            <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Sign Up [Tell us about yourself].svg" alt="">
+                            <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Sign Up [Tell us about yourself].svg" alt="">
+                            <div class="expand two">
+                                <div>
+                                    <h4 class="expand m-bott-non">Mobile - Sign Up step 2</h4>
+                                    <p>The displayed screen is the secodn step, after successfully logging-in via third party API. User is prompt to input their profewssional role, field and industry. We use this data to helpusers find workspaces relevant to their current professional industry of interest.</p>
+                                </div>
+                                <div>
+                                    <h4 class="expand m-bott-non">Desktop - Sign Up step 2</h4>
+                                    <p>The status bar at the top of the screen is a subtle indicator of the remaining steps.User can choose to complete the steps and setup  their profile information, or close out of the modal via close button at top right corner. Skip the step and going to the next step or fill out the input section and activate the "Continue" button.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="one-third gap">
+                            <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Sign Up [How do we contact you].svg" alt="">
+                            <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Sign Up [How do we contact you].svg" alt="">
+                            <div class="expand two">
+                                <div>
+                                    <h4 class="expand m-bott-non">Mobile - Sign Up step 3</h4>
+                                    <p>The following step after providing information about their profession, user is prompt to input their contact information. The email input section wont be editableinput area, since the user is already logged-in via an existing account connected to an email.</p>
+                                </div>
+                                <div>
+                                    <h4 class="expand m-bott-non">Desktop - Sign Up step 3</h4>
+                                    <p>The following steps, steps 4 to indicate whether user is fully vaccinated and step 5 prompts the user to provide a short description about themsleves, with maximum 300 character limit. All the inputted information will be stored in user profile.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    
+                    <div id="home-page" class="line divider">
+                        <div class="gap">    
+                            <h3 class="blue">Home Page</h3>
+                            <div class="two">
+                                <p>We dedicated the home page of Dimpledesk to a brief intorduction of the features, the team mebers and their roles, and a contact form for our users to reach out to us.</p>
+                                <p>The placeholder in the first section is where the hero image will be placed. Following by a short description of the platform.</p>
+                            </div>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/Mobile - Home Page.svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Home Page [Input Location].svg" alt="">
+                            </div>
+                            <div class="two">
+                                <div>
+                                    <h4 class="expand m-bott-non">Mobile - Home Page (Landing page)</h4>
+                                    <p>The navigation bar with 4 main features supported by DimpleDesk is located statically and sticky at the bottom of the screen. Therefore the search bar, which is our primary and most important feature, designed at the very top part of the screen.</p>
+                                </div>
+                                <div>
+                                    <h4 class="expand m-bott-non">Desktop - Home Page (Landing page)</h4>
+                                    <p>On desktop sizes we chose to have the top navigation sticky and accessible for the user to navigate through the features sections. The navigation bar on desktop contains the home page navigation menu item, the search bar, and the remaining features.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gap">
+                            <h3 class="blue">Workspace Type Modal</h3>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Home Page [Workspace Type].svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Home Page [Workspace Type].svg" alt="">
+                            </div>
+                            <div class="two">
+                                <div>
+                                    <h4 class="expand m-bott-non">Mobile - Workspace Type Filter Card</h4>
+                                    <p>After inputting the desired location keywords in the search bar, the Workspace type modal will be displayed. User is prompt to choose a private or shared workspace, depending on their preference. But activating either options, it will filter down the search results displayed on the following section.</p>
+                                </div>
+                                <div>
+                                    <h4 class="expand m-bott-non">Desktop - Workspace Type Filter Card</h4>
+                                    <p>After choosing workspace type filter card and by clicking on "Show Listings" button, the modal will close and continues to search results. To skip this step, click on "Skip for now" tertiary button. </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="gap">
+                            <div>    
+                                <h3 class="blue">Search Result Listing Cards</h3>
+                                <p>Based on the inputted location and the applied filters, the search result will get udated and the rellevant listing information will be displayed as cards. Detailed information about listing cards is provided in the following sections.</p>
+                            </div>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Show Listings Page.svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Show Listings Page.svg" alt="">
+                            </div>
+                            <div class="two">
+                                <div>
+                                    <h4 class="m-bott-non">Mobile - Search Result</h4>
+                                    <p>The filter option in the mobile sizes is in the top navigation, next to search bar. By activating the filter button, filter options will be displayed. User then can edjust their search results by activating their desired filters.</p>
+                                </div>
+                                <div>
+                                    <h4 class="m-bott-non">Desktop - Search Result</h4>
+                                    <p>As displayed, the filter button on the mobile size is now taking one thord of the desktop size. The 4 categories of Workspace Type (previous section), Rental terms, Amenities and Industry Interests.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="gap">
+                            <h3 class="blue">Rental Duration</h3>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Rental Duration Filter Pop-Up.svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Rental Duration Filter Pop-Up.svg" alt="">
+                            </div>
+                            <div class="two">
+                                <div>
+                                    <h4 class="m-bott-non">Mobile - Rental Duration Filter Cards</h4>
+                                    <p>Rental duration is the indicator of price type displayed on the listing cards, and on the listing page. The filter cards function similar to Workspace Type filter.</p>
+                                </div>
+                                <div>
+                                    <h4 class="m-bott-non">Desktop - Rental Duration Filter Cards</h4>
+                                    <p>Based on our UX strategy, we decided to have 3 options of Daily, Weekly and Monthly to make the price estimate adjustable to users preferences.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="gap">
+                            <h3 class="blue">Amenity Filters</h3>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Amenities Filter Pop-Up.svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Amenities Filter Pop-Up Active.svg" alt="">
+                            </div>
+                            <div class="two">
+                                <div>
+                                    <h4 class="m-bott-non">Mobile - Amenity FIlter Cards (Unselected)</h4>
+                                    <p>Similar to the previos filter options, amenities filter options cards contain decriptive icon (30px x 30px) and the title of the amenity.By affinity diagraming the list of amenities, we created 5 categories to divide the amenity types.</p>
+                                </div>
+                                <div>
+                                    <h4 class="m-bott-non">Desktop - Amenity FIlter Cards (Selected)</h4>
+                                    <p>The displayed wireframe demonstrates how the selected filters function. Once a filter, or more is selected, the "Show Listings" CTA button is activated.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="gap">
+                            <h3 class="blue">Industry Interests</h3>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - Industry Interests Pop Up.svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Industry Interests Pop Up [Selected].svg" alt="">
+                            </div>
+                            <div class="two">
+                                <div>
+                                    <h4 class="m-bott-non">Mobile - Industry Interests (Unselected)</h4>
+                                    <p>Industry interests are another filter option that helps users filter down search results to their industry of interest. Users have to enter their Professional role, industry and field amongst other personal information on their profile.</p>
+                                </div>
+                                <div>
+                                    <h4 class="m-bott-non">Desktop - Industry Interests (Selected)</h4>
+                                    <p>The chosen Industry type appears as tag buttons with a close button, for users to discard selection one by one, or use the "Clear Selection" tertiary button. By choosing one or more industry tags, the "Show Listing" CTA gets activated.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="gap">
+                            <h3 class="blue">Activated Filter Options</h3>
+                            <p>The selected filters and the filter button will be displayed as activated, and by removing each filter, the filter button will be dispalyed in inactive state.</p>
+                            <div class="one-third m-bott">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Mobile - All Filters Active.svg" alt="">
+                                <img class="box-shadow m-top" src="dimpledesk/wireframes/Wireframe Desktop - Show Listings Page [All Filters Active].png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="listing" class="line divider">
+                        <h3 class="blue">Listing Page</h3>
+                        <p>The listing page is consisted of many critical sections, providing detailed information about the workspace, the property and the Host. The listing page starts by showcasing the brief information provided on the listing cards, such as name of the property and the host, workspace name,Industry tag, number of views and the estimate distance from users current location.</p>
+                        <div class="one-third m-bott">
+                            <img class="box-shadow m-top" src="dimpledesk/wireframes/Wireframe Mobile - Listing Detail.png" alt="">
+                            <img class="box-shadow m-top" src="dimpledesk/wireframes/Wireframe Desktop - Listing Detail.png" alt="">
+                        </div>
+                        <div class="two">
+                            <div>
+                                <h4 class="m-bott-non">Mobile - Listing Detail Page (First Half)</h4>
+                                <p>The price estimate of the chosen listing, based on the activated Rental Duration type based on users preference, and the "Contact Host" CTA are located statically at the bottom of the screen, prompting the user to contact host as soon as possible</p>
+                                <br>
+                                <p>User can either acess the date picker and rental duration filter option via the "Calendar" button at the top right in top navigation section. Both routes will take the user to choose a date and desired rental duration starting from the chosen date. The rental duration options are presets and include Daily, Weekly or Monthly. </p>
+                            </div>
+                            <div>
+                                <h4 class="m-bott-non">Desktop - Listing Detail Page (First Half)</h4>
+                                <p>The date and duration filter options, as well as the "Contact Host" CTA are displayed on the left column on Desktop Sizes. (Similar to our approach on listing search result page and relevant filter options).</p>
+                                <p>After choosing the starting date and desired duration period, user can reach out to the host. If the user is not logged-in or has an incomplete profile, relevant pop-up will take the user to start logging-in, or complete the remaining sections. The summary of the information provided on profile will be sent to the Host via email. Consent pop-up will be displayed before the personal information of the user is shared with the host.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </section>
+            </div>
+
+    <!-- INTERFACE -->
+            <div id="userInterface" class="tabcontent">
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#branding">Branding</a></li>
+                        <li><a href="#gif">Feauter Gif Animation</a></li>
+                        <li><a href="#ui-kit">UI Kit</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#iconography">Iconography</a></li>
+                        <li><a href="#illustrations">Illustrations</a></li>
+                        <li><a href="#components">Components</a></li>
+                        <li><a href="#mockups">Mockups</a></li>
+                    </ul>
+                </nav>
+                <section id="intro" class="two">
+                    <h2 class="expand">User Interface</h2>
+                    <p>The design team collaborated on creating moodboards by collecting inspirational examples. Therefore deciding on the UI direction  took place within the team.</p>
+                    <p>In the following sections you can find the design decision behind our branding and utilizied vissual such as Illustrations, Gif animations and UI Kit.</p>
+                </section>
+                <section id="branding" class="two">
+                    <h2 class="expand">Branding</h2>
+                    <p class="expand">We sketched and designed up to 5 logos per team member, narrowing down ideas by brainstorming and discussing the concept behind the design. The chosen logo (displayed here), is conceptual representation of customers' possitive experience with our platform after finding their desired workspace.</p>
+                    <div>
+                        <img src="dimpledesk/branding/Group 2113.png" alt="">
+                        <h4 class="m-bott-non">White Background</h4>
+                    </div>
+                    <div>
+                        <img src="dimpledesk/branding/Group 2112.png" alt="">
+                        <h4 class="m-bott-non">Reveresed Colors</h4>
+                    </div>
+                    <p>Our logotype is a modified rendition of the "Poppins" typeface, displayed in horizontal alignment for large screens and vertical alignment for small screens.</p>
+                    <p>We chose color blue as our primary color, due to the nature of our concept, which is to provide efficinet service for professionals in a mjority of inudtries.</p>
+                </section>
+                <section id="gif" class="three low-gap">
+                    <h2 class="expand">Feauter Gif Animation</h2>
+                    <p class="expand">The displayed gif animations are used to create a visual assets as onboarding and quick intorodcution of the features.The concept behind the stop motion was the result of group discussions, however the execution and stop motion editing was done by one of the designers. The remaining tow, including myself, took the responsibility of all illustrations utilized across platform.</p>
+                    <img class="box-shadow" src="dimpledesk/gif/Search Workspace.gif" alt="">
+                    <img class="box-shadow" src="dimpledesk/gif//Filter Results.gif" alt="">
+                    <img class="box-shadow" src="dimpledesk/gif/Contact Host.gif" alt="">
+                </section>
+                <section id="ui-kit" class="two">
+                    <h2 class="expand">UI Kit</h2>
+                    <p>The intention behind choosing a high-contrast color as accent color, which is in saturated pink color, was to create a balanced contrast between the two shades against the white space reserved to less clutter the interface.</p>
+                    <p>Our color palette consists of shades and tints of Blue, which is DimpleDesk’s primary color, with light red as our accent color. We chose to balance these colours to remain gender-neutral in support of our target audiences.</p>
+                    <div class="expand two">
+                        <img src="dimpledesk/Color Palette 1.png" alt="">
+                        <img src="dimpledesk/Color Palette 2.png" alt="">
+                    </div>
+                </section>
+                <section id="typography" class="two">
+                    <h2 class="expand">Typography</h2>
+                    <img src="dimpledesk/Typography.png" alt="">
+                    <p class="right m-top-non">Poppins typeface being our primary font family, which we also levreged in our logotype. We utilized the "Inter" typeface for the body text and headings 3-5, due to its legibility and moderate kerning suitable for our content heavy platform.
+                    </p>
+                </section>
+                <section id="buttons">
+                    <h2>Buttons</h2>
+                    <img src="dimpledesk/UI Kit.png" alt="">
+                </section>
+                <section id="iconography" class="two">
+                    <h2 class="expand">Iconography</h2>
+                    <img src="dimpledesk/Iconography.png" alt="">
+                    <div>
+                        <p class="m-top-non">Our visual assets and icons make it easier for users to search, filter, and identify desired listings, with speed and efficacy.</p>
+                        <br>
+                        <p>All the utilized icona across platform has been designed and created via Figma and Adobe Illustrator (shared via Creative Cloud).</p>
+                    </div>
+                </section>
+                <section id="illustrations">
+                    <h2>Illustrations</h2>
+                    <div class="m-top-non two">
+                        <p>The chosen direction for the illustration and brainstorming ideas on how to approach this assets was done entirely within the design team. However for drawing, polishing and executing each illustration assigned to each member was an individual activity.</p>
+                        <p>The collection of illustrations required for the platform, such as the hero image, pop-ups and modals illustrations, etc. was divided between two designers. The third designer was responsible for the gif animations showcasing the features, which are displayed on the home page.</p>
+                    </div>
+                    <div class="two gap">
+                        <img class="box-shadow m-bott" src="dimpledesk/illustrationBookmarkedDesktop.png" alt="">
+                        <img class="box-shadow m-bott" src="dimpledesk/illustrationContactedDesktop.png" alt="">
+                        <h4 class="expand m-non">Contacted and Bookmarked Pop-up Illustrations</h4>
+                    </div>
+                    <div class="two gap">
+                        <img class="box-shadow m-bott" src="dimpledesk/DatepickerIllustrationMobile.png" alt="">
+                        <h4 class="expand m-non">Calendar and Confirmation Pop-up Illustrations</h4>
+                    </div>
+                    <div class="one-third gap">
+                        <img class="box-shadow m-bott" src="dimpledesk/Mobile - Rental Duration Filter Pop-Up.png" alt="">
+                        <div class="three">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationDurationDay.png" alt="">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationDurationMonth.png" alt="">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationDurationWeek.png" alt="">
+                        </div>
+                        <h4 class="expand m-non">Rental Duration Isometric Illustrations</h4>
+                    </div>
+                    <div class="one-third gap">
+                        <img class="box-shadow m-bott" src="dimpledesk/cardModalDesktop.png" alt="">
+                        <div class="three">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationShared.png" alt="">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationPrivate.png" alt="">
+                        </div>
+                        <h4 class="expand m-non">Workspace (Shared or Private) Illustartion</h4>
+                    </div>
+                    <div class="one-third gap">
+                        <img class="box-shadow m-bott" src="dimpledesk/group workspace illustration.png" alt="">
+                        <div class="three">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationWorkspaceSize.png" alt="">
+                            <img class="box-shadow m-bott" src="dimpledesk/illustrationDeskSize.png" alt="">
+                        </div>
+                        <h4 class="expand m-non">Three descriptive Illustrations (Listing page illustrations)</h4>
+                    </div>
+                </section>
+                <section id="components">
+                    <h2>Components</h2>
+                    <img class="third" src="dimpledesk/Components.png" alt="">
+                </section>
+                <section id="mockups">
+                    <h2>Mockups</h2>
+                    <p>During the final weeks of the project, and after finalizing the UI Kit, the transition from hi-fi wireframes to mockups started.</p>
+                    <p>Having the Ui kit and the relative components layed out, now lets go over the final mockups after implementation of assets. Detailed information about the listing cards is also provided.</p>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Home Page</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Home Page.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Home Page [Input Location].png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Search Result</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/Mobile - Show Listings Page.svg" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/Desktop - Show Listings Page.svg" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Listing page (Part A)</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Listing Detail.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Listing Detail.png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Listing page (Part B)</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Contact Host.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Contact Host.png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">List of Listing Amenities</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Listing All Amenities.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Listing All Amenities.png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Contacted Listing Pop-up</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Contacted Pop Up.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Contacted Pop Up.png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Contacted Page</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Contacted.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Contacted.png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Bookmarked Page</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Bookmarked.png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Bookmarked.png" alt="">
+                    </div>
+                    <div class="one-third side-gap gap">
+                        <h4 class="expand m-non">Profile Page</h4>
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Mobile - Profile [Vaccinated].png" alt="">
+                        <img class="box-shadow m-top" src="dimpledesk/mockups/Desktop - Profile [Vaccinated].png" alt="">
+                    </div>
+                </section>
+            </div>
+            
+    <!-- TEAM MEMBERS -->
+            <div id="teamMembers" class="tabcontent">
+                <h2 class="members">Team Members</h2>
+                <div class="two">
+                    <img class="m-top" src="dimpledesk/Design Team.png" alt="Designers team">
+                    <img class="m-top" src="dimpledesk/Development Team.png" alt="Developers team">
+                </div>
+                <!-- <section>
+                    <h3>Sayena Einafshar</h3>
+                    <h4>UI/UX Lead</h4>
+                    <p>Sayena has been in the Graphic and Product Design industry since 2013, both
+                        academically and professionally. As the Lead Designer, she is responsible for the quality
+                        and creativity of the project, as well as meeting deadlines accordingly. She reports directly
+                        to the project manager about design progress and design decisions.</p>
+                </section>
+
+                <section>
+                    <h3>Victor Jianto</h3>
+                    <h4>Project Manager & Product Designer</h4>
+                    <p>Victor started his design career in the architecture industry in 2016. He pivoted to design
+                        in the tech industry in 2019 by attending a UI/UX design bootcamp. He is interested in
+                        design systems, efficient workflows, DesignOps & DevOps, and product thinking.</p>
+                </section> -->
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <nav id="footer-nav">
+            <ul>                
+                <li><a href="mailto:saynafshar@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a></li>
+                <li><a href="https://www.linkedin.com/in/einafshar/"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a></li>
+                <li><a href="https://www.behance.net/einafshar/"><i class="fab fa-behance-square" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a></li>
+            </ul>
+        </nav>
+        <p>Ⓒ 2020 All Rights Reserved.</p>
+        <p>Designed & Coded by Sayena Einafshar</p>
+    </footer>
+</body>
+</html>
+

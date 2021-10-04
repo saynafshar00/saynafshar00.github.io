@@ -1,0 +1,17 @@
+.logo {
+    max-width: 8%;
+}
+
+/* secondary pages */
+.logo-wrapper a{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+      max-width: 10%;
+    }
+
+  }

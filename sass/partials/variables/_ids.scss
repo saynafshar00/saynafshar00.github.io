@@ -1,0 +1,51 @@
+// **********************************
+// PROJECTS
+// **********************************
+#projects section {
+    border: 1px solid rgba(211, 211, 211, 0.459);
+    margin: 3rem 0;
+    border-radius: 8px;
+    background-color: #f4f3f0a6;
+}
+#projects section:hover {
+    background-color: #fff;
+}
+#projects section:hover h2 {
+    color: black;
+}
+#projects section:hover img {
+    opacity: 1;
+    filter: grayscale(0);
+}
+#projects section a img {
+    border-radius: 8px 8px 0 0;
+}
+// ****************************
+#index h1 {
+    font-family: "Playfair Display", serif;
+    color: #638383;
+    margin-bottom: 1rem;
+}
+#index h4 {
+    margin: 0;
+}
+// ****************************
+
+#dimpledesk #persona h2 {
+    margin-bottom: 0;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    #overview, #userExperience, #userInterface,  #teamMembers, #uiKit {
+        grid-column: 1 / -1;
+    }
+    #projects section a img {
+        border-radius: 8px 8px 0 0;
+    }
+    #about {
+        justify-content: space-between;
+    }
+}

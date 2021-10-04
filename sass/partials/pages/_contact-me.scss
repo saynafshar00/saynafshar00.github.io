@@ -1,0 +1,78 @@
+// **********************************
+// CONTACT ME
+// **********************************
+// #contact h2 {
+//     margin-top: 3rem;
+// }
+form {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    // margin: 3rem 0;
+}
+input {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+}
+input:focus {
+    outline: none;
+}
+
+#contact button {
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #638383;
+    transition: background-color .4s ease-in-out;
+    // transition: color .4s ease-in-out;
+}
+#contact button:hover, #contact button:active {
+    background-color: #154368;
+    color: white;
+}
+
+textarea {
+    margin: 2rem 0;
+    padding: 0.5rem;
+    font-family: "Lato", sans-serif;
+    border: none;
+    background-color: rgba(231, 231, 231, 0.486);
+}
+textarea:focus {
+    background-color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    outline: none;
+    // color: #638383;
+}
+
+
+// **********************************
+// TABLETT
+// **********************************
+@media screen and (min-width:768px) {
+    
+    .wrapper-contact {
+        max-width: 60%;
+        margin: 1rem auto;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+}
+
+// **********************************
+// DESKTOP
+// **********************************
+@media screen and (min-width:1024px) {
+    .wrapper-contact {
+        max-width: 50%;
+    }
+}

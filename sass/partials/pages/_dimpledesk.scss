@@ -1,0 +1,118 @@
+#dimpledesk h1 a, .title {
+    font-family: "Poppins", sans-serif;
+    color: #4176FF;
+}
+
+/* DimpleDesk */
+#dimpledesk main {
+    background-image: url(../imgs/dimpledesk.png);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-y: 8rem;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
+}
+#dimpledesk .features {
+    margin: 1rem auto;
+}
+#dimpledesk .features img {
+    max-width: 50%;
+    margin: auto;
+}
+
+#overview section:not(:last-of-type), #userExperience section:not(:last-of-type), #userInterface section:not(:last-of-type) {
+    padding: 0 0 5rem 0;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.445);
+}
+.search, .contact {
+    margin-bottom: 5rem;
+}
+.search img, .contact img, .filter img, .box img {
+    max-width: 50%;
+    margin: auto;
+    // text-align: center;
+}
+.box:first-of-type {
+    margin-bottom: 5rem;
+}
+#teamMembers img {
+    margin-bottom: 1rem;
+}
+
+#system-arch img, #design-tech img {
+    padding: 2rem 0;
+}
+#persona img:first-of-type{
+    margin-bottom: 4rem;
+}
+
+.sub ul {
+    padding-left: 1rem;
+}
+.sub ul li {
+    // list-style-type: none;
+    font-weight: 300;
+    font-size: 0.98rem;
+    // color: #FF4470;
+}
+#login {
+    margin-top: 4rem;
+}
+
+@media screen and (min-width:768px) {
+
+    #dimpledesk main {
+        background-size: 50%;
+        padding-top: 22rem;
+        background-position-x: 50%;
+    }
+
+    #design, #development  {
+        margin-top: 0;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.445);
+    }
+ 
+    #database-structure .right {
+        grid-column: 2;
+    }
+
+    #design-tech img,  #design-tech h2 {
+        grid-column: 1;
+    }
+
+    #design-tech p {
+        grid-column: 2;
+    }
+    #features h2 {
+        grid-column: 1 / -1;
+    }
+
+    // #dimpledesk .logo {
+    //     max-width: 11%;
+    // }
+    #system-arch img {
+        padding: 0;
+    }
+    #persona img:first-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+@media screen and (min-width:1024px) {
+    #dimpledesk main {
+        background-size: 50%;
+        padding-top: 22rem;
+        background-position-x: 50%;
+        background-position-y: 7rem;
+    }
+    
+    // #dimpledesk .logo {
+    //     max-width: 12%;
+    // }
+
+
+}

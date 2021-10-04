@@ -1,0 +1,143 @@
+.menu-icon{
+    width: 22px;   
+}
+button {
+    padding: 0;
+}
+.show-menu {
+    display: block;
+}
+nav div {
+    display: none;
+}
+
+
+
+
+#menu-button, #close {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+#close {
+    padding: 0;
+    margin: .5rem 1.7rem 0 0;
+}
+
+#menu {
+    background-color: #ffffff;
+    position: absolute;
+    right: -.2rem;
+    top: 1.2rem;
+    z-index: 200;
+}
+// #index #menu {
+//     background-color: #F4F3F0;
+// }
+
+#main-nav li, #footer-nav li{
+    list-style-type: none;
+    font-weight: 500;
+}
+
+#main-nav ul  {
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+#main-nav li a {
+    text-decoration: none;
+    color: #638383;
+    display: block;
+    transition: color .1s ease-in-out;
+}
+#main-nav li:hover a {
+    color: #154368;
+
+}
+#main-nav li {
+    margin-right: 1rem;
+    // flex: 1 0 35%;
+}
+#main-nav li:last-child {
+    margin-right: 0;
+}
+
+
+
+#footer-nav ul{
+    display: flex;
+    flex-flow: row, nowrap;
+    gap: .6rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+#footer-nav li a {
+    color: grey;
+    padding:0 .3rem;
+    transition: color .1s ease-in-out;
+}
+#footer-nav li a:hover {
+    color: #638383;
+}
+footer ul li a {
+    font-size: 1.5rem;
+}
+
+
+// Tag nav
+.tag-nav ul li {
+    list-style-type: none;
+    flex: 1 0 8%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-right: 2rem;
+}
+.tag-nav ul {
+    padding-left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: scroll;
+}
+.tag-nav ul li a {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    display: block;
+    font-size: .8rem;
+}
+.tag-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width:768px) {
+    nav div {
+        display: block;
+    }
+    #menu-button, #close {
+        display: none;
+    }
+    #menu {
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+        top: 0;
+    }
+    #main-nav li {
+        margin-right: 2rem;
+    }
+    #main-nav li:last-child, #main-nav li:nth-child(3)  {
+        margin-right: 0;
+    }
+    #menu ul li a {
+        text-align: right;
+    }
+    aside {
+        grid-column: 1 / -1;
+    }
+    #main-nav {
+        align-content: center;
+    }
+}

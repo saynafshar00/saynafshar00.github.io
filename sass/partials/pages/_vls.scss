@@ -1,0 +1,53 @@
+#vls h1 a
+// ,  .wrapper-projects a[href="vls.html"] h2 
+{
+    color: #E75424;
+    font-family: "Adelle", serif;
+}
+#vls main {
+    background-image: url(../vls/hero-img.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-y: 6rem;
+    background-repeat: no-repeat;
+    padding-top: 8rem;
+}
+#vls h4 {
+    margin: .5rem 0;
+}
+.services {
+    margin: 4rem 0;
+    // display: flex;
+    // flex-flow: row nowrap;
+    // align-items: center;
+    // gap: 1rem;
+}
+.services img {
+    max-width: 20%;
+    // margin: auto;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    #vls main {
+        // background-size: 50%;
+        padding-top: 16rem;
+        background-position-x: 50%;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    #vls main {
+        // background-size: 50%;
+        padding-top: 22rem;
+        background-position-x: 50%;
+    }
+    
+}
