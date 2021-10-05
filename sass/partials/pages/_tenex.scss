@@ -4,7 +4,7 @@
     background-size: contain;
     background-position-y: 5rem;
     background-repeat: no-repeat;
-    padding-top: 16rem;
+    padding-top: 14rem;
 }
 
 #tenex h1 a
@@ -30,7 +30,7 @@
 
     #tenex main {
         background-size: 50%;
-        padding-top: 16rem;
+        padding-top: 14rem;
         background-position-x: 50%;
         background-color: #D7EAE8;
     }
@@ -44,9 +44,21 @@
 @media screen and (min-width:1024px) {
     #tenex main {
         background-size: 50%;
-        padding-top: 22rem;
+        padding-top: 18rem;
         background-position-x: 50%;
         background-position-y: 4rem;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width:1440px) {
+    #tenex main {
+        background-size: 50%;
+        padding-top: 25rem;
+
     }
     
 }

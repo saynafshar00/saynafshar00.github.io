@@ -3,6 +3,7 @@
 {
     color: #E75424;
     font-family: "Adelle", serif;
+    font-size: 1.4rem;
 }
 #vls main {
     background-image: url(../vls/hero-img.jpg);
@@ -10,7 +11,7 @@
     background-size: contain;
     background-position-y: 6rem;
     background-repeat: no-repeat;
-    padding-top: 8rem;
+    padding-top: 9rem;
 }
 #vls h4 {
     margin: .5rem 0;
@@ -47,6 +48,15 @@
     #vls main {
         // background-size: 50%;
         padding-top: 22rem;
+        background-position-x: 50%;
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+    #vls main {
+        // background-size: 50%;
+        padding-top: 30rem;
         background-position-x: 50%;
     }
     

@@ -21,7 +21,7 @@ input:focus {
     outline: none;
 }
 
-#contact button {
+#contact .wrapper-body button {
     padding: 0.5rem 0;
     margin: 1rem 0;
     border: none;
@@ -31,7 +31,7 @@ input:focus {
     transition: background-color .4s ease-in-out;
     // transition: color .4s ease-in-out;
 }
-#contact button:hover, #contact button:active {
+#contact .wrapper-body button:hover, #contact .wrapper-body button:active {
     background-color: #154368;
     color: white;
 }
@@ -50,17 +50,26 @@ textarea:focus {
     // color: #638383;
 }
 
+#contact h2 {
+    margin-top: 0;
+}
+
 
 // **********************************
 // TABLETT
 // **********************************
 @media screen and (min-width:768px) {
     
-    .wrapper-contact {
-        max-width: 60%;
-        margin: 1rem auto;
-    }
 
+    #contact h2 {
+        margin-top: 5rem;
+    }
+    #contact .wrapper-body {
+        display: block;
+        padding: 1.5rem 2.5rem;
+        max-width: 500px;
+        margin: auto;
+    }
     form {
         display: grid;
         grid-template-columns: repeat(1fr);
@@ -71,8 +80,3 @@ textarea:focus {
 // **********************************
 // DESKTOP
 // **********************************
-@media screen and (min-width:1024px) {
-    .wrapper-contact {
-        max-width: 50%;
-    }
-}

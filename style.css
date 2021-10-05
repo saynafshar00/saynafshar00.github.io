@@ -27,7 +27,7 @@ Tables of content
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 .logo {
-  max-width: 8%;
+  max-width: 30px;
 }
 
 /* secondary pages */
@@ -42,12 +42,8 @@ Tables of content
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    max-width: 10%;
-  }
+  margin: 0;
+  padding: 0;
 }
 
 .avatar {
@@ -266,14 +262,6 @@ Tables of content
   margin-bottom: 1rem;
 }
 
-.m-bott-non {
-  margin-bottom: .5rem;
-}
-
-.m-top-non {
-  margin-top: 0;
-}
-
 .box-shadow {
   -webkit-box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
           box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
@@ -329,6 +317,10 @@ Tables of content
   margin-bottom: 3rem;
 }
 
+.scale {
+  max-width: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .two {
     display: -ms-grid;
@@ -361,7 +353,7 @@ Tables of content
     gap: 1rem  2rem;
   }
   .members {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
   .vls-layout {
     display: -ms-grid;
@@ -397,11 +389,17 @@ Tables of content
   .read-more {
     text-align: center;
   }
-  .scale {
-    max-width: 3.9%;
-  }
   .expand {
     grid-column: 1 / -1;
+  }
+  .m-bott-non {
+    margin-bottom: .5rem;
+  }
+  .m-top-non {
+    margin-top: 0;
+  }
+  .scale {
+    max-width: 100%;
   }
 }
 
@@ -478,6 +476,12 @@ h1 {
 
 h1 a {
   font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2 {
@@ -691,7 +695,7 @@ nav div {
   background-color: #ffffff;
   position: absolute;
   right: -.2rem;
-  top: 1.2rem;
+  top: .5rem;
   z-index: 200;
 }
 
@@ -937,7 +941,7 @@ aside {
 @media screen and (min-width: 768px) {
   #dimpledesk main {
     background-size: 50%;
-    padding-top: 22rem;
+    padding-top: 18rem;
     background-position-x: 50%;
   }
   #design, #development {
@@ -976,7 +980,13 @@ aside {
   }
 }
 
-#plantor h1 a {
+@media screen and (min-width: 1440px) {
+  #dimpledesk main {
+    padding-top: 30rem;
+  }
+}
+
+#plantor h1 {
   color: #8F8F57;
 }
 
@@ -1015,6 +1025,7 @@ aside {
 #vls h1 a {
   color: #E75424;
   font-family: "Adelle", serif;
+  font-size: 1.4rem;
 }
 
 #vls main {
@@ -1023,7 +1034,7 @@ aside {
   background-size: contain;
   background-position-y: 6rem;
   background-repeat: no-repeat;
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 
 #vls h4 {
@@ -1052,13 +1063,20 @@ aside {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  #vls main {
+    padding-top: 30rem;
+    background-position-x: 50%;
+  }
+}
+
 #tenex main {
   background-image: url(../../../imgs/tenex.jpg);
   background-attachment: fixed;
   background-size: contain;
   background-position-y: 5rem;
   background-repeat: no-repeat;
-  padding-top: 16rem;
+  padding-top: 14rem;
 }
 
 #tenex h1 a {
@@ -1080,7 +1098,7 @@ aside {
 @media screen and (min-width: 768px) {
   #tenex main {
     background-size: 50%;
-    padding-top: 16rem;
+    padding-top: 14rem;
     background-position-x: 50%;
     background-color: #D7EAE8;
   }
@@ -1089,9 +1107,16 @@ aside {
 @media screen and (min-width: 1024px) {
   #tenex main {
     background-size: 50%;
-    padding-top: 22rem;
+    padding-top: 18rem;
     background-position-x: 50%;
     background-position-y: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #tenex main {
+    background-size: 50%;
+    padding-top: 25rem;
   }
 }
 
@@ -1115,7 +1140,7 @@ input:focus {
   outline: none;
 }
 
-#contact button {
+#contact .wrapper-body button {
   padding: 0.5rem 0;
   margin: 1rem 0;
   border: none;
@@ -1126,7 +1151,7 @@ input:focus {
   transition: background-color .4s ease-in-out;
 }
 
-#contact button:hover, #contact button:active {
+#contact .wrapper-body button:hover, #contact .wrapper-body button:active {
   background-color: #154368;
   color: white;
 }
@@ -1145,22 +1170,25 @@ textarea:focus {
   outline: none;
 }
 
+#contact h2 {
+  margin-top: 0;
+}
+
 @media screen and (min-width: 768px) {
-  .wrapper-contact {
-    max-width: 60%;
-    margin: 1rem auto;
+  #contact h2 {
+    margin-top: 5rem;
+  }
+  #contact .wrapper-body {
+    display: block;
+    padding: 1.5rem 2.5rem;
+    max-width: 500px;
+    margin: auto;
   }
   form {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: ()[1fr];
         grid-template-columns: repeat(1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .wrapper-contact {
-    max-width: 50%;
   }
 }
 

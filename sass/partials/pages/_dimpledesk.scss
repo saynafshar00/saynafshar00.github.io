@@ -64,7 +64,7 @@
 
     #dimpledesk main {
         background-size: 50%;
-        padding-top: 22rem;
+        padding-top: 18rem;
         background-position-x: 50%;
     }
 
@@ -88,9 +88,6 @@
         grid-column: 1 / -1;
     }
 
-    // #dimpledesk .logo {
-    //     max-width: 11%;
-    // }
     #system-arch img {
         padding: 0;
     }
@@ -110,9 +107,13 @@
         background-position-y: 7rem;
     }
     
-    // #dimpledesk .logo {
-    //     max-width: 12%;
-    // }
+}
+
+
+@media screen and (min-width:1440px) {
+    #dimpledesk main {
+        padding-top: 30rem;
+    }
 
 
 }
