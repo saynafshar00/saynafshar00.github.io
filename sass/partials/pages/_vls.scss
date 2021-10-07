@@ -3,7 +3,7 @@
 {
     color: #E75424;
     font-family: "Adelle", serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 #vls main {
     background-image: url(../vls/hero-img.jpg);
@@ -37,7 +37,9 @@
         padding-top: 16rem;
         background-position-x: 50%;
     }
-
+    #vls h1 a {
+        font-size: 1.4rem;
+    }
 }
 
 

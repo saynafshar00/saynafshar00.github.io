@@ -46,6 +46,12 @@ Tables of content
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 40px;
+  }
+}
+
 .avatar {
   padding: 1rem 0;
   display: -webkit-box;
@@ -994,17 +1000,15 @@ aside {
   background-image: url(imgs/plantor.jpg);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 6rem;
+  background-position-y: 5rem;
   background-repeat: no-repeat;
-  padding-top: 20rem;
+  padding-top: 14rem;
   background-color: #8F8F57;
 }
 
 @media screen and (min-width: 768px) {
   #plantor main {
-    background-size: 50%;
-    padding-top: 16rem;
-    background-position-x: 50%;
+    padding-top: 26rem;
   }
   .w-i-p {
     grid-column: 1 / -1;
@@ -1016,16 +1020,23 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #plantor main {
-    background-size: 50%;
+    background-size: 60%;
+    background-position-y: 7rem;
     background-position-x: 50%;
-    padding-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #plantor main {
+    background-size: 50%;
+    background-position-y: 5rem;
   }
 }
 
 #vls h1 a {
   color: #E75424;
   font-family: "Adelle", serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 #vls main {
@@ -1054,6 +1065,9 @@ aside {
     padding-top: 16rem;
     background-position-x: 50%;
   }
+  #vls h1 a {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1074,7 +1088,7 @@ aside {
   background-image: url(../../../imgs/tenex.jpg);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 5rem;
+  background-position-y: 4rem;
   background-repeat: no-repeat;
   padding-top: 14rem;
 }
@@ -1097,10 +1111,15 @@ aside {
 
 @media screen and (min-width: 768px) {
   #tenex main {
-    background-size: 50%;
-    padding-top: 14rem;
-    background-position-x: 50%;
+    background-size: contain;
+    padding-top: 28rem;
     background-color: #D7EAE8;
+  }
+  #tenex .scale {
+    max-width: 100%;
+  }
+  #tenex .form-gap {
+    margin-bottom: 1rem;
   }
 }
 

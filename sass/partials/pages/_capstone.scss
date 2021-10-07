@@ -6,9 +6,9 @@
     background-image: url(imgs/plantor.jpg);
     background-attachment: fixed;
     background-size: contain;
-    background-position-y: 6rem;
+    background-position-y: 5rem;
     background-repeat: no-repeat;
-    padding-top: 20rem;
+    padding-top: 14rem;
     background-color: #8F8F57;
 
 }
@@ -29,9 +29,9 @@
 @media screen and (min-width:768px) {
 
     #plantor main {
-        background-size: 50%;
-        padding-top: 16rem;
-        background-position-x: 50%;
+        // background-size: 50%;
+        padding-top: 26rem;
+        // background-position-x: 50%;
     }
     .w-i-p {
         grid-column: 1 / -1;
@@ -51,9 +51,18 @@
 
 @media screen and (min-width:1024px) {
     #plantor main {
-        background-size: 50%;
+        background-size: 60%;
+        background-position-y: 7rem;
         background-position-x: 50%;
-        padding-top: 20rem;
+    }
+}
 
+
+
+
+@media screen and (min-width:1440px) {
+    #plantor main {
+        background-size: 50%;
+        background-position-y: 5rem;
     }
 }

@@ -2,7 +2,7 @@
     background-image: url(../../../imgs/tenex.jpg);
     background-attachment: fixed;
     background-size: contain;
-    background-position-y: 5rem;
+    background-position-y: 4rem;
     background-repeat: no-repeat;
     padding-top: 14rem;
 }
@@ -29,12 +29,17 @@
 @media screen and (min-width:768px) {
 
     #tenex main {
-        background-size: 50%;
-        padding-top: 14rem;
-        background-position-x: 50%;
+        background-size: contain;
+        padding-top: 28rem;
+        // background-position-x: 50%;
         background-color: #D7EAE8;
     }
-
+    #tenex .scale {
+        max-width: 100%;
+    }
+    #tenex .form-gap {
+        margin-bottom: 1rem;
+    }
 }
 
 
