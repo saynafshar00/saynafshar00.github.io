@@ -6,7 +6,7 @@
     font-size: 1.2rem;
 }
 #vls main {
-    background-image: url(../vls/hero-img.jpg);
+    background-image: url(../vls/hero-img.png);
     background-attachment: fixed;
     background-size: contain;
     background-position-y: 6rem;
@@ -33,9 +33,9 @@
 @media screen and (min-width:768px) {
 
     #vls main {
-        // background-size: 50%;
+        background-size: 110%;
         padding-top: 16rem;
-        background-position-x: 50%;
+        // background-position-x: 60%;
     }
     #vls h1 a {
         font-size: 1.4rem;
@@ -48,9 +48,8 @@
 
 @media screen and (min-width:1024px) {
     #vls main {
-        // background-size: 50%;
-        padding-top: 22rem;
-        background-position-x: 50%;
+        padding-top: 20rem;
+        background-position-x: 1%;
     }
     
 }

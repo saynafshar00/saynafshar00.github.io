@@ -59,7 +59,8 @@
                         <li><a href="#p-problem">Problem</a></li>
                         <li><a href="#p-solution">Solution</a></li>
                         <li><a href="#p-features">Features</a></li>
-                        <li><a href="#p-analysis">Competitive Analysis</a></li>
+                        <li><a href="#p-research">Market Research</a></li>
+                        <!-- <li><a href="#p-analysis">Competitive Analysis</a></li>
                         <li><a href="#p-design">Design Schedule</a></li>
                         <li><a href="#p-development">Development Schedule</a></li>
                         <li><a href="#p-system-arch">System Architecture</a></li>
@@ -70,51 +71,57 @@
                         <li><a href="#p-userflow">Userflow</a></li>
                         <li><a href="#p-business">Business Plan</a></li>
                         <li><a href="#p-marketing">Marketing Strategy</a></li>
-                        <li><a href="#p-roadmap">Roadmap</a></li>
+                        <li><a href="#p-roadmap">Roadmap</a></li> -->
                     </ul>
                 </nav>
                 <section>
-                    <div>
-                        <h2 id="p-intro">Project Overview</h2>
-                        <p>Progressive web app that eases communication between tenants, building managers, and landlords. MVP will only focus on the tenant side of the app. WordPress website for marketing and branding purposes.</p>
+                    <div class="two">
+                        <h2 id="p-intro" class="expand">Project Overview</h2>
+                        <p>The project is in the agriculture industry. We will be solving the problem of users who are new to gardening not knowing what plants they can grow at home.</p><p>We will be solving this problem by creating a mobile app to provide users with suggestions on what plants they can grow at home based on location, season, and light exposure.</p>
                     </div>
-                    <article>
-                        <h3 id="#p-problem">Problem Statement</h3>
-                        <p>Tenants in apartments and condos need a better way to communicate with building managers because current communication methods can be cumbersome. Residents in apartments and condos can have a hard time communicating with building management to solve issues with their homes, neighbors, and the building.</p>
-                    </article>
-                    <article>
-                        <h3 id="#p-solution">Recommended Solution</h3>
-                        <p>Create an app that eases communication between residents and building management with functionalities such as requesting services and maintenance, filing complaints, receiving notifications (elevator maintenance, electrical outage, exterior cleaning etc.), showing building policies, forum for tenants, and booking building amenities.</p>
-                    </article>
+                    <div class="two">
+                        <article>
+                            <h3 id="#p-problem">Save Environment</h3>
+                            <p>Users will be able to save their location’s environment information in the app to view suitable plants of the environment in the future.</p>
+                        </article>
+                        <article>
+                            <h3 id="#p-solution">Weather Notification</h3>
+                            <p>Users will get notifications about seasonal changes and weather hazards.</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="#p-features">
-                        <h2>The supporting features</h2>
-                        <div class="request">
-                            <img src="dimpledesk/Search Listing Illustration.png" alt="Illustration demontrating user searchinf workspaces">
-                            <h3>Send Complaint Or Requests</h3>
-                            <p>Send requests to your building manager and follow up via our in-app chat box.</p>
+                
+                <section id="#p-features" class="three">
+                        <h2 class="expand">The supporting features</h2>
+                        <div>
+                            <img src="plantor/f2.png" alt="Illustration demontrating user searchinf workspaces">
+                            <h3>Plant Suggestion</h3>
+                            <p>The feature provides users suggestions on what plants users can grow at home based on the users’ location, season, and light exposure. This solves the problem of users who want to start gardening at home but do not know what plants they can grow.</p>
+                            <p>Users will provide their location, light source, and the app will provide the top 10 suggestions on what the user can grow at home. This feature will be utilizing the magnetometer (to determine users’ light source orientation), geolocation (to determine the climate based on users’ location), and the date/time functionality (to determine the current season) of the mobile device.</p>
                         </div>
-                        <div class="booking">
-                            <img src="dimpledesk/Contact Host Illustration.png" alt="Illustration demontrating user contacting host">
-                            <h3>Booking Amenities & Services</h3>
-                            <p>Book amenities and appointments.Use our in-app calendar to track every booking, alert, notification, and request.
-                            </p>
+                        <div>
+                            <img src="plantor/f3.png" alt="Illustration demontrating user contacting host">
+                            <h3>Save Environment</h3>
+                            <p>The feature will be used to save user location’s environment information in the app. This makes it more convenient for users to keep track of the plants that they can grow and remember which seeds or starter plants to buy when they get to the plant shop. This will also reduce the number of times users need to input their environment information into the app to get plant suggestions in the future.</p>
+                            <p>Users can save the environment information on the plant suggestion screen after inputting the environment information needed for the app to provide plant suggestions. The saved environment will be stored and displayed on the “Saved” page. Users can always rename or delete the saved environment. When users tap on the saved environment, they will be navigated to the plant suggestion screen and the app will display the suggested plants based on the saved environment’s information.</p>
                         </div>
-                        <div class="filter">
-                            <img src="dimpledesk/Filter Listing Illustration.png" alt="Illustration demonstrating filtering option">
-                            <h3>Recieve Alets & Notifications</h3>
-                            <p>View the latest building notifications and request updates on the home page. Access past building notifications and alerts in the Tenex archive.</p>
+                        <div>
+                            <img src="plantor/f1.png" alt="Illustration demonstrating filtering option">
+                            <h3>Weather Notification</h3>
+                            <p>The feature will be used to notify users of any seasonal changes and weather hazards. This allows users to reevaluate what plants to grow or adjust how they’re currently growing their plants, especially for users who are growing plants outdoors.</p>
+                            <p>Users will receive push notifications when there are seasonal changes and weather hazards. They can also view the notifications displayed on the “Notifications” page.</p>
                         </div>
-
-                        <div class="chat">
-                            <img src="dimpledesk/Filter Listing Illustration.png" alt="Illustration demonstrating filtering option">
-                            <h3>In-App Chat</h3>
-                            <p>View all past and current requests and bookings in TenexBox.</p>
-                        </div>
+                </section>
+                
+                <section id="p-research" class="two">
+                    <h2 class="expand" >Market Research</h2>
+                    <p>According to a Grand View Research lawn and gardening consumables market analysis report (https://bit.ly/3DjDNnG), the global lawn and gardening consumables market was valued at USD 19.50 billion in 2019 and is expected to grow to USD 25.94 billion by 2027. Among all the demographics, the residential segment accounts for the largest share of the market of more than 45% in 2019 and is expected to grow at the highest rate.</p>
+                    <p> A common problem with people new to gardening is that they do not know what they can grow at home. That’s when our app can come in handy to solve the problem of the growing number of new residential gardeners. Our app will be recommending to the new residential gardeners what plants they can grow at home.
+                    </p>
                 </section>
             </div>
 
-
+<!-- 
             <div id="userExperience" class="tabcontent">
                 <div class="p-intro-ux">
                     <h3>User Experience</h3>
@@ -129,10 +136,10 @@
             <div id="userInterface" class="tabcontent">
                 <h3>User Interface</h3>
                 <p>User Interface is the capital of Japan.</p>
-            </div>
+            </div> -->
 
 
-            <div id="teamMembers" class="tabcontent">
+            <!-- <div id="teamMembers" class="tabcontent">
                 <h2>Team Members</h2>
 
                 <section>
@@ -170,7 +177,7 @@
                     <h4>Wez Ireland</h4>
                     <p>Product Engineer</p>
                 </section>
-            </div>
+            </div> -->
                 
             <div class="w-i-p">
                 <h2>Work In Progress...</h2>

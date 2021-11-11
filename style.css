@@ -26,6 +26,7 @@ Tables of content
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=DM+Serif+Display&family=Quicksand:wght@300;400;500;700&display=swap");
 .logo {
   max-width: 30px;
 }
@@ -115,6 +116,10 @@ Tables of content
 
 .wrapper-aside {
   padding: 9rem 1.5rem;
+}
+
+.wrapper-aside div p {
+  text-align: justify;
 }
 
 .wrapper-projects, .wrapper-body {
@@ -980,7 +985,7 @@ aside {
 @media screen and (min-width: 1024px) {
   #dimpledesk main {
     background-size: 50%;
-    padding-top: 22rem;
+    padding-top: 26rem;
     background-position-x: 50%;
     background-position-y: 7rem;
   }
@@ -992,8 +997,10 @@ aside {
   }
 }
 
-#plantor h1 {
+#plantor h1 a {
   color: #8F8F57;
+  font-family: "Amatic SC", serif;
+  font-size: 2.5rem;
 }
 
 #plantor main {
@@ -1003,12 +1010,12 @@ aside {
   background-position-y: 5rem;
   background-repeat: no-repeat;
   padding-top: 14rem;
-  background-color: #8F8F57;
+  background-color: #DFD7C6;
 }
 
 @media screen and (min-width: 768px) {
   #plantor main {
-    padding-top: 26rem;
+    padding-top: 22rem;
   }
   .w-i-p {
     grid-column: 1 / -1;
@@ -1021,7 +1028,7 @@ aside {
 @media screen and (min-width: 1024px) {
   #plantor main {
     background-size: 60%;
-    background-position-y: 7rem;
+    background-position-y: 5rem;
     background-position-x: 50%;
   }
 }
@@ -1040,7 +1047,7 @@ aside {
 }
 
 #vls main {
-  background-image: url(../vls/hero-img.jpg);
+  background-image: url(../vls/hero-img.png);
   background-attachment: fixed;
   background-size: contain;
   background-position-y: 6rem;
@@ -1062,8 +1069,8 @@ aside {
 
 @media screen and (min-width: 768px) {
   #vls main {
+    background-size: 110%;
     padding-top: 16rem;
-    background-position-x: 50%;
   }
   #vls h1 a {
     font-size: 1.4rem;
@@ -1072,8 +1079,8 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #vls main {
-    padding-top: 22rem;
-    background-position-x: 50%;
+    padding-top: 20rem;
+    background-position-x: 1%;
   }
 }
 
@@ -1126,7 +1133,7 @@ aside {
 @media screen and (min-width: 1024px) {
   #tenex main {
     background-size: 50%;
-    padding-top: 18rem;
+    padding-top: 22rem;
     background-position-x: 50%;
     background-position-y: 4rem;
   }

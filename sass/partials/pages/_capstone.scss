@@ -1,5 +1,7 @@
-#plantor h1 {
+#plantor h1 a{
     color: #8F8F57;
+    font-family: "Amatic SC", serif;
+    font-size: 2.5rem;
 }
 
 #plantor main {
@@ -9,7 +11,7 @@
     background-position-y: 5rem;
     background-repeat: no-repeat;
     padding-top: 14rem;
-    background-color: #8F8F57;
+    background-color: #DFD7C6;
 
 }
 
@@ -30,7 +32,7 @@
 
     #plantor main {
         // background-size: 50%;
-        padding-top: 26rem;
+        padding-top: 22rem;
         // background-position-x: 50%;
     }
     .w-i-p {
@@ -52,7 +54,7 @@
 @media screen and (min-width:1024px) {
     #plantor main {
         background-size: 60%;
-        background-position-y: 7rem;
+        background-position-y: 5rem;
         background-position-x: 50%;
     }
 }
