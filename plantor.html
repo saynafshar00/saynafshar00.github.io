@@ -60,11 +60,11 @@
                         <li><a href="#p-solution">Solution</a></li>
                         <li><a href="#p-features">Features</a></li>
                         <li><a href="#p-research">Market Research</a></li>
-                        <!-- <li><a href="#p-analysis">Competitive Analysis</a></li>
+                        <li><a href="#p-analysis">Competitive Analysis</a></li>
                         <li><a href="#p-design">Design Schedule</a></li>
                         <li><a href="#p-development">Development Schedule</a></li>
                         <li><a href="#p-system-arch">System Architecture</a></li>
-                        <li><a href="#p-data-driven-feature">Data-driven Feature</a></li>
+                        <!-- <li><a href="#p-data-driven-feature">Data-driven Feature</a></li>
                         <li><a href="#p-database-structure">Database Structure</a></li>
                         <li><a href="#p-design-tech">Design Technology</a></li>
                         <li><a href="#p-persona">User Persona</a></li>
@@ -76,67 +76,171 @@
                 </nav>
                 <section>
                     <div class="two">
-                        <h2 id="p-intro" class="expand">Project Overview</h2>
-                        <p>The project is in the agriculture industry. We will be solving the problem of users who are new to gardening not knowing what plants they can grow at home.</p><p>We will be solving this problem by creating a mobile app to provide users with suggestions on what plants they can grow at home based on location, season, and light exposure.</p>
+                        <h2 class="expand">Project Overview</h2>
+                        <p>The project is in the agriculture industry. We will be solving the problem of users who are new to gardening not knowing what plants they can grow at home. We will be solving this problem by creating a mobile app to provide users with suggestions on plants they can grow at home based on location, season & light exposure.</p>
+
+                        <p>Via our Android Native Application, users can get top 10 plant suggestions suitable to their inputted information about the environment, whether looking for plants to grow indoor or outdoor. These suggestions can be filtered upon users preference, to view pet-friendly/non-pet-friendly and edible/non-edible options.</p>
+  
                     </div>
-                    <div class="two">
+                    <article id="#p-problem" class="three">
+                        <h3 class="expand">Problem</h3>
+                        <div>
+                            <img class="half" src="plantor/light.svg" alt="">
+                            <h4>Light</h4>
+                            <p></p>
+                        </div>
+                        <div>
+                            <img  class="half"src="plantor/temp.svg" alt="">
+                            <h4>Temperture</h4>
+                            <p></p>
+                        </div>
+                        <div>
+                            <img class="half" src="plantor/season.svg" alt="">
+                            <h4>Season</h4>
+                            <p></p>
+                        </div>
+
+
+                    </article>
+                    <article id="#p-solution" class="three">
+                        <h3 class="expand">Solution</h3>
                         <article>
-                            <h3 id="#p-problem">Save Environment</h3>
+                            <h4>Plant Suggestion</h4>
+                            <p>Providing suggestions on what plants users can grow at home based on location, season, and light exposure.</p>
+                        </article>
+                        <article>
+                            <h4>Save Environment</h4>
                             <p>Users will be able to save their location’s environment information in the app to view suitable plants of the environment in the future.</p>
                         </article>
+
                         <article>
-                            <h3 id="#p-solution">Weather Notification</h3>
+                            <h4>Weather Notification</h4>
                             <p>Users will get notifications about seasonal changes and weather hazards.</p>
                         </article>
-                    </div>
+                    </article>
                 </section>
                 
                 <section id="#p-features" class="three">
                         <h2 class="expand">The supporting features</h2>
                         <div>
-                            <img src="plantor/f2.png" alt="Illustration demontrating user searchinf workspaces">
+                            <img src="plantor/f2.svg" alt="Illustration demontrating user searchinf workspaces">
                             <h3>Plant Suggestion</h3>
                             <p>The feature provides users suggestions on what plants users can grow at home based on the users’ location, season, and light exposure. This solves the problem of users who want to start gardening at home but do not know what plants they can grow.</p>
+                            <br>
                             <p>Users will provide their location, light source, and the app will provide the top 10 suggestions on what the user can grow at home. This feature will be utilizing the magnetometer (to determine users’ light source orientation), geolocation (to determine the climate based on users’ location), and the date/time functionality (to determine the current season) of the mobile device.</p>
                         </div>
                         <div>
-                            <img src="plantor/f3.png" alt="Illustration demontrating user contacting host">
+                            <img src="plantor/f3.svg" alt="Illustration demontrating user contacting host">
                             <h3>Save Environment</h3>
                             <p>The feature will be used to save user location’s environment information in the app. This makes it more convenient for users to keep track of the plants that they can grow and remember which seeds or starter plants to buy when they get to the plant shop. This will also reduce the number of times users need to input their environment information into the app to get plant suggestions in the future.</p>
+                            <br>
                             <p>Users can save the environment information on the plant suggestion screen after inputting the environment information needed for the app to provide plant suggestions. The saved environment will be stored and displayed on the “Saved” page. Users can always rename or delete the saved environment. When users tap on the saved environment, they will be navigated to the plant suggestion screen and the app will display the suggested plants based on the saved environment’s information.</p>
                         </div>
                         <div>
-                            <img src="plantor/f1.png" alt="Illustration demonstrating filtering option">
+                            <img src="plantor/f1.svg" alt="Illustration demonstrating filtering option">
                             <h3>Weather Notification</h3>
                             <p>The feature will be used to notify users of any seasonal changes and weather hazards. This allows users to reevaluate what plants to grow or adjust how they’re currently growing their plants, especially for users who are growing plants outdoors.</p>
+                            <br>
                             <p>Users will receive push notifications when there are seasonal changes and weather hazards. They can also view the notifications displayed on the “Notifications” page.</p>
                         </div>
                 </section>
                 
                 <section id="p-research" class="two">
-                    <h2 class="expand" >Market Research</h2>
+                    <h2 class="expand">Market Research</h2>
                     <p>According to a Grand View Research lawn and gardening consumables market analysis report (https://bit.ly/3DjDNnG), the global lawn and gardening consumables market was valued at USD 19.50 billion in 2019 and is expected to grow to USD 25.94 billion by 2027. Among all the demographics, the residential segment accounts for the largest share of the market of more than 45% in 2019 and is expected to grow at the highest rate.</p>
                     <p> A common problem with people new to gardening is that they do not know what they can grow at home. That’s when our app can come in handy to solve the problem of the growing number of new residential gardeners. Our app will be recommending to the new residential gardeners what plants they can grow at home.
                     </p>
                 </section>
+                <section id="p-analysis">
+                    <h2>Competitive Analysis</h2>
+                    <img class="third m-top expand" src="plantor/Competetie analysis.svg" alt="Competitive analysis chart">
+                </section>
+                <section id="p-design" class="two">
+                        <h2 class="expand">Design Schedule</h2>
+                        <img class="m-bott" src="plantor/Design Schedule.svg" alt="Design Schedule">
+                        <div>
+                            <p class="m-top-non">We developed our Design concept from emphasizing on problem to Project Launch within 12 weeks. To specify context of use, our team conducted extensive market research and competitive analysis to plan, define scope, and lockdown features.</p> 
+                            <br>
+                            <p>During ideation, and within the span of 4 weeks, we collaborated on design and iterations of wireframes and visual assets on platforms such as Figma and Creative Cloud. Development of each iteration was built on bi-weekly sprints, which helped us manage tasks and maintain design integrity.
+                            </p>
+                            <br>
+                            <p>My role as Design Lead consisted of planning for the design schedule and getting approval from  the Project manager to ensure deliverable deadlines meets the project development pace. To keep track of the progress of Designers, I broke down deliverables into work packages, and assigned tasks to design team members based on their interests and area of expertise.</p>
+                        </div>
+                </section>
+                <section id="p-development" class="two">
+                        <h2 class="expand">Development Schedule</h2>
+                        <img class="m-bott" src="plantor/Development Schedule.svg" alt="Development Schedule">
+                        <div>
+                            <p class="m-top-non">During the first sprint, the Development team planned on the features and conducted research. During weeks 3-4 the development environment was set up and the development process began during weeks 5-7.</p>
+                            <br>
+                            <p>By week 8 of Development schedule, we got started on the Alpha build testing and refining bugs accordingly. Code freeze process took place during week 11, which helped us prepare for the presentation preparation, platform demo and rehearsal that took place during week 12.</p>
+                        </div>
+                </section>
+                <section id="p-system-arch">
+                    <h2>System Architecture</h2>
+                    <!-- <p>Our front-end (including React and SASS) and back-end (including NodeJS and ExpressJS) repositories are posted on Github, and we are hosting both on Heroku. We are using MongoDB for the database and Amazon S3 for image storage. We are using SendGrid for emails and Auth0 for authentication. We chose this tech stack so that we could focus on building upon the best tools for our MVP.</p> -->
+                    <img src="plantor/System Architecture.svg" alt="System Architecture">
+                </section>
             </div>
 
-<!-- 
+
             <div id="userExperience" class="tabcontent">
-                <div class="p-intro-ux">
-                    <h3>User Experience</h3>
-                    <p>DimpleDesk is a web platform that enables 
-                        hosts to list workspaces and tenants to 
-                        find and rent workspaces efficiently.
-                    </p>
-                </div>
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#p-blue-print">UX Blueprint</a></li>
+                        <li><a href="#p-persona">User Persona</a></li>
+                        <!-- <li><a href="#p-info-arch">Information Architecture</a></li>
+                        <li><a href="#p-userflow">User Task Flow</a></li>
+                        <li><a href="#p-affinity-diagram">Affinity Diagram</a></li>
+                        <li><a href="#p-prototyping">Prototyping</a></li>
+                        <li><a href="#p-wireframes">Hi-fidelity Wireframes</a></li>
+                        <li><a href="#p-signup">Sign Up</a></li>
+                        <li><a href="#p-home-page">Home Page</a></li>
+                        <li><a href="#p-listing">Listing Page</a></li> -->
+                    </ul>
+                </nav>
+                <section class="p-intro-ux two">
+                    <h2 class="expand m-bott-non">User Experience</h2>
+                    <p>The concept of the project, due to the limited timeline (10 weeks), only focus on the client-side, where the user inputs location and gets access to a variety of listings. The Host-side and how they can create a listing are set for the future roadmap. We anticipated allowing regular users to convert and upgrade their User profile to Host via a button. By providing more detailed information about themselves, property and workspace, they can start creating listings.</p>
+                    <p>The following steps we took during the defining phase of the project to learn more about our prospect user's pain points, needs and how they can use navigation through our platform to accomplish their desired goal. The flowing documentation is a collaborative effort divided equally between the team of 3 designers. As the Lead Designer, I was responsible for guiding towards cohesiveness of the project, branding and meeting deadlines efficiently. All the design team members participate in the early stages of defining the concept.</p>
+                    <div>
+                        <h4 class="m-bott-non">UX Blueprint</h4>
+                        <p>To define the concept, feature lockdown and plan for the steps required to create the features.</p>
+                    </div>
+                    <div>
+                        <h4 class="m-bott-non">User Persona</h4>
+                        <p>To create an imaginary profile for our prospect users, taking their pain points, needs and goals into consideration. </p>
+                    </div>
+                    <div>
+                        <h4 class="m-bott-non">Information Architecture</h4>
+                        <p>To distinguish the data and dedicate sections and subsections to them in the most intuitive format to create higher engagement within the platform.</p>
+                    </div>
+                    <div>
+                        <h4 class="m-bott-non">Userflow</h4>
+                        <p>Contains detailed information about the user navigation through this web app from login process to the final steps after contacting the host.</p>
+                    </div>
+                </section>
+
+                <section id="p-blue-print">
+                    <h2>UX Blueprint</h2>
+                    <img src="plantor/UX BluePrint.svg" alt="">
+                </section>
+                <section id="p-persona" class="two">
+                    <div class="expand two">
+                        <h2 class="expand">User Persona</h2>
+                        <p>The design team collaborated on conducting market research, refining the data and creating two fictional personas that would describe our prospect users clearly. We created three user personas, one described the demographics of a user who would use this platform to list their properties.</p>
+                        <p>Since the MVP of this project covered the client-side of the concept, we chose to showcase the following personas. The remaining user personas displayed here are the descriptions of prospect users that would refer to our platform to find appropriate workspaces.</p>
+                        <img class="m-persona" src="plantor/persona 1.svg" alt="User persona">
+                        <img class="m-persona" src="plantor/persona 2.svg" alt="User persona">
+                    </div>
+                </section>
             </div>
 
 
             <div id="userInterface" class="tabcontent">
                 <h3>User Interface</h3>
-                <p>User Interface is the capital of Japan.</p>
-            </div> -->
+                <!-- <p>User Interface is the capital of Japan.</p> -->
+            </div>
 
 
             <!-- <div id="teamMembers" class="tabcontent">
