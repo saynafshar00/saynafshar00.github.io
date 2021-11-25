@@ -246,9 +246,22 @@
                         <li><a href="#wireframes">Hi-fidelity Wireframes</a></li>
                         <li><a href="#signup">Sign Up</a></li>
                         <li><a href="#home-page">Home Page</a></li>
+                        <li><a href="#modal">Workspace Type Modal</a></li>
+                        <li><a href="#search">Search Result Listing Cards</a></li>
+                        <li><a href="#rental">Rental Duration</a></li>
+                        <li><a href="#filters">Amenity Filters</a></li>
+                        <li><a href="#interests">Industry Interests</a></li>
+                        <li><a href="#activated">Activated Filter Options</a></li>
                         <li><a href="#listing">Listing Page</a></li>
                     </ul>
                 </nav>
+                
+
+
+
+
+
+
                 <section class="introduction two">
                     <h2 class="expand m-bott-non">User Experience</h2>
                     <p>The concept of the project, due to the limited development duration and within 12 weeks, prompted our design team to only focus on the MVP features, which are to search for listings, filtering options and contacting the host for the client-side. User search listings within the DimpleDesk platform by inputting location keywords, such as "Vancouver, BC" and get access to a variety of listings based on the designated location and selected filters.</p>
@@ -412,8 +425,9 @@
                                 </div>
                             </div>
                         </div>
+                       
 
-                        <div class="gap">
+                        <div id="modal" class="gap">
                             <h3 class="blue">Workspace Type Modal</h3>
                             <div class="one-third m-bott">
                                 <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Mobile - Home Page [Workspace Type].svg" alt="">
@@ -431,7 +445,7 @@
                             </div>
                         </div>
     
-                        <div class="gap">
+                        <div id="search" class="gap">
                             <div>    
                                 <h3 class="blue">Search Result Listing Cards</h3>
                                 <p>Based on the inputted location and the applied filters, the search result will get updated, and the relevant listing information will be displayed as cards. Detailed information about listing cards is provided in the following sections.</p>
@@ -451,8 +465,8 @@
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="gap">
+       
+                        <div id="rental" class="gap">
                             <h3 class="blue">Rental Duration</h3>
                             <div class="one-third m-bott">
                                 <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Mobile - Rental Duration Filter Pop-Up.svg" alt="">
@@ -461,16 +475,16 @@
                             <div class="two">
                                 <div>
                                     <h4 class="m-bott-non">Mobile - Rental Duration Filter Cards</h4>
-                                    <p>Rental duration is the indicator of price type displayed on the listing cards and the listing page. The filter cards function similar to Workspace Type filter.</p>
+                                    <p>Rental duration is the indicator of price type displayed on the listing cards, or on the listing information page. The button behavior on filter cards are mutual across platform. By choosing a filter option, search result will get updated instantly. User can also choose to skip applying filters via "skip for now" Button.</p>
                                 </div>
                                 <div>
                                     <h4 class="m-bott-non">Desktop - Rental Duration Filter Cards</h4>
-                                    <p>Based on our UX strategy, we decided to have 3 Daily, Weekly, and Monthly options to make the price estimate adjustable to users' preferences.</p>
+                                    <p>According to our business strategies, we decided to have 3 types of rental duration options to showcase most relevant information for the users. As well as providing a variety of rental pricing options. Daily, Weekly, and Monthly options will make the price estimate adjustable to users' preferences.</p>
                                 </div>
                             </div>
                         </div>
     
-                        <div class="gap">
+                        <div id="filters" class="gap">
                             <h3 class="blue">Amenity Filters</h3>
                             <div class="one-third m-bott">
                                 <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Mobile - Amenities Filter Pop-Up.svg" alt="">
@@ -479,16 +493,16 @@
                             <div class="two">
                                 <div>
                                     <h4 class="m-bott-non">Mobile - Amenity Filter Cards (Unselected)</h4>
-                                    <p>Similar to the previous filter options, amenities filter options cards contain descriptive icon (30px x 30px) and the title of the amenity.By utilizing affinity diagram, we created five categories to divide the amenity types for the list of amenities per listing.</p>
+                                    <p>Similar to the previous filter options, Amenity filter option cards contain descriptive icons (30px x 30px) to visually assist the users when looking for specific amenity options. The final amenity categories displayed on the wireframes are the results of the analyzed and processed data via affinity diagram. We created five categories to divide the amenity types for the list of amenities per listing.</p>
                                 </div>
                                 <div>
                                     <h4 class="m-bott-non">Desktop - Amenity Filter Cards (Selected)</h4>
-                                    <p>The displayed Wireframes demonstrate how the selected filters function. Once a filter or more is selected, the "Show Listings" CTA button is activated.</p>
+                                    <p>The displayed Wireframes demonstrate the behavior of the selected filters. Once a filter or multiple filters are selected, the "Show Listings" CTA button will get activated. The amenities filtering options are the same amenity options displayed in the list of amenities per listing information page.</p>
                                 </div>
                             </div>
                         </div>
     
-                        <div class="gap">
+                        <div id="interests" class="gap">
                             <h3 class="blue">Industry Interests</h3>
                             <div class="one-third m-bott">
                                 <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Mobile - Industry Interests Pop Up.svg" alt="">
@@ -505,7 +519,7 @@
                             </div>
                         </div>
     
-                        <div class="gap">
+                        <div id="activated" class="gap">
                             <h3 class="blue">Activated Filter Options</h3>
                             <p>The selected filters and the filter button will be displayed as activated, and by removing each filter, the filter button will be displayed in an inactive state.</p>
                             <div class="one-third m-bott">
@@ -514,6 +528,8 @@
                             </div>
                         </div>
                     </div>
+
+                    
                     <div id="listing" class="line divider">
                         <h3 class="blue">Listing Page</h3>
                         <p>The listing page is consisted of many critical sections, providing detailed information about the workspace, the property and the Host. The listing page starts by showcasing the brief information provided on the listing cards, such as the name of the property and the Host, workspace name, Industry tag, number of views and the estimated distance from the users current location.</p>
@@ -521,6 +537,8 @@
                             <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Wireframe Mobile - Listing Detail.png" alt="">
                             <img class="box-shadow m-top" src="dimpledesk/wireframes/Wireframe Desktop - Listing Detail.png" alt="">
                         </div>
+
+                        
                         <div class="two">
                             <div>
                                 <h4 class="m-bott-non">Mobile - Listing Detail Page (First Half)</h4>
