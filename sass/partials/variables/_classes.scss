@@ -222,7 +222,15 @@
 .scale {
   max-width: 50%;
 }
-
+.circle {
+  width: 80px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 2px;
+}
+.row {
+  @include row;
+}
 @media screen and (min-width:768px) {
 
   // **********************************

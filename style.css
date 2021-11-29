@@ -332,6 +332,13 @@ Tables of content
   max-width: 50%;
 }
 
+.circle {
+  width: 80px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 2px;
+}
+
 @media screen and (min-width: 768px) {
   .two {
     display: -ms-grid;
@@ -691,6 +698,10 @@ nav div {
   display: none;
 }
 
+#main-nav button {
+  color: white;
+}
+
 #menu-button, #close {
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -1011,6 +1022,10 @@ aside {
   background-repeat: no-repeat;
   padding-top: 14rem;
   background-color: #DFD7C6;
+}
+
+.primary {
+  color: #827344;
 }
 
 @media screen and (min-width: 768px) {
