@@ -64,14 +64,13 @@
                         <li><a href="#p-design">Design Schedule</a></li>
                         <li><a href="#p-development">Development Schedule</a></li>
                         <li><a href="#p-system-arch">System Architecture</a></li>
-                        <!-- <li><a href="#p-data-driven-feature">Data-driven Feature</a></li>
+                        <li><a href="#p-cloud">Cloud Feature</a></li>
+                        <li><a href="#p-Platform">Platform</a></li>
                         <li><a href="#p-database-structure">Database Structure</a></li>
                         <li><a href="#p-design-tech">Design Technology</a></li>
-                        <li><a href="#p-persona">User Persona</a></li>
-                        <li><a href="#p-userflow">Userflow</a></li>
                         <li><a href="#p-business">Business Plan</a></li>
                         <li><a href="#p-marketing">Marketing Strategy</a></li>
-                        <li><a href="#p-roadmap">Roadmap</a></li> -->
+                        <li><a href="#p-roadmap">Roadmap</a></li>
                     </ul>
                 </nav>
                 <section>
@@ -100,8 +99,6 @@
                             <img class="half" src="plantor/season.svg" alt="">
                             <h4>Season</h4>
                         </div> -->
-
-
                     </article>
                     <article id="#p-solution" class="three">
                         <h3 class="expand">Solution</h3>
@@ -154,17 +151,17 @@
                     <h2 class="expand">Market Research</h2>
                     <div>
                         <img class="third" src="plantor/Proposal Graphic Assets/researchDiagram.png" alt="">
-                        <div>
+                        <div class="m-top">
                             <div class="row">
-                                <div class="circle dark-green"></div>
+                                <div class="rec dark-green"></div>
                                 <p>Residential</p>
                             </div>
                             <div class="row">
-                                <div class="circle green"></div>
+                                <div class="rec green"></div>
                                 <p>Commercial</p>
                             </div>
                             <div class="row">
-                                <div class="circle light-green"></div>
+                                <div class="rec light-green"></div>
                                 <p>Industrial</p>
                             </div>
                         </div>
@@ -203,8 +200,71 @@
                 </section>
                 <section id="p-system-arch">
                     <h2>System Architecture</h2>
-                    <!-- <p>Our front-end (including React and SASS) and back-end (including NodeJS and ExpressJS) repositories are posted on Github, and we are hosting both on Heroku. We are using MongoDB for the database and Amazon S3 for image storage. We are using SendGrid for emails and Auth0 for authentication. We chose this tech stack so that we could focus on building upon the best tools for our MVP.</p> -->
-                    <img src="plantor/System Architecture.svg" alt="System Architecture">
+                    <p>Our mobile app front-end (including React, Facebook and Google Authentication) and back-end (including NodeJS and ExpressJS) repositories are posted on Github. We are using MongoDB for database and Amazon S3 for image storage. We are hosting our front-end on Expo and back-end on AWS EC2. We chose this tech stack because it is widely used in the industry.</p>
+                    <img class="m-top" src="plantor/Proposal Graphic Assets/systemArch.png" alt="System Architecture">
+                </section>
+                <section class="two" id="p-cloud">
+                    <h2 class="expand">Cloud Feature</h2>
+                    <p>Through the cloud, we will be storing  and retrieving user information to keep track of the user’s saved environments. We will be using plant information to filter and suggest recommendations that users can grow at their place. We will also be using city information to get outdoor conditions and filter plants accordingly to get suggestions for outdoor growing.</p>
+                    <p>We are using MongoDB as a NoSQL Database that provides us scalability in the future when our user base grows along with plants and city data. We are using Amazon S3 for image storage on the cloud for fast and easy access.</p>
+                </section>
+                <section class="two" id="p-platform">
+                    <h2 class="expand">Platfrom</h2>
+                    <p>Both Android and iOS are very popular these days. Consequently, we decided to build the mobile application on a hybrid platform. The app will be developed in React Native because later on, we can modify the code to work on both platforms. The developer team is familiar with React components and we wanted to make use of this skill to develop a mobile application with a great user experience.</p>
+                    <p>Our marketing website used promote the Plantor mobile app and encourage users to download the app is a static website without any of the mobile app plant suggestion functionalities.</p>
+                </section>
+                <section class="two" id="p-database-structure">
+                    <h2 class="expand">Database Structure</h2>
+                    <div>
+                        <div>
+                            <img src="plantor/Proposal Graphic Assets/datasetCity.png" alt="">
+                            <h4>City Database</h4>
+                        </div>
+                        <div>
+                            <img src="plantor/Proposal Graphic Assets/datasetUser.png" alt="">
+                            <h4>User Database</h4>
+                        </div>
+                        <div>
+                            <img src="plantor/Proposal Graphic Assets/datasetPlant.png" alt="">
+                            <h4>Plant Database</h4>
+                        </div>
+                    </div>
+                    <p>We have 3 endpoints for data sets for the users, plants, and cities. User dataset will have basic user information, saved articles and saved environments for that user. Plants dataset will have all the plant information that our algorithm requires to filter through and suggest plants to users that they can grow. Cities dataset will have the cities information for the algorithm to apply filters for outdoor plant suggestions.</p>
+                </section>
+                <section class="two" id="p-platform">
+                    <h2 class="m-bott expand">Design Technology</h2>
+                    <img src="plantor/Proposal Graphic Assets/designTech.png" alt="">
+                    <p>We used Asana to keep track of tasks, Figma to collaborate on UI and UX design tasks (information architecture, user flow, wireframes, mockups), Adobe Illustrator and Photoshop to create UI assets, Adobe Indesign to draft the project proposal, and Adobe After  Effects to create GIF animations.</p>
+                </section>
+                <section id="p-business" class="two">
+                    <h2 class="expand">Business Strategy</h2>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/monetization.png" alt="Monetization Illustration">
+                        <h3>Monetization</h3>
+                        <p>With future features implemented, we will be monetizing the platform by collecting a 10% transaction fee at the time of each purchase at the expense of the vendor. We will also be monetizing through user subscriptions to access the full functionalities of the mobile app.</p>
+                    </div>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/businessModel.png" alt="Business Model Illustration">
+                        <h3>Business Model</h3>
+                        <p>With future features implemented, our business model will be focusing on C2C (peer to peer gardening support) and B2C (businesses selling seeds and gardening products).</p>
+                    </div>
+                </section>
+                <section id="p-marketing" class="two">
+                    <h2 class="expand">Marketing Strategy</h2>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/referralProgram.png" alt="Referral Program Illustration">
+                        <h3>Referral Program</h3>
+                        <p>With future features implemented, our referral program entitles the referee and referrer 3 months of free access to our premium subscription and free in-app credits for the referee and referrer to get gardening support or buy seeds and gardening products.</p>
+                    </div>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/affiliatePartner.png" alt="Affiliate Partner Program Illustration">
+                        <h3>Affiliate Partner Program</h3>
+                        <p>Our affiliate program entitles partners to 0.2% of each transaction tracked and executed via their channels.</p>
+                    </div>
+                </section>
+                <section id="p-roadmap" class="two">
+                    <h2 class="expand">Future RoadMap</h2>
+                    <img src="plantor/Proposal Graphic Assets/futureRoadmap.png" alt="Future Roadmap">
                 </section>
             </div>
 
@@ -214,6 +274,7 @@
                     <ul>
                         <li><a href="#p-blue-print">UX Blueprint</a></li>
                         <li><a href="#p-persona">User Persona</a></li>
+                        
                         <!-- <li><a href="#p-info-arch">Information Architecture</a></li>
                         <li><a href="#p-userflow">User Task Flow</a></li>
                         <li><a href="#p-affinity-diagram">Affinity Diagram</a></li>
@@ -307,11 +368,12 @@
                     <p>Product Engineer</p>
                 </section>
             </div> -->
-                
+<!--   
+
             <div class="w-i-p">
                 <h2>Work In Progress...</h2>
                 <img src="/imgs/work-in-progress.svg" alt="">
-            </div>
+            </div> -->
 
         
         </div>
