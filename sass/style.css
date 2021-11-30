@@ -332,6 +332,39 @@ Tables of content
   max-width: 50%;
 }
 
+.rec {
+  width: 80px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 2px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: .5rem;
+  padding: .3rem 0;
+}
+
+.dark-green {
+  background-color: #3D5A2A;
+}
+
+.green {
+  background-color: #668437;
+}
+
+.light-green {
+  background-color: #92C750;
+}
+
 @media screen and (min-width: 768px) {
   .two {
     display: -ms-grid;
@@ -408,6 +441,9 @@ Tables of content
   }
   .m-bott-non {
     margin-bottom: .5rem;
+  }
+  .m-bott {
+    margin-bottom: 2.5rem;
   }
   .m-top-non {
     margin-top: 0;
@@ -1009,13 +1045,17 @@ aside {
 }
 
 #plantor main {
-  background-image: url(imgs/plantor.jpg);
+  background-image: url(../imgs/plantor.jpg);
   background-attachment: fixed;
   background-size: contain;
   background-position-y: 5rem;
   background-repeat: no-repeat;
   padding-top: 14rem;
   background-color: #DFD7C6;
+}
+
+.primary {
+  color: #827344;
 }
 
 @media screen and (min-width: 768px) {
@@ -1027,6 +1067,9 @@ aside {
   }
   .w-i-p h2 {
     font-size: 1.5rem;
+  }
+  #p-system-arch img {
+    max-width: 90%;
   }
 }
 
