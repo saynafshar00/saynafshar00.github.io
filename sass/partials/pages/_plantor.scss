@@ -1,0 +1,76 @@
+#plantor h1 a{
+    color: #8F8F57;
+    font-family: "Amatic SC", serif;
+    font-size: 2.5rem;
+}
+
+#plantor main {
+    background-image: url(imgs/plantor.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-y: 5rem;
+    background-repeat: no-repeat;
+    padding-top: 14rem;
+    background-color: #DFD7C6;
+}
+.primary {
+    color: #827344;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+    #plantor main {
+        // background-size: 50%;
+        padding-top: 22rem;
+        // background-position-x: 50%;
+    }
+    .w-i-p {
+        grid-column: 1 / -1;
+    }
+    .w-i-p h2  {
+        font-size: 1.5rem;
+    }
+    #p-system-arch img {
+        max-width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    #plantor main {
+        background-size: 60%;
+        background-position-y: 5rem;
+        background-position-x: 50%;
+    }
+}
+
+
+
+
+@media screen and (min-width:1440px) {
+    #plantor main {
+        background-size: 50%;
+        background-position-y: 5rem;
+    }
+}

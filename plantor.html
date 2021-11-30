@@ -40,7 +40,7 @@
 
             <div class="avatar">
                 <img class="small" src="imgs/capstone-avatar.jpg" alt="">
-                <h1><a href="https://plantor.netlify.app/" target=”_blank”>Plantor</a></h1>
+                <h1><a href="https://plantor.app/" target=”_blank”>Plantor</a></h1>
 
             </div>
 
@@ -64,7 +64,12 @@
                         <li><a href="#p-design">Design Schedule</a></li>
                         <li><a href="#p-development">Development Schedule</a></li>
                         <li><a href="#p-system-arch">System Architecture</a></li>
+<<<<<<< HEAD
                         <li><a href="#p-data-driven-feature">Data-driven Feature</a></li>
+=======
+                        <li><a href="#p-cloud">Cloud Feature</a></li>
+                        <li><a href="#p-Platform">Platform</a></li>
+>>>>>>> f81c98e24fac121b196541e960be146214008247
                         <li><a href="#p-database-structure">Database Structure</a></li>
                         <li><a href="#p-design-tech">Design Technology</a></li>
                         <li><a href="#p-business">Business Plan</a></li>
@@ -82,37 +87,39 @@
                     </div>
                     <article id="#p-problem" class="three">
                         <h3 class="expand">Problem</h3>
-                        <div>
+                        <div class="expand two">
+                            <p>Rooted in the digital agriculture industry, Plantor will be solving this problem by creating a mobile experience that will provide users with suggestions on what plants they can grow well at their place based on temperature, lighting, location, and season.</p>
+                            <p>Via this platform, we help users, whether a beginner or experienced, to get plant recommendations based on the mentioned factors. Therefore, users can grow suggested plants and receive weather hazard notification to maintain a safe environment for their plants to grow.</p>
+                        </div>
+                        <!-- <div>
                             <img class="half" src="plantor/light.svg" alt="">
                             <h4>Light</h4>
-                            <p></p>
                         </div>
                         <div>
                             <img  class="half"src="plantor/temp.svg" alt="">
                             <h4>Temperture</h4>
-                            <p></p>
                         </div>
                         <div>
                             <img class="half" src="plantor/season.svg" alt="">
                             <h4>Season</h4>
-                            <p></p>
-                        </div>
-
-
+                        </div> -->
                     </article>
                     <article id="#p-solution" class="three">
                         <h3 class="expand">Solution</h3>
+                        <p class="expand">
+                            Rooted in the digital agriculture industry, Plantor will be solving this problem by creating a mobile experience that will provide users with suggestions on what plants they can grow well at their place based on temperature, lighting, location, and season. 
+                        </p>
+
                         <article>
-                            <h4>Plant Suggestion</h4>
+                            <h4 class="m-bott-non primary">Save Environment</h4>
+                            <p>Users will be able to save their location’s environment information in the app to view suitable plants of the environment in the future.</p>
+                        </article>
+                        <article>
+                            <h4 class="m-bott-non primary">Plant Suggestion</h4>
                             <p>Providing suggestions on what plants users can grow at home based on location, season, and light exposure.</p>
                         </article>
                         <article>
-                            <h4>Save Environment</h4>
-                            <p>Users will be able to save their location’s environment information in the app to view suitable plants of the environment in the future.</p>
-                        </article>
-
-                        <article>
-                            <h4>Weather Notification</h4>
+                            <h4 class="m-bott-non primary">Weather Notification</h4>
                             <p>Users will get notifications about seasonal changes and weather hazards.</p>
                         </article>
                     </article>
@@ -120,33 +127,54 @@
                 <section id="#p-features" class="three">
                         <h2 class="expand">The supporting features</h2>
                         <div>
+                            <img src="plantor/f3.svg" alt="Illustration demontrating user contacting host">
+                            <h3>Save Environment</h3>
+                            <p>This feature will be used to save user’s location environment information in the app. This makes it more convenient for users to keep track of the plants that they can grow. This will also reduce the number of times users need to input their environment information into the app to get plant suggestions in the future.</p>
+                            <br>
+                            <p>Users can save the environment information on the plant suggestion screen after inputting the environment information needed for the app to provide plant suggestions. The saved environment will be stored and displayed on the “Saved” page. Users can always rename or delete the saved environment. </p>
+                        </div>
+                        <div>
                             <img src="plantor/f2.svg" alt="Illustration demontrating user searchinf workspaces">
                             <h3>Plant Suggestion</h3>
                             <p>The feature provides users suggestions on what plants users can grow at home based on the users’ location, season, and light exposure. This solves the problem of users who want to start gardening at home but do not know what plants they can grow.</p>
                             <br>
                             <p>Users will provide their location, light source, and the app will provide the top 10 suggestions on what the user can grow at home. This feature will be utilizing the magnetometer (to determine users’ light source orientation), geolocation (to determine the climate based on users’ location), and the date/time functionality (to determine the current season) of the mobile device.</p>
                         </div>
-                        <div>
-                            <img src="plantor/f3.svg" alt="Illustration demontrating user contacting host">
-                            <h3>Save Environment</h3>
-                            <p>The feature will be used to save user location’s environment information in the app. This makes it more convenient for users to keep track of the plants that they can grow and remember which seeds or starter plants to buy when they get to the plant shop. This will also reduce the number of times users need to input their environment information into the app to get plant suggestions in the future.</p>
-                            <br>
-                            <p>Users can save the environment information on the plant suggestion screen after inputting the environment information needed for the app to provide plant suggestions. The saved environment will be stored and displayed on the “Saved” page. Users can always rename or delete the saved environment. When users tap on the saved environment, they will be navigated to the plant suggestion screen and the app will display the suggested plants based on the saved environment’s information.</p>
-                        </div>
+
                         <div>
                             <img src="plantor/f1.svg" alt="Illustration demonstrating filtering option">
                             <h3>Weather Notification</h3>
-                            <p>The feature will be used to notify users of any seasonal changes and weather hazards. This allows users to reevaluate what plants to grow or adjust how they’re currently growing their plants, especially for users who are growing plants outdoors.</p>
+                            <p>This feature will be used to save user’s location environment information in the app. This makes it more convenient for users to keep track of the plants that they can grow. This will also reduce the number of times users need to input their environment information into the app to get plant suggestions in the future.</p>
                             <br>
-                            <p>Users will receive push notifications when there are seasonal changes and weather hazards. They can also view the notifications displayed on the “Notifications” page.</p>
+                            <p>Users can save the environment information on the plant suggestion screen after inputting the environment information needed for the app to provide plant suggestions. The saved environment will be stored and displayed on the “Saved” page. Users can always rename or delete the saved environment. </p>
                         </div>
                 </section>
                 
                 <section id="p-research" class="two">
                     <h2 class="expand">Market Research</h2>
-                    <p>According to a Grand View Research lawn and gardening consumables market analysis report (https://bit.ly/3DjDNnG), the global lawn and gardening consumables market was valued at USD 19.50 billion in 2019 and is expected to grow to USD 25.94 billion by 2027. Among all the demographics, the residential segment accounts for the largest share of the market of more than 45% in 2019 and is expected to grow at the highest rate.</p>
-                    <p> A common problem with people new to gardening is that they do not know what they can grow at home. That’s when our app can come in handy to solve the problem of the growing number of new residential gardeners. Our app will be recommending to the new residential gardeners what plants they can grow at home.
-                    </p>
+                    <div>
+                        <img class="third" src="plantor/Proposal Graphic Assets/researchDiagram.png" alt="">
+                        <div class="m-top">
+                            <div class="row">
+                                <div class="rec dark-green"></div>
+                                <p>Residential</p>
+                            </div>
+                            <div class="row">
+                                <div class="rec green"></div>
+                                <p>Commercial</p>
+                            </div>
+                            <div class="row">
+                                <div class="rec light-green"></div>
+                                <p>Industrial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>According to a Grand View Research lawn and gardening consumables market analysis report (https://bit.ly/3DjDNnG), the global lawn and gardening consumables market was valued at USD 19.50 billion in 2019 and is expected to grow to USD 25.94 billion by 2027. Among all the demographics, the residential segment accounts for the largest share of the market of more than 45% in 2019 and is expected to grow at the highest rate.</p><br>
+                        <p> A common problem with people new to gardening is that they do not know what they can grow at home. That’s when our app can come in handy to solve the problem of the growing number of new residential gardeners. Our app will be recommending to the new residential gardeners what plants they can grow at home.
+                        </p>
+                    </div>
+
                 </section>
                 <section id="p-analysis">
                     <h2>Competitive Analysis</h2>
@@ -175,8 +203,71 @@
                 </section>
                 <section id="p-system-arch">
                     <h2>System Architecture</h2>
-                    <!-- <p>Our front-end (including React and SASS) and back-end (including NodeJS and ExpressJS) repositories are posted on Github, and we are hosting both on Heroku. We are using MongoDB for the database and Amazon S3 for image storage. We are using SendGrid for emails and Auth0 for authentication. We chose this tech stack so that we could focus on building upon the best tools for our MVP.</p> -->
-                    <img src="plantor/System Architecture.svg" alt="System Architecture">
+                    <p>Our mobile app front-end (including React, Facebook and Google Authentication) and back-end (including NodeJS and ExpressJS) repositories are posted on Github. We are using MongoDB for database and Amazon S3 for image storage. We are hosting our front-end on Expo and back-end on AWS EC2. We chose this tech stack because it is widely used in the industry.</p>
+                    <img class="m-top" src="plantor/Proposal Graphic Assets/systemArch.png" alt="System Architecture">
+                </section>
+                <section class="two" id="p-cloud">
+                    <h2 class="expand">Cloud Feature</h2>
+                    <p>Through the cloud, we will be storing  and retrieving user information to keep track of the user’s saved environments. We will be using plant information to filter and suggest recommendations that users can grow at their place. We will also be using city information to get outdoor conditions and filter plants accordingly to get suggestions for outdoor growing.</p>
+                    <p>We are using MongoDB as a NoSQL Database that provides us scalability in the future when our user base grows along with plants and city data. We are using Amazon S3 for image storage on the cloud for fast and easy access.</p>
+                </section>
+                <section class="two" id="p-platform">
+                    <h2 class="expand">Platfrom</h2>
+                    <p>Both Android and iOS are very popular these days. Consequently, we decided to build the mobile application on a hybrid platform. The app will be developed in React Native because later on, we can modify the code to work on both platforms. The developer team is familiar with React components and we wanted to make use of this skill to develop a mobile application with a great user experience.</p>
+                    <p>Our marketing website used promote the Plantor mobile app and encourage users to download the app is a static website without any of the mobile app plant suggestion functionalities.</p>
+                </section>
+                <section class="two" id="p-database-structure">
+                    <h2 class="expand">Database Structure</h2>
+                    <div>
+                        <div>
+                            <img src="plantor/Proposal Graphic Assets/datasetCity.png" alt="">
+                            <h4>City Database</h4>
+                        </div>
+                        <div>
+                            <img src="plantor/Proposal Graphic Assets/datasetUser.png" alt="">
+                            <h4>User Database</h4>
+                        </div>
+                        <div>
+                            <img src="plantor/Proposal Graphic Assets/datasetPlant.png" alt="">
+                            <h4>Plant Database</h4>
+                        </div>
+                    </div>
+                    <p>We have 3 endpoints for data sets for the users, plants, and cities. User dataset will have basic user information, saved articles and saved environments for that user. Plants dataset will have all the plant information that our algorithm requires to filter through and suggest plants to users that they can grow. Cities dataset will have the cities information for the algorithm to apply filters for outdoor plant suggestions.</p>
+                </section>
+                <section class="two" id="p-platform">
+                    <h2 class="m-bott expand">Design Technology</h2>
+                    <img src="plantor/Proposal Graphic Assets/designTech.png" alt="">
+                    <p>We used Asana to keep track of tasks, Figma to collaborate on UI and UX design tasks (information architecture, user flow, wireframes, mockups), Adobe Illustrator and Photoshop to create UI assets, Adobe Indesign to draft the project proposal, and Adobe After  Effects to create GIF animations.</p>
+                </section>
+                <section id="p-business" class="two">
+                    <h2 class="expand">Business Strategy</h2>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/monetization.png" alt="Monetization Illustration">
+                        <h3>Monetization</h3>
+                        <p>With future features implemented, we will be monetizing the platform by collecting a 10% transaction fee at the time of each purchase at the expense of the vendor. We will also be monetizing through user subscriptions to access the full functionalities of the mobile app.</p>
+                    </div>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/businessModel.png" alt="Business Model Illustration">
+                        <h3>Business Model</h3>
+                        <p>With future features implemented, our business model will be focusing on C2C (peer to peer gardening support) and B2C (businesses selling seeds and gardening products).</p>
+                    </div>
+                </section>
+                <section id="p-marketing" class="two">
+                    <h2 class="expand">Marketing Strategy</h2>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/referralProgram.png" alt="Referral Program Illustration">
+                        <h3>Referral Program</h3>
+                        <p>With future features implemented, our referral program entitles the referee and referrer 3 months of free access to our premium subscription and free in-app credits for the referee and referrer to get gardening support or buy seeds and gardening products.</p>
+                    </div>
+                    <div class="box">
+                        <img class="half" src="plantor/Proposal Graphic Assets/affiliatePartner.png" alt="Affiliate Partner Program Illustration">
+                        <h3>Affiliate Partner Program</h3>
+                        <p>Our affiliate program entitles partners to 0.2% of each transaction tracked and executed via their channels.</p>
+                    </div>
+                </section>
+                <section id="p-roadmap" class="two">
+                    <h2 class="expand">Future RoadMap</h2>
+                    <img src="plantor/Proposal Graphic Assets/futureRoadmap.png" alt="Future Roadmap">
                 </section>
             </div>
 
@@ -186,14 +277,10 @@
                     <ul>
                         <li><a href="#p-blue-print">UX Blueprint</a></li>
                         <li><a href="#p-persona">User Persona</a></li>
-                        <!-- <li><a href="#p-info-arch">Information Architecture</a></li>
+                        <li><a href="#p-info-arch">Information Architecture</a></li>
                         <li><a href="#p-userflow">User Task Flow</a></li>
-                        <li><a href="#p-affinity-diagram">Affinity Diagram</a></li>
                         <li><a href="#p-prototyping">Prototyping</a></li>
-                        <li><a href="#p-wireframes">Hi-fidelity Wireframes</a></li>
-                        <li><a href="#p-signup">Sign Up</a></li>
-                        <li><a href="#p-home-page">Home Page</a></li>
-                        <li><a href="#p-listing">Listing Page</a></li> -->
+                        <!-- <li><a href="#p-wireframes">Hi-fidelity Wireframes</a></li> -->
                     </ul>
                 </nav>
                 <section class="p-intro-ux two">
@@ -225,64 +312,52 @@
                 <section id="p-persona" class="two">
                     <div class="expand two">
                         <h2 class="expand">User Persona</h2>
-                        <p>The design team collaborated on conducting market research, refining the data and creating two fictional personas that would describe our prospect users clearly. We created three user personas, one described the demographics of a user who would use this platform to list their properties.</p>
-                        <p>Since the MVP of this project covered the client-side of the concept, we chose to showcase the following personas. The remaining user personas displayed here are the descriptions of prospect users that would refer to our platform to find appropriate workspaces.</p>
+                        <!-- <p>The design team collaborated on conducting market research, refining the data and creating two fictional personas that would describe our prospect users clearly. We created three user personas, one described the demographics of a user who would use this platform to list their properties.</p>
+                        <p>Since the MVP of this project covered the client-side of the concept, we chose to showcase the following personas. The remaining user personas displayed here are the descriptions of prospect users that would refer to our platform to find appropriate workspaces.</p> -->
                         <img class="m-persona" src="plantor/persona 1.svg" alt="User persona">
                         <img class="m-persona" src="plantor/persona 2.svg" alt="User persona">
                     </div>
                 </section>
+                <section id="p-info-arch">
+                    <h2>Information Architecture</h2>
+                    <img class="third m-top" src="plantor/Proposal Graphic Assets/infoArch.png" alt="Information Architecture">
+                </section>
+                <section id="p-userflow">
+                    <h2>User Task Flow</h2>
+                    <img class="m-top" src="plantor/Proposal Graphic Assets/User Flow.png" alt="User Task Flow">
+                </section>
+                <section id="p-prototyping" class="two">
+                    <h2 class="expand">Prototyping Feature UX</h2>
+                    <div class="two">
+                        <img class="m-top" src="plantor/Proposal Graphic Assets/featureUX1.png" alt="Feature UX">
+                        <img class="m-top" src="plantor/Proposal Graphic Assets/featureUX2.png" alt="Feature UX">
+                    </div>
+                    <p>The pet friendly plant suggestion option page wireframe is shown on the left. The plant information detail page wireframe is shown on the right</p>
+                </section>
+                <div class="w-i-p">
+                    <h2>Project Release December 2021</h2>
+                    <img src="/imgs/work-in-progress.svg" alt="">
+                </div>
             </div>
 
 
             <div id="userInterface" class="tabcontent">
-                <h3>User Interface</h3>
+                <!-- <h2>User Interface</h2> -->
                 <!-- <p>User Interface is the capital of Japan.</p> -->
+                <div class="w-i-p">
+                    <h2>Project Release December 2021</h2>
+                    <img src="/imgs/work-in-progress.svg" alt="">
+                </div>
             </div>
 
 
-            <!-- <div id="teamMembers" class="tabcontent">
-                <h2>Team Members</h2>
+            <div id="teamMembers" class="tabcontent">
+                <h2 class="gap">Team Members</h2>
+                <div class="two">
+                    <img src="plantor/Proposal Graphic Assets/designTeam.png" alt="Designers">
+                    <img src="plantor/Proposal Graphic Assets/devTeam.png" alt="Developers">
+                </div>
 
-                <section>
-                    <img src="#team-member" alt="">
-                    <h4>Sayena Einafshar</h4>
-                    <p>Lead UX/UI Designer</p>
-                </section>
-
-                <section>
-                    <img src="#team-member" alt="">
-                    <h4>Victor Jianto</h4>
-                    <p>Project Manager</p>
-                </section>
-
-                <section>
-                    <img src="#team-member" alt="">
-                    <h4>Reetu</h4>
-                    <p>Graphic Designer</p>
-                </section>
-
-                <section>
-                    <img src="#team-member" alt="">
-                    <h4>Sumeet Kumar</h4>
-                    <p>Lead Developer</p>
-                </section>
-
-                <section>
-                    <img src="#team-member" alt="">
-                    <h4>kamaljit </h4>
-                    <p>Full Stack Developer</p>
-                </section>
-
-                <section>
-                    <img src="#team-member" alt="">
-                    <h4>Wez Ireland</h4>
-                    <p>Product Engineer</p>
-                </section>
-            </div> -->
-                
-            <div class="w-i-p">
-                <h2>Work In Progress...</h2>
-                <img src="/imgs/work-in-progress.svg" alt="">
             </div>
 
         

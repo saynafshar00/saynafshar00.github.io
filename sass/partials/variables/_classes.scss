@@ -222,7 +222,28 @@
 .scale {
   max-width: 50%;
 }
-
+.rec {
+  width: 80px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 2px;
+}
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    gap: .5rem;
+    padding: .3rem 0;
+}
+.dark-green {
+  background-color: #3D5A2A;
+}
+.green {
+  background-color: #668437;
+}
+.light-green  {
+  background-color: #92C750;
+}
 @media screen and (min-width:768px) {
 
   // **********************************
@@ -292,6 +313,9 @@
   
   .m-bott-non {
     margin-bottom: .5rem;
+  }
+  .m-bott {
+    margin-bottom: 2.5rem;
   }
   .m-top-non {
     margin-top: 0;
