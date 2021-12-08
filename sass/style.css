@@ -1025,8 +1025,8 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #dimpledesk main {
-    background-size: 50%;
-    padding-top: 26rem;
+    background-size: 40%;
+    padding-top: 22rem;
     background-position-x: 50%;
     background-position-y: 7rem;
   }
@@ -1045,12 +1045,11 @@ aside {
 }
 
 #plantor main {
-  background-image: url(../imgs/plantor.jpg);
+  background-image: url(../imgs/plantor.png);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 5rem;
   background-repeat: no-repeat;
-  padding-top: 14rem;
+  padding-top: 12rem;
   background-color: #DFD7C6;
 }
 
@@ -1076,7 +1075,7 @@ aside {
 @media screen and (min-width: 1024px) {
   #plantor main {
     background-size: 60%;
-    background-position-y: 5rem;
+    background-position-y: 3rem;
     background-position-x: 50%;
   }
 }
