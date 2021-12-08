@@ -927,6 +927,12 @@ aside {
   color: #4176FF;
 }
 
+#illustrations div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* DimpleDesk */
 #dimpledesk main {
   background-image: url(../imgs/dimpledesk.png);

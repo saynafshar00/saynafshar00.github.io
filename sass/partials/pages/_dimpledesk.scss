@@ -2,7 +2,9 @@
     font-family: "Poppins", sans-serif;
     color: #4176FF;
 }
-
+#illustrations div {
+    justify-content: space-between;
+}
 /* DimpleDesk */
 #dimpledesk main {
     background-image: url(../imgs/dimpledesk.png);
