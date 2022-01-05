@@ -2,7 +2,9 @@
     font-family: "Poppins", sans-serif;
     color: #4176FF;
 }
-
+#illustrations div {
+    justify-content: space-between;
+}
 /* DimpleDesk */
 #dimpledesk main {
     background-image: url(../imgs/dimpledesk.png);
@@ -101,8 +103,8 @@
 
 @media screen and (min-width:1024px) {
     #dimpledesk main {
-        background-size: 50%;
-        padding-top: 26rem;
+        background-size: 40%;
+        padding-top: 22rem;
         background-position-x: 50%;
         background-position-y: 7rem;
     }

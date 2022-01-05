@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayena Einafshar - DimpleDesk Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="branding/favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="icon" href="imgs/favicon-16x16.png" sizes="16x16" type="image/png">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
 </head>
@@ -73,7 +73,7 @@
                     <div class="expand two">
                         <h2 class="expand m-bott-non">Project Overview</h2>
                         <p>DimpleDesk is a Data-Driven Responsive Web Application, that enables hosts to list workspaces, and tenants to find and rent workspaces efficiently. The project development took place within 12 weeks, from concept ideation and research to design, development and execution.</p>
-                        <p>The design and Development team is consisted of 7 members, 3 Designers (One Designer as Project Manager) and 4 Developers. You can find the team member's information on the Member's information Tab above.</p>
+                        <p>The DimpleDesk team is consisted of 7 members, 3 Designers (One Designer as Project Manager) and 4 Developers. You can find the team member's information on the Member's information Tab above.</p>
                     </div>
                     <article id="problem">
                         <h3>Problem</h3>
@@ -119,7 +119,7 @@
                         <h2 class="expand">Design Schedule</h2>
                         <img class="m-bott" src="dimpledesk/Design Schedule.png" alt="Design Schedule Image">
                         <div>
-                            <p class="m-top-non">We developed our Design concept from emphasizing on problem to Project Launch within 12 weeks. To specify context of use, our team conducted extensive market research and competitive analysis to plan, define scope, and lockdown features.</p> 
+                            <p class="m-top-non">We developed our Design concept from emphasizing on problem to project launch within 12 weeks. To specify context of use, our team conducted extensive market research and competitive analysis to plan, define scope, and lockdown features.</p> 
                             <br>
                             <p>During ideation, and within the span of 4 weeks, we collaborated on design and iterations of wireframes and visual assets on platforms such as Figma and Creative Cloud. Development of each iteration was built on bi-weekly sprints, which helped us manage tasks and maintain design integrity.
                             </p>
@@ -131,7 +131,7 @@
                         <h2 class="expand">Development Schedule</h2>
                         <img class="m-bott" src="dimpledesk/Development Schedule.png" alt="Development Schedule Image">
                         <div>
-                            <p class="m-top-non">During the first sprint, the Development team planned on the features and conducted research. During weeks 3-4 the development environment was set up and the development process began during weeks 5-7.</p>
+                            <p class="m-top-non">During the first sprint, the Development team planned on the features with the collaboration of the team and based on the conducted market research. During weeks 3-4, setting up the  development environment to start the development process for the following weeks, during weeks 5-7.</p>
                             <br>
                             <p>By week 8 of Development schedule, we got started on the Alpha build testing and refining bugs accordingly. Code freeze process took place during week 11, which helped us prepare for the presentation preparation, platform demo and rehearsal that took place during week 12.</p>
                         </div>
@@ -359,8 +359,10 @@
                 </section>
                 <section id="wireframes">
                     <h2>Hi-fidelity Wireframes</h2>
-                    <p>The hi-fidelity wireframes showcased in the following sections are for both Mobile (375px width) and Desktop(1080px width) sizes. The Mock-ups enhanced with color and visual assets can be found in the User Interface tab of this online portfolio.</p>
-                    
+                    <div class="two">
+                        <p>The hi-fidelity wireframes showcased in the following sections are for both Mobile (375px width) and Desktop(1080px width) sizes.</p><p>Mock-ups enhanced with color and visual assets can be found in the User Interface tab of this online portfolio.</p>
+
+                    </div>                    
                     <div id="signup" class="gap divider">  
                         <div class="one-third divider">
                             <h3 class="expand m-bott-non blue">Sign Up</h3>
@@ -498,6 +500,9 @@
     
                         <div id="interests" class="gap">
                             <h3 class="blue">Industry Interests</h3>
+                            <div class="two">
+                                <p>We chose to have Industry Interests as a filter option, as well as complimentary information regarding workspace listings. The intention to include professional industry as one of the filtering options was to allow users find the most relevant workspace to their profession and interest.</p><p>This approach will help users to also communicate and network with like-minded professionals in their industry, or benefit from finding specific listings suitable to their professions.</p>
+                            </div>
                             <div class="one-third m-bott">
                                 <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Mobile - Industry Interests Pop Up.svg" alt="">
                                 <img class="box-shadow m-top" src="dimpledesk/wireframes/Desktop - Industry Interests Pop Up [Selected].svg" alt="">
@@ -505,17 +510,18 @@
                             <div class="two">
                                 <div>
                                     <h4 class="m-bott-non">Mobile - Industry Interests (Unselected)</h4>
-                                    <p>Industry interests are another filter option that helps users filter down search results to their in                                </div>
+                                    <p>Industry Interests filter tags, similar to the mentioned filter tags in the previous sections, can be accessed via the Filter button located next to the search bar on mobile device sizes. User can view the list of industry tags via Industry Interests filter section on the left column on Desktop.</p>
+                                </div>
                                 <div>
                                     <h4 class="m-bott-non">Desktop - Industry Interests (Selected)</h4>
-                                    <p>The chosen Industry type appears as tag buttons with a close button, for users to discard selection one by one or use the "Clear Selection" tertiary button. By choosing one or more industry tags, the "Show Listing" CTA gets activated.</p>
+                                    <p>The chosen Industry type appears as tag buttons with a nested close button on each selected tag. User can discard selections one by one or use the "Clear Selection" tertiary button to remove all filters at once. By choosing one or more industry tags, the "Show Listing" CTA gets activated.</p>
                                 </div>
                             </div>
                         </div>
     
                         <div id="activated" class="gap">
                             <h3 class="blue">Activated Filter Options</h3>
-                            <p>The selected filters and the filter button will be displayed as activated, and by removing each filter, the filter button will be displayed in an inactive state.</p>
+                            <p>As displayed here, selected filter tags are distinguishable via the nested Close Button from the non-selected filters. The filter category, such as Workspace Types, Rental Terms, Amenities and Industry Interests also have a subtle indicator if a tag option in that category has been selected.</p>
                             <div class="one-third m-bott">
                                 <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Mobile - All Filters Active.svg" alt="">
                                 <img class="box-shadow m-top" src="dimpledesk/wireframes/Wireframe Desktop - Show Listings Page [All Filters Active].png" alt="">
@@ -526,7 +532,9 @@
                     
                     <div id="listing" class="line divider">
                         <h3 class="blue">Listing Page</h3>
-                        <p>The listing page is consisted of many critical sections, providing detailed information about the workspace, the property and the Host. The listing page starts by showcasing the brief information provided on the listing cards, such as the name of the property and the Host, workspace name, Industry tag, number of views and the estimated distance from the users current location.</p>
+                        <div class="two">
+                            <p>The listing page is consisted of many critical sections, providing detailed information about the workspace, the property and the Host.</p><p>The listing page starts by showcasing the brief information provided on the listing cards, such as the name of the property and the Host, workspace name, Industry tag, number of views and the estimated distance from the users current location.</p>
+                        </div>
                         <div class="one-third m-bott">
                             <img class="scale box-shadow m-top" src="dimpledesk/wireframes/Wireframe Mobile - Listing Detail.png" alt="">
                             <img class="box-shadow m-top" src="dimpledesk/wireframes/Wireframe Desktop - Listing Detail.png" alt="">
@@ -543,6 +551,7 @@
                             <div>
                                 <h4 class="m-bott-non">Desktop - Listing Detail Page (First Half)</h4>
                                 <p>The date and duration filter options, as well as the "Contact Host" CTA, are displayed on the left column on Desktop Sizes. (Similar to our approach on listing search result page and appropriate filter options).</p>
+                                <br>
                                 <p>After choosing the starting date and desired duration period, the user can reach out to the Host. If the user is not logged-in or has an incomplete profile, a relevant pop-up will take the user to start logging in or complete the remaining sections. The summary of the information provided on the profile will be sent to the Host via email. Consent pop-up will be displayed before the personal data of the user is shared with the Host.</p>
                             </div>
                         </div>
@@ -629,18 +638,25 @@
                         <p>The chosen direction for the illustration and brainstorming ideas on approaching this asset was done entirely within the design team. However, drawing, polishing and executing each illustration assigned to each member was an individual activity.</p>
                         <p>The collection of illustrations required for the platform, such as the hero image, pop-ups and modals illustrations, etc., was divided between two designers. The third designer was responsible for the gif animations showcasing the features displayed on the home page.</p>
                     </div>
-                    <div class="two gap">
-                        <img class="box-shadow m-bott" src="dimpledesk/illustrationBookmarkedDesktop.png" alt="">
-                        <img class="box-shadow m-bott" src="dimpledesk/illustrationContactedDesktop.png" alt="">
-                        <h4 class="expand m-non">Contacted and Bookmarked Pop-up Illustrations</h4>
+                    <div class="three gap">
+                        <div>
+                            <img class="box-shadow" src="dimpledesk/illustrationContactedMobile.png" alt="">
+                            <h4>Contacted Pop-up Illustration</h4>
+                        </div>
+                        <div>
+                            <img class="box-shadow" src="dimpledesk/illustrationbBookmarkedMobile.png" alt="">
+                            <h4>Bookmarked Pop-up Illustration</h4>
+
+                        </div>
+                        <div>
+                            <img class="box-shadow" src="dimpledesk/DatepickerIllustrationMobile.png" alt="">
+                            <h4>Date Picker Pop-up Illustration</h4>
+                        </div>
                     </div>
-                    <div class="two gap">
-                        <img class="box-shadow m-bott" src="dimpledesk/DatepickerIllustrationMobile.png" alt="">
-                        <h4 class="expand m-non">Calendar and Confirmation Pop-up Illustrations</h4>
-                    </div>
+
                     <div class="one-third gap">
                         <img class="box-shadow m-bott" src="dimpledesk/Mobile - Rental Duration Filter Pop-Up.png" alt="">
-                        <div class="three">
+                        <div class="third three">
                             <img class="box-shadow m-bott" src="dimpledesk/illustrationDurationDay.png" alt="">
                             <img class="box-shadow m-bott" src="dimpledesk/illustrationDurationMonth.png" alt="">
                             <img class="box-shadow m-bott" src="dimpledesk/illustrationDurationWeek.png" alt="">

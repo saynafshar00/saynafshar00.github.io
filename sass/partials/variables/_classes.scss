@@ -21,7 +21,7 @@
 // **********************************
 .wrapper-header {
   max-width: 1200px;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   margin: auto;
   display: flex;
   flex-flow: row nowrap;
@@ -281,8 +281,10 @@
       grid-template-columns: .5fr 1fr 2fr;
       gap: 1rem  2rem;
   }
-
-  .wrapper-header, .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body {
+  .wrapper-header {
+    padding: 1rem 2.5rem;
+  }
+   .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body {
       padding: 1.5rem 2.5rem;
   }
 
@@ -333,8 +335,11 @@
 
 
 @media screen and (min-width:1024px) {
+  .wrapper-header {
+    padding: 1rem 8rem;
 
-  .wrapper-header, .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body  {
+  }
+  .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body  {
       padding: 1.5rem 8rem;
   }
   .wrapper-projects {
