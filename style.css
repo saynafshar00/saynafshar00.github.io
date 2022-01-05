@@ -448,6 +448,9 @@ Tables of content
   .scale {
     max-width: 100%;
   }
+  .legend {
+    max-width: 10%;
+  }
 }
 
 @media screen and (min-width: 1024px) {

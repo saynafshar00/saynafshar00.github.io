@@ -45,8 +45,9 @@
 
             <div class="tab">
                 <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
+                <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
                 <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
-                <button class="tablinks" onclick="openButton(event, 'uiKit')">UI Kit</button>
+                <button class="tablinks" onclick="openButton(event, 'UI-Kit')">UI Kit</button>
             </div>
     <!-- OVERVIEW -->
             <div id="overview" class="tabcontent" style="display:block;">
@@ -63,14 +64,14 @@
                 <section class="introduction two">
                         <h2 class="expand">Project Overview</h2>
                         <p>Virtual Learning Support, a place where you can find resources and connect with someone from the Learning Support Team to get help with academic and online learning. This website is a service supported by Langara College. The development team consisted of project Administrator and two WordPress developers. </p>
-                        <p>My role eventually transformed into focusing mainly on user experience and user interface design of the website. My colleague took the responsibility of coding and Wordpress front-end development. Nonetheless, I assisted the project administrator in minor front-end coding during urgent occasions, such as in the absence of our Developer.</p>
+                        <p>My role eventually transformed into focusing mainly on user experience and user interface design of the website. My colleague took the responsibility of coding and WordPress front-end development. Nonetheless, I assisted the project administrator in minor front-end coding during urgent occasions, such as in the absence of our Developer.</p>
                         <article id="vls-problem">
                             <h3>Problem</h3>
                             <p>The majority of Virtual Learning Support users are students, who access the website via their desktop devices (based on analytics provided by the project Administrator). Initially, the structure of website had been created via WordPress templates (Twenty Ten), utilizing Elementor to customize the interface. Therefore, the installed plugins such as calendar, contact form, etc. gave us limited opportunities to manipulate and redesign the User Experience aspect.</p>
                         </article>
                         <article id="vls-solution">
                             <h3>Solution</h3>
-                            <p>Our solution to update and create an accessible, user-centered design was to create documentation of required updates, which we will go through in the following sections, and redesign the User Interface to create dynamic yet user friendly website. After first iteration of design updates, we planned to investigate more on the existing plugins and update sections based on the upated direction of the platform.</p>
+                            <p>Our solution to update and create an accessible, user-centered design was to create documentation of required updates, which we will go through in the following sections, and redesign the User Interface to create dynamic yet user-centric website. After first iteration of design updates, we planned to investigate more on the existing plugins and update sections based on the updated direction of the platform.</p>
                         </article>
                 </section>
                 <section id="vls-features" class="three">
@@ -115,96 +116,182 @@
                     <p>My collaboration with Virtual Learning Support started by prioritizing sections regarding development plan based on the context of each page (services). Some pages required updates on dataset from different departments, hence those services became the least priorty of development until updated. The process of planning out the development steps prompt me to start the task management of the project via Asana Software.</p>
                     <img class="expand gap" src="vls/image 1.png" alt="">
                 </section>
-                <section id="site-map">
-                    <h2 class="expand">Site Map</h2>
-                    <p>The displayed charts of sections and subsections demosntartes the content provided per each service. The remaining pages such as FAQS and Tips & Resources, had the lowest severity to be inclused in the development schedule since they were at an acceptable state (Visually).</p>
-                    <img class="gap" src="vls/Site Map.svg" alt="">
+               
+            </div>
+            
+            <div id="userExperience" class="tabcontent">
+                <nav class="tag-nav scroll">
+                    <ul>
+                        <li><a href="#v-sitemap">Sitemap</a></li>
+                        <li><a href="#v-live-site">Initial Layout</a></li>
+                        <li><a href="#v-home">Home Page</a></li>
+                        <li><a href="#v-blogs">Living & Learning Online</a></li>
+                        <!-- <li><a href="#v-tools">Online Learning Tools</a></li>
+                        <li><a href="#v-apps">Apps & Brightspace</a></li>
+                        <li><a href="#v-writing">Writing & Tutoring Support</a></li>
+                        <li><a href="#v-library">Library Services</a></li> -->
+                    </ul>
+                </nav>
+                <section class="two">
+                    <h2 class="expand">User Experience</h2>
+                    <p>In order to redesign the website and enhance the content delivery, I created the platform's Sitemap. These charts highlighting the hierarchy in section and subsections per page helps clarify the utilized UI component furthermore.  </p>
                 </section>
+                <section id="v-sitemap">
+                    <h2 class="expand">Sitemap</h2>
+                    <p>The displayed charts of sections and subsections demonstrates the content provided per each service. The remaining pages such as FAQS and Tips & Resources, had the lowest severity to be included in the development schedule since they were at an acceptable state (Visually).</p>
+                    <img class="gap" src="vls/Site Map.png" alt="Sitemap">
+                    <img class="legend" src="vls/Legend.png" alt="">
+                </section>
+                               
+                <section id="v-live-site">
+                    <div class="two">
+                        <h2 class="expand">Initial Layout</h2>
+                        <p>As displayed on the screenshots below, the initial state of the website was very cluttered and unorganized. We started the development by designing and developing the menu. I utilized a hamburger menu to minimize the menu space on mobile sizes. Also, having number of navigation menu items required a collapsible menu. The menu in the updated version (displayed in the next section) is compatible with both small and larger device sizes.</p>
+                        <p>The format of services menu in the middle section of the screen was recommended to be kept by the project manager since the accessibility to core supporting pages for students is the service this platform provides. Having constraints on the installed plugins, there was not much room for improvement.</p>
+                    </div>
+                    <div class="vls-layout gap">
+                        <h3 class="expand">Home Page</h3>
+                        <img class="box-shadow" src="vls/home/live-site/Mobile.png" alt="">
+                        <img class="box-shadow" src="vls/home/live-site/Medium.png" alt="">
+                        <img class="box-shadow" src="vls/home/live-site/Desktop.png" alt="">
+                    </div>
+                </section>
+                               
+                <section id="v-home">
+                        <h2 class="expand">Home Page Redesign</h2>
+                        <div class="two">
+                            <p>As displayed on the screenshots below, the initial state of the website was very cluttered and unorganized. We started the development by designing and developing the menu.</p>
+                        </div>
+                        <div id="v-home" class="vls-layout gap">
+                            <h3 class="expand">Home Page (Landing)</h3>
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home Mobile.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Ipad.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Desktop.png" alt="">
+                        </div>
+
+                        <div id="v-home" class="vls-layout gap">
+                            <h3 class="expand">Home Page (Services Navigation)</h3>
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home Mobile-services.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Ipad-services.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Desktop-services.png" alt="">
+                        </div>
+
+
+                        <div id="v-home" class="vls-layout gap">
+                            <h3 class="expand">Home Page (Blogs)</h3>
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home Mobile-Blogs.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Ipad-blogs.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Desktop-blogs.png" alt="">
+                        </div>
+
+
+                        <div id="v-home" class="vls-layout gap">
+                            <h3 class="expand">Home Page (Calendar)</h3>
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home Mobile-Calendar.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Ipad-calendar.png" alt="">
+                            <img class="box-shadow" src="vls/home/2nd iteration/Home-Desktop-calendar.png" alt="">
+                        </div>
+                </section>
+               
+                <section id="v-blogs">
+                    <h2 class="expand">Living & Learning Online Redesign</h2>
+                    <div class="two">
+                        <p>As displayed on the screenshots below, the initial state of the website was very cluttered and unorganized. We started the development by designing and developing the menu.</p>
+                    </div>
+                    <div id="v-home" class="vls-layout gap">
+                        <h3 class="expand">Blogs Archive Page</h3>
+                        <img class="box-shadow" src="vls/blogs/Blogs Mobile.png" alt="">
+                        <img class="box-shadow" src="vls/blogs/Blog archive  Ipad.png" alt="">
+                        <img class="box-shadow" src="vls/blogs/Blog archive  Desktop.png" alt="">
+                    </div>
+                </section>
+
                 <section id="vls-test" class="two">
                     <h2 class="expand">Accessibility Test</h2>
-                    <p>We were able to conduct an accessibility test after 70% of the development plan was accomplished. We conducted the usability remotely with a visually impared student from Langara College.</p>
-                    <p>The major change that had to be anticipated in the design aspect for the project aspect was to keep anchor tags hihlighted with underlines on hover, and implement more decriptive labels as button text.</p>
+                    <p>We were able to conduct an accessibility test after 70% of the development plan was accomplished. We conducted the usability remotely with a visually impaired student from Langara College.</p>
+                    <p>The major change that had to be anticipated in the design aspect for the project aspect was to keep anchor tags highlighted with underlines on hover, and implement more descriptive labels as button text.</p>
                     <img class="m-bott-non" src="vls/VLS A11y Audit_Page_1.png" alt="">
                     <img class="m-bott-non" src="vls/VLS A11y Audit_Page_2.png" alt="">
                     <img class="m-bott-non" src="vls/VLS A11y Audit_Page_3.png" alt="">
                     <img class="m-bott-non" src="vls/VLS A11y Audit_Page_4.png" alt="">
                 </section>
             </div>
-            
-            <!-- <div id="userInterface" class="tabcontent">
+
+
+
+
+
+            <div id="userInterface" class="tabcontent">
                 <nav class="tag-nav scroll">
                     <ul>
-                        <li><a href="#v-live-site">Initial Layout</a></li>
-                        <li><a href="#v-mockup">Mockups</a></li>
-                        <li><a href="#v-home">Home</a></li>
-                        <li><a href="#v-blogs">Living & Learning Online</a></li>
-                        <li><a href="#v-tools">Online Learning Tools</a></li>
-                        <li><a href="#v-apps">Apps & Brightspace</a></li>
-                        <li><a href="#v-writing">Writing & Tutoring Support</a></li>
-                        <li><a href="#v-library">Library Services</a></li>
+                        <li><a href="#v-branding">Branding</a></li>
+                        <li><a href="#v-illustreations">Illustrations</a></li>
+                        <li><a href="#v-gif">GIF Animation</a></li>
+                        <li><a href="#v-mockups">Mockups</a></li>
                     </ul>
                 </nav>
-                <section id="intro" class="two">
-                    <h2 class="expand">User Interface</h2>
-                    <p>The initial plan to develop the VLS wordpress website was to improve and touch up the User Interface. However minor changes were applied regarding User Experience aspect of this project</p>
+                <section>
+                    <h2 class="expand m-bott-non">Branding</h2>
+                    <div class="two m-bott">
+                        <p>Langara College has established their own Design Language and guidelines that creates structure into the Virtual Learning website redesign.</p>
+                        <p>On the other hand, Virtual Learning Support has been opporating post panademic and therefore, the branding for this platform is only limited to Lettermark Logo.</p>
+                    </div>
+                    <img src="vls/Branding.png" alt="Logos">
+
                 </section>
-                               
-                <section id="v-live-site">
+                <section>
+                    <h2 class="expand">Illustrations</h2>
                     <div class="two">
-                        <h2 class="expand">Initial Layout</h2>
-                        <p>As displayed on the screenshots below, the initial state of the website ws very cluttered and unorganized. We started the development by designing and developing the menu. I utilized a hamburger menu to minimize the menu space on mobile sizes. Also, Having a number of navigation menu items required a collabsoable menu. The menu in the updated version (displayed in the next section) is compatibale with both small and larger device sizes.</p>
-                        <p>The format of services menu in the middle section of the screen was recommended to be kept by the project manager since the accessibility to core supporting pages for students is the service this platform provides. Having constraints on the instulled and oporating plugins, there was not much room for improvment </p>
+                        <p>All the displayed illustrations and visual assets are designed, created and executed via Figma. These illustrations are used on cards containing content.</p>
+                        <p></p>
                     </div>
-                    <div id="v-home" class="vls-layout gap">
-                        <h3 class="expand">Home Page</h3>
-                        <img class="box-shadow" src="vls/home/live-site/Mobile.png" alt="">
-                        <img class="box-shadow" src="vls/home/live-site/Medium.png" alt="">
-                        <img class="box-shadow" src="vls/home/live-site/Desktop.png" alt="">
-                    </div>
-   
+                    <img class="m-top" src="vls/Visual assets.png" alt="Ilustrations">
+                    <p></p>
+
                 </section>
+                <section class="two">
+                    <h2 class="expand">GIF Animation</h2>
+                    <img src="vls/Apps-Video-GIF.gif" alt="Booking GIF Animation">
+                    <div>
+                        <p class="m-bott-non">Additional to descriptive illustrations created for different sections, I anticipated to create GIF animations for an enhanced content delivery that is more engaging for our prospect users.</p>
+                        <p class="m-bott-non">Initially I had designed an illustration guiding the users to use the Apps and Brightspace scheduling service and book a meeting with tutors for extended help and assistant.</p>
+                        <p class="m-bott-non">I used Figma and Adobe Illustrator to sketch the illustration. I then executed layers of Vectors and created the GIF animation via Adobe After Effects and Adobe Premier Pro.</p>
+                    </div>
+                </section>
+<!--                 
                 <section id="v-mockups">
                     <div class="two">
                         <h2 class="expand">Mockups</h2>
                         <p>During the final weeks of the project, and after finalizing the UI Kit, the transition from hi-fi wireframes to mockups started.</p>
-                        <p>Having the Ui kit and the relative components layed out, now lets go over the final mockups after implementation of assets. Detailed information about the listing cards is also provided.</p>
+                        <p>Having the UI Kit and the relative component layed out, now let's go over the final mockups after implementation of assets. Detailed information about the listing cards is also provided.</p>
                     </div>
                     <div class="vls-layout gap">
-                        <h3 class="expand">Home Page (Part A)</h3>
+                        <h3 class="expand">Home Page (Menu)</h3>
                         <img class="box-shadow" src="vls/home/menu/Menu Mobile.svg" alt="">
                         <img class="box-shadow" src="vls/home/menu/Home-Ipad.svg" alt="">
                         <img class="box-shadow" src="vls/home/menu/Menu -Desktop.svg" alt="">
                     </div>
                     <div class="vls-layout gap">
-                        <h3 class="expand">Home Page (Part B)</h3>
+                        <h3 class="expand">Home Page (Landing Section)</h3>
                         <img class="box-shadow" src="vls/home/mockups/Home Mobilepart-a.svg" alt="">
                         <img class="box-shadow" src="vls/home/mockups/Home-Ipadpart-a.svg" alt="">
                         <img class="box-shadow" src="vls/home/mockups/Home-Desktoppart-a.svg" alt="">
                     </div>
+                </section> -->
+            </div>
 
-                    
-                </section>
-            </div> -->
 
-            <div id="uiKit" class="tabcontent">
-                <section class="two">
-                    <h2 class="members expand">UI Kit</h2>
-                    <p>Having the current result of the development as first and initial iteration, therefore, this platform lacked efficient documentation of assets and components. The following UI Kit and its documentation has been created by me.</p>
-                    <br class="expand">
-                    <p>Based on our initial intention of developing the website more dynamically, the designed visual assets contain more youthful and colorful approach, as well as descriptive and suitable for educational platform.</p>   
-                    <br class="expand">
-                    <p class="expand">The following document displays assets and components utilized in Mobile, Tablet and Desktop device sizes.</p> 
-                    <img class="gap expand" src="vls/UI KIT - V2.svg" alt="">
 
-                </section>
+            <div id="UI-Kit" class="tabcontent expand">
                 <section>
+                    <h2 class="members">UI Kit</h2>
+                    <p>The following document displays assets and components utilized in Mobile, Tablet and Desktop device sizes.</p> 
+                    <img class="third gap" src="vls/UI KIT - V2.svg" alt="">
                 </section>
+            
             </div>
 
-            <div class="w-i-p">
-                <h2>Work In Progress...</h2>
-                <img src="/imgs/work-in-progress.svg" alt="">
-            </div>
+  
         </div>
     </main>
 
@@ -224,11 +311,3 @@
     
 </body>
 </html>
-
-
-                <!-- <button class="tablinks" onclick="openCity(event, 'faqs')">Student FAQs</button>
-                <button class="tablinks" onclick="openCity(event, 'tips')">Tips & Resources</button>
-                <button class="tablinks" onclick="openCity(event, 'tools')">Online Learning Tools</button>
-                <button class="tablinks" onclick="openCity(event, 'apps')">Apps & Brightspace Support</button>
-                <button class="tablinks" onclick="openCity(event, 'tutoring')">Writing & Tutoring Support</button>
-                <button class="tablinks" onclick="openCity(event, 'library')">Library Services</button> -->
