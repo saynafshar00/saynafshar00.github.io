@@ -10,9 +10,9 @@
     background-image: url(../imgs/dimpledesk.png);
     background-attachment: fixed;
     background-size: contain;
-    background-position-y: 8rem;
+    background-position-y: 4rem;
     background-repeat: no-repeat;
-    padding-top: 20rem;
+    padding-top: 16rem;
 }
 #dimpledesk .features {
     margin: 1rem auto;
@@ -62,6 +62,14 @@
     margin-top: 4rem;
 }
 
+@media screen and (min-width:425px) {
+    #dimpledesk main {
+        padding-top: 18rem;
+    }
+}
+
+
+
 @media screen and (min-width:768px) {
 
     #dimpledesk main {
@@ -104,9 +112,9 @@
 @media screen and (min-width:1024px) {
     #dimpledesk main {
         background-size: 40%;
-        padding-top: 22rem;
+        padding-top: 18rem;
         background-position-x: 50%;
-        background-position-y: 7rem;
+        background-position-y: 4rem;
     }
     
 }
@@ -114,7 +122,9 @@
 
 @media screen and (min-width:1440px) {
     #dimpledesk main {
-        padding-top: 30rem;
+        background-size: auto 288px;
+        padding-top: 19rem;
+
     }
 
 

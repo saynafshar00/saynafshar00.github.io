@@ -30,8 +30,11 @@ nav div {
     background-color: #ffffff;
     position: absolute;
     right: -.2rem;
-    top: .08rem;
+    top: .6rem;
     z-index: 200;
+}
+#menu ul{
+    margin: 0;
 }
 
 #main-nav li, #footer-nav li{

@@ -28,7 +28,7 @@ Tables of content
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=DM+Serif+Display&family=Quicksand:wght@300;400;500;700&display=swap");
 .logo {
-  max-width: 30px;
+  max-width: 28px;
 }
 
 /* secondary pages */
@@ -45,12 +45,6 @@ Tables of content
           justify-content: center;
   margin: 0;
   padding: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    max-width: 35px;
-  }
 }
 
 .avatar {
@@ -115,7 +109,7 @@ Tables of content
 }
 
 .wrapper-aside {
-  padding: 9rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 .wrapper-aside div p {
@@ -460,11 +454,8 @@ Tables of content
 }
 
 @media screen and (min-width: 1020px) {
-  .wrapper-body {
-    padding: 1.5rem 10rem;
-  }
-  .wrapper-header, .wrapper-contact, .wrapper-aside, .wrapper-projects {
-    max-width: 780px;
+  .wrapper-body, .wrapper-header, .wrapper-contact, .wrapper-aside, .wrapper-projects {
+    max-width: 800px;
   }
 }
 
@@ -525,12 +516,6 @@ Tables of content
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #projects section {
-    margin: 0;
   }
 }
 
@@ -759,8 +744,12 @@ nav div {
   background-color: #ffffff;
   position: absolute;
   right: -.2rem;
-  top: .08rem;
+  top: .6rem;
   z-index: 200;
+}
+
+#menu ul {
+  margin: 0;
 }
 
 #main-nav li, #footer-nav li {
@@ -950,9 +939,9 @@ aside {
   background-image: url(../imgs/dimpledesk.png);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 8rem;
+  background-position-y: 4rem;
   background-repeat: no-repeat;
-  padding-top: 20rem;
+  padding-top: 16rem;
 }
 
 #dimpledesk .features {
@@ -1008,6 +997,12 @@ aside {
   margin-top: 4rem;
 }
 
+@media screen and (min-width: 425px) {
+  #dimpledesk main {
+    padding-top: 18rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #dimpledesk main {
     background-size: 50%;
@@ -1044,15 +1039,16 @@ aside {
 @media screen and (min-width: 1024px) {
   #dimpledesk main {
     background-size: 40%;
-    padding-top: 22rem;
+    padding-top: 18rem;
     background-position-x: 50%;
-    background-position-y: 7rem;
+    background-position-y: 4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #dimpledesk main {
-    padding-top: 30rem;
+    background-size: auto 288px;
+    padding-top: 19rem;
   }
 }
 
@@ -1106,17 +1102,20 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #plantor main {
+    background-color: white;
     padding-top: 18rem;
-    background-size: 60%;
-    background-position-y: 3rem;
+    background-size: 50%;
+    background-position-y: 1rem;
     background-position-x: 50%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #plantor main {
-    background-size: auto 320px;
-    padding-top: 20rem;
+    background-image: url(../imgs/plantor-large.png);
+    background-size: auto 300px;
+    background-position-y: 2rem;
+    padding-top: 18rem;
   }
 }
 
@@ -1299,11 +1298,23 @@ textarea:focus {
 }
 
 #resume main {
-  padding: 2.5rem 1rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   #resume main {
     padding: 2.5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #resume main {
+    padding: 2.5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #resume main {
+    padding: 2.5rem 50rem;
   }
 }

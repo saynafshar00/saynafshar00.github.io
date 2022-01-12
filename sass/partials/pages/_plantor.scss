@@ -63,9 +63,10 @@
 
 @media screen and (min-width:1024px) {
     #plantor main {
+        background-color: white;
         padding-top: 18rem;
-        background-size: 60%;
-        background-position-y: 3rem;
+        background-size: 50%;
+        background-position-y: 1rem;
         background-position-x: 50%;
     }
 }
@@ -75,7 +76,9 @@
 
 @media screen and (min-width:1440px) {
     #plantor main {
-        background-size: auto 320px;
-        padding-top: 20rem;
+        background-image: url(../imgs/plantor-large.png);
+        background-size: auto 300px;
+        background-position-y: 2rem;
+        padding-top: 18rem;
     }
 }

@@ -30,7 +30,7 @@
   justify-content: space-between;
 }
 .wrapper-aside {
-  padding: 9rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 .wrapper-aside div p{
   text-align: justify;
@@ -339,12 +339,10 @@
 
 @media screen and (min-width:1020px) {
 
-   .wrapper-body  {
-      padding: 1.5rem 10rem;
-  }
-  .wrapper-header , .wrapper-contact, .wrapper-aside,.wrapper-projects {
-    max-width: 780px;
+   .wrapper-body, .wrapper-header , .wrapper-contact, .wrapper-aside,.wrapper-projects {
+    max-width: 800px;
   }
 
 }
+
 

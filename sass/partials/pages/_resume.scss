@@ -1,5 +1,5 @@
 #resume main {
-    padding: 2.5rem 1rem;
+    padding: 1rem;
 }
 
 
@@ -8,4 +8,22 @@
         padding: 2.5rem 8rem;
     }
 
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    #resume main {
+        padding: 2.5rem 8rem;
+    }
+}
+
+
+
+
+@media screen and (min-width:1440px) {
+    #resume main {
+        padding: 2.5rem 50rem;
+    }
 }
