@@ -16,12 +16,13 @@
   max-width: 1200px;
   margin: auto;
 }
+
 // **********************************
 // BODY
 // **********************************
 .wrapper-header {
   max-width: 1200px;
-  padding: 1rem 1.5rem;
+  padding: .5rem 1.5rem;
   margin: auto;
   display: flex;
   flex-flow: row nowrap;
@@ -165,6 +166,9 @@
 // **********************************
 // GENERAL
 // **********************************
+.m-top-min {
+  margin-top: 1rem;
+}
 .m-top {
   margin-top: 1.5rem;
 }
@@ -282,7 +286,7 @@
       gap: 1rem  2rem;
   }
   .wrapper-header {
-    padding: 1rem 2.5rem;
+    padding: .5rem 2.5rem;
   }
    .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body {
       padding: 1.5rem 3rem;
@@ -291,12 +295,11 @@
   .wrapper-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  
-    gap: 0 2.5rem;
+    gap: 0 2rem;
 }
   .wrapper-body {
       display: grid;
       grid-template-columns: 1.5fr 2fr;
-      padding: 1rem;
   }
   
   .tab {
@@ -334,13 +337,13 @@
 
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1020px) {
 
    .wrapper-body  {
-      padding: 1.5rem 8.5rem;
+      padding: 1.5rem 10rem;
   }
   .wrapper-header , .wrapper-contact, .wrapper-aside,.wrapper-projects {
-    max-width: 700px;
+    max-width: 780px;
   }
 
 }

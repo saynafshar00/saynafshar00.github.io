@@ -97,7 +97,7 @@ Tables of content
 
 .wrapper-header {
   max-width: 1200px;
-  padding: 1rem 1.5rem;
+  padding: .5rem 1.5rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,6 +257,10 @@ Tables of content
   color: #BDC6CD;
 }
 
+.m-top-min {
+  margin-top: 1rem;
+}
+
 .m-top {
   margin-top: 1.5rem;
 }
@@ -407,7 +411,7 @@ Tables of content
     gap: 1rem  2rem;
   }
   .wrapper-header {
-    padding: 1rem 2.5rem;
+    padding: .5rem 2.5rem;
   }
   .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body {
     padding: 1.5rem 3rem;
@@ -417,14 +421,13 @@ Tables of content
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 0 2.5rem;
+    gap: 0 2rem;
   }
   .wrapper-body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
-    padding: 1rem;
   }
   .tab {
     -ms-flex-item-align: center;
@@ -456,12 +459,12 @@ Tables of content
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1020px) {
   .wrapper-body {
-    padding: 1.5rem 8.5rem;
+    padding: 1.5rem 10rem;
   }
   .wrapper-header, .wrapper-contact, .wrapper-aside, .wrapper-projects {
-    max-width: 700px;
+    max-width: 780px;
   }
 }
 
@@ -500,6 +503,10 @@ Tables of content
   margin: 0;
 }
 
+#colorTweak {
+  color: #001f33;
+}
+
 #dimpledesk #persona h2 {
   margin-bottom: 0;
 }
@@ -512,7 +519,7 @@ Tables of content
     border-radius: 8px 8px 0 0;
   }
   #projects section {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   #about {
     -webkit-box-pack: justify;
@@ -752,7 +759,7 @@ nav div {
   background-color: #ffffff;
   position: absolute;
   right: -.2rem;
-  top: .5rem;
+  top: .08rem;
   z-index: 200;
 }
 
@@ -1060,7 +1067,8 @@ aside {
   background-attachment: fixed;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 12rem;
+  padding-top: 9rem;
+  background-position-y: 2.5rem;
   background-color: #DFD7C6;
 }
 
@@ -1068,9 +1076,22 @@ aside {
   color: #827344;
 }
 
+@media screen and (min-width: 375px) {
+  #plantor main {
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #plantor main {
+    padding-top: 12rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #plantor main {
-    padding-top: 22rem;
+    padding-top: 20rem;
+    background-position-y: 1rem;
   }
   .w-i-p {
     grid-column: 1 / -1;
@@ -1085,6 +1106,7 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #plantor main {
+    padding-top: 18rem;
     background-size: 60%;
     background-position-y: 3rem;
     background-position-x: 50%;
@@ -1093,8 +1115,8 @@ aside {
 
 @media screen and (min-width: 1440px) {
   #plantor main {
-    background-size: 50%;
-    background-position-y: 5rem;
+    background-size: auto 320px;
+    padding-top: 20rem;
   }
 }
 

@@ -55,9 +55,11 @@ function myFunction() {
     dots.style.display = "inline";
     btnText.innerHTML = "<i class='fas fa-chevron-down'></i>";
     moreText.style.display = "none";
+    colorTweak.style.color = "#001f33";
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "<i class='fas fa-chevron-up'></i>";
     moreText.style.display = "inline";
+    colorTweak.style.color = "#F4F3F0";
   }
 }

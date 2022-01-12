@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayena Einafshar - Product/UX Designer</title>
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imgs/favicon-16x16.png" sizes="16x16" type="image/png">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
@@ -37,9 +37,23 @@
 
 <!-- MAIN -->    
     <aside id="me">
-        <div class="wrapper-aside">
+        <div class="wrapper-aside two">
             <h1>Hi,<br>I'm Sayena</h1>
-            <div class="two">
+                <div class="expand">
+                    <div class="two">
+                        <p>Front-end Developer & User Interface/Experience Designer. My role as Lead Designer during my most recent collaborations on web and mobile app development projects entails constant communication with the Product Designer and Project Management, Developers, Designers.<span id="dots">..</span></p>
+                        <p id="colorTweak">Graphic Designer and Product Design BA Graduate from London, UK. With 2+ years of practical experience, I have been able to exhibit my decision-making abilities by leading design and development projects in the fields of design.
+                        </p>
+                    </div>
+                    <span id="more">
+                        <div class="expand two m-top-min">
+                            <p>My most recent work experience at Langara College as WordPress CMS and Front-end Development includes prototyping interface designs for diverse groups of demographics. I have leveraged my academic training as UI/UX Designer to solve user pain points by designing user-focused solutions.</p>
+                            <p>My role as Lead Designer during my most recent collaborations on web and mobile app development projects entails constant communication with the Product Designer and Project Management, Developers, Designers and other stakeholders.</p>
+                        </div>
+                </span>
+                <button class="read-more expand" onclick="myFunction()" id="myBtn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <!-- <div class="two">
                 <p>Front-end Developer & User Interface/Experience Designer. My role as Lead Designer during my most recent collaborations on web and mobile app development projects entails constant communication with the Product Designer and Project Management, Developers, Designers and <span id="dots">...</span><span id="more">other stakeholders.
                 <br>
                 <br>Graphic Designer and Product Design BA Graduate from London, UK. With 2+ years of practical experience, I have been able to exhibit my decision-making abilities by leading design and development projects in the fields of design. As the Design Lead in academic projects since September 2020, I have had the chance to inspire a number of junior UI/UX designers.
@@ -48,40 +62,19 @@
                 <br>
                 <br>My role as Lead Designer during my most recent collaborations on web and mobile app development projects entails constant communication with the Product Designer and Project Management, Developers, Designers and other stakeholders.
                 <br></span></p>
-                </span></p>
-                <button class="read-more expand" onclick="myFunction()" id="myBtn"><i class="fas fa-chevron-down"></i></button>
-            </div>
+                
+            </div> -->
         </div>
     </aside>
 
 
     <main id="projects"> 
-        <!-- <nav class="tags">
-            <div>
-                <h4>Concept</h4>
-                <ul>
-                    <li><a href="capstone.html">Agroculture</a></li>
-                    <li><a href="tenex.html">Building Management</a></li>
-                    <li><a href="slack.html">Business Communication</a></li>
-                    <li><a href="vls.html">Educational</a></li>
-                    <li><a href="dimpledesk.html">Workspaces Rental</a></li>
-                </ul>
-            </div>   
-            <div>
-                <h4>Tech Stack</h4>
-                <ul>
-                    <li><a href="capstone.html">React Native</a></li>
-                    <li><a href="tenex.html">Integrated API</a></li>
-                    <li><a href="vls.html">Wordpress (Elementor)</a></li>
-                    <li><a href="dimpledesk.html">Data-driven</a></li>
-                </ul>
-            </div>   
-        </nav> -->        
+     
         <div class="wrapper-projects">
         <!-- DimpleDesk -->
             <section>
                 <a href="dimpledesk.html">
-                    <img src="imgs/dimpledesk2.jpg" alt="orkspace illustration with tables, desks and figures">
+                    <img src="imgs/dimpledesk2.jpg" alt="DImpleDesk Logo">
                     <p class="tagline"><span>Responsive Data-Driven Web App / Responsive Data-Driven Web App / Responsive Data-Driven Web App</span></p>
                 </a>
                 <div class="content-wrapper">
@@ -92,20 +85,20 @@
         <!-- Plantor -->
             <section>
                 <a href="plantor.html">
-                    <img src="imgs/capstone.jpg" alt="Tenex Feature Image, neighbours connecting via Tenex">
+                    <img src="imgs/capstone.jpg" alt="Plantor Logo">
                     <p class="tagline"><span>Native Android Mobile App / Native Android Mobile App / Native Android Mobile App / Native Android Mobile App / Native Android Mobile App / Native Android Mobile App</span></p>
     
                 </a>
                 <div class="content-wrapper">
                     <a href="plantor.html"><h2>Plantor</h2></a>
-                    <p>Native Andriod Application in the agriculture industry solving the problem of people not knowing what plants they can grow at home</p>
+                    <p>Native Android Application in the agriculture industry solving the problem of people not knowing what plants they can grow at home</p>
                 </div>
             </section>
         <!-- VLS -->
             <section>
                 <a href="vls.html">
-                    <img src="imgs/VLS2.jpg" alt="Screenshot of the frontend layout of Library Services page on VLS website">
-                    <p class="tagline"><span>Responsive Wordpress Website / Responsive Wordpress Website / Responsive Wordpress Website</span></p>
+                    <img src="imgs/VLS2.jpg" alt="VLS Logo">
+                    <p class="tagline"><span>Responsive WordPress Website / Responsive WordPress Website / Responsive WordPress Website</span></p>
                 </a>
                 <div class="content-wrapper">
                     <a href="vls.html"><h2>Virtual Learning Support</h2></a>
@@ -115,36 +108,15 @@
         <!-- Tenex -->
             <section>
                 <a href="tenex.html">
-                    <img src="imgs/tenex2.jpg" alt="Tenex Feature Image, neighbours connecting via Tenex">
+                    <img src="imgs/tenex2.jpg" alt="Tenex Logo">
                     <p class="tagline"><span>API Integrated Responsive Web App / API Integrated Responsive Web App / API Integrated Responsive Web App</span></p>
                 </a>
                 <div class="content-wrapper">
                     <a href="tenex.html"><h2>Tenex</h2></a>
-                    <p>Building Management Progresive Web Application to help remove the boarders of communication with their residential Building Manager</p>
+                    <p>Building Management Progressive Web Application for more efficient and easier communication with Building Managers</p>
                 </div>
             </section>
            
-            <!-- <section>
-                <a href="slack.html">
-                    <img src="imgs/Slack2.jpg" alt="Logo of Slack business communication platform">
-                    <p class="tagline"><span>Native IOS Mobile App / Native IOS Mobile App / Native IOS Mobile App / Native IOS Mobile App</span></p>
-                </a>
-                <div class="content-wrapper">
-                    <a href="slack.html"><h2>Slack<span class="light">/UX Redesign</span></h2></a>
-                    <p>My approach to redesign Slack was mainly to distinguish the types of data in the most accessible and user friendly way...</p>
-                </div>
-            </section> -->
-            <!-- <section>
-                <a href="mindBody.html">
-                    <img src="imgs/mindbody2.jpg" alt="Tenex Feature Image, neighbours connecting via Tenex">
-                    <p class="tagline"><span>Native IOS Mobile App / Native IOS Mobile App / Native IOS Mobile App / Native IOS Mobile App</span></p>
-    
-                </a>
-                <div class="content-wrapper">
-                    <a href="mindbody.html"><h2>MINDBODY<span class="light">/UI Redesign</span></h2></a>
-                    <p>My approach to redesign this app was to create a more dynamic atmophere by taking advantage of their colorful palete...</p>
-                </div>
-            </section> -->
         </div>
     </main>
 

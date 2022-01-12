@@ -8,22 +8,38 @@
     background-image: url(../imgs/plantor.png);
     background-attachment: fixed;
     background-size: contain;
-    // background-position-y: 5rem;
     background-repeat: no-repeat;
-    padding-top: 12rem;
+    padding-top: 9rem;
+    background-position-y: 2.5rem;
+
     background-color: #DFD7C6;
 }
 .primary {
     color: #827344;
 }
 
+@media screen and (min-width:375px) {
 
+    #plantor main {
+        padding-top: 11rem;
+    }
+}
+
+
+@media screen and (min-width:425px) {
+
+    #plantor main {
+        padding-top: 12rem;
+    }
+}
 
 
 @media screen and (min-width:768px) {
 
     #plantor main {
-        padding-top: 22rem;
+        padding-top: 20rem;
+        background-position-y: 1rem;
+
     }
     .w-i-p {
         grid-column: 1 / -1;
@@ -47,6 +63,7 @@
 
 @media screen and (min-width:1024px) {
     #plantor main {
+        padding-top: 18rem;
         background-size: 60%;
         background-position-y: 3rem;
         background-position-x: 50%;
@@ -58,7 +75,7 @@
 
 @media screen and (min-width:1440px) {
     #plantor main {
-        background-size: 50%;
-        background-position-y: 5rem;
+        background-size: auto 320px;
+        padding-top: 20rem;
     }
 }
