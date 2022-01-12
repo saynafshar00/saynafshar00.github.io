@@ -45,7 +45,22 @@
     #projects section a img {
         border-radius: 8px 8px 0 0;
     }
+    #projects section {
+        margin: 2rem 0;
+    }
+
     #about {
         justify-content: space-between;
     }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+    #projects section {
+        margin:  0;
+    }
+
+
 }
