@@ -1,4 +1,6 @@
-
+@mixin line {
+    border-top: 1px solid rgba(0, 0, 0, 0.836);
+}
 @mixin marginMobile {
     padding: 2rem 1.5rem;
 }

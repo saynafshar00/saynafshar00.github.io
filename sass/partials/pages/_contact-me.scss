@@ -74,6 +74,9 @@ textarea:focus {
         display: grid;
         grid-template-columns: repeat(1fr);
     }
+    .wrapper-contact {
+        min-width: 800px;
+    }
 
 }
 

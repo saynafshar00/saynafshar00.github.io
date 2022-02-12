@@ -6,13 +6,14 @@
     justify-content: space-between;
 }
 /* DimpleDesk */
+
 #dimpledesk main {
     background-image: url(../imgs/dimpledesk.png);
     background-attachment: fixed;
     background-size: contain;
     background-position-y: 4rem;
     background-repeat: no-repeat;
-    padding-top: 16rem;
+    padding-top: 14rem;
 }
 #dimpledesk .features {
     margin: 1rem auto;
@@ -62,19 +63,23 @@
     margin-top: 4rem;
 }
 
+@media screen and (min-width:375px) {
+    #dimpledesk main {
+        padding-top: 16rem;
+        background-position-y: 5rem;
+    }
+}
 @media screen and (min-width:425px) {
     #dimpledesk main {
         padding-top: 18rem;
     }
 }
 
-
-
 @media screen and (min-width:768px) {
 
     #dimpledesk main {
-        background-size: 50%;
-        padding-top: 18rem;
+        background-size: 60%;
+        padding-top: 20rem;
         background-position-x: 50%;
     }
 

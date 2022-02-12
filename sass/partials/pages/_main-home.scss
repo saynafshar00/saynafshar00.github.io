@@ -1,14 +1,4 @@
 
-// **********************************
-// ASIDE
-// **********************************
-aside {
-    background-color: #001f33;
-    color: #F4F3F0;
-    box-shadow: inset 0 3px 4px #000000bb;
-    // margin-bottom: 2rem;
-}
-
 
 
 // **********************************
@@ -44,7 +34,9 @@ aside {
     p {
         font-size: .9rem;        
     }
-    
+    .wrapper-projects {
+        max-width: 800px;
+    }
     section {
         margin: 5rem auto;
     }

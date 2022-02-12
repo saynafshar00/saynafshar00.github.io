@@ -419,7 +419,7 @@ Tables of content
 }
 
 @media screen and (min-width: 1020px) {
-  .wrapper-body, .wrapper-header, .wrapper-contact, .wrapper-aside, .wrapper-projects {
+  .wrapper-body {
     max-width: 800px;
   }
 }
@@ -574,6 +574,7 @@ header {
   .wrapper-header {
     max-width: 1200px;
     padding: .8rem 3rem;
+    max-width: 800px;
   }
 }
 
@@ -620,7 +621,7 @@ header {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 6px 0;
   /* border: 1px solid #ccc; */
   border-top: none;
 }
@@ -677,6 +678,13 @@ body {
   text-align: left;
 }
 
+aside {
+  background-color: #001f33;
+  color: #F4F3F0;
+  -webkit-box-shadow: inset 0 3px 4px #000000bb;
+          box-shadow: inset 0 3px 4px #000000bb;
+}
+
 @media screen and (min-width: 768px) {
   .read-more {
     position: relative;
@@ -685,6 +693,7 @@ body {
   .wrapper-aside {
     max-width: 1200px;
     padding: .8rem 3rem;
+    max-width: 800px;
   }
 }
 
@@ -919,13 +928,6 @@ footer ul li a {
   }
 }
 
-aside {
-  background-color: #001f33;
-  color: #F4F3F0;
-  -webkit-box-shadow: inset 0 3px 4px #000000bb;
-          box-shadow: inset 0 3px 4px #000000bb;
-}
-
 @media screen and (min-width: 768px) {
   header, footer, aside {
     grid-column: 1 / -1;
@@ -945,6 +947,9 @@ aside {
 @media screen and (min-width: 1024px) {
   p {
     font-size: .9rem;
+  }
+  .wrapper-projects {
+    max-width: 800px;
   }
   section {
     margin: 5rem auto;
@@ -969,7 +974,7 @@ aside {
   background-size: contain;
   background-position-y: 4rem;
   background-repeat: no-repeat;
-  padding-top: 16rem;
+  padding-top: 14rem;
 }
 
 #dimpledesk .features {
@@ -1025,6 +1030,13 @@ aside {
   margin-top: 4rem;
 }
 
+@media screen and (min-width: 375px) {
+  #dimpledesk main {
+    padding-top: 16rem;
+    background-position-y: 5rem;
+  }
+}
+
 @media screen and (min-width: 425px) {
   #dimpledesk main {
     padding-top: 18rem;
@@ -1033,8 +1045,8 @@ aside {
 
 @media screen and (min-width: 768px) {
   #dimpledesk main {
-    background-size: 50%;
-    padding-top: 18rem;
+    background-size: 60%;
+    padding-top: 20rem;
     background-position-x: 50%;
   }
   #design, #development {
@@ -1322,6 +1334,9 @@ textarea:focus {
     display: grid;
     -ms-grid-columns: ()[1fr];
         grid-template-columns: repeat(1fr);
+  }
+  .wrapper-contact {
+    min-width: 800px;
   }
 }
 

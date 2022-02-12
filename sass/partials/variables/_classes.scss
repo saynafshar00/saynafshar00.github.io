@@ -2,9 +2,10 @@
 #more, .tags {
   display: none;
 }
-.wrapper-aside {
-  max-width: 1200px;
-  margin: auto;
+
+.wrapper-body {
+  background-color: #fff;
+  @include line;
 }
 
 // **********************************
@@ -39,9 +40,6 @@
   font-weight: 400;
   margin: 0;
   color: #154368;
-}
-.wrapper-body {
-  background-color: #fff;
 }
 
 
@@ -315,7 +313,7 @@
 
 @media screen and (min-width:1020px) {
 
-   .wrapper-body, .wrapper-header , .wrapper-contact, .wrapper-aside,.wrapper-projects {
+   .wrapper-body {
     max-width: 800px;
   }
 
