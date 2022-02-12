@@ -123,7 +123,9 @@ footer ul li a {
     nav div {
         display: flex;
     }
-
+    #menu ul li{
+        padding: .5rem 0;
+    }
     #menu ul {
         display: flex;
         flex-flow: row nowrap;

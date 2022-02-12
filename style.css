@@ -78,7 +78,7 @@ Tables of content
 
 .wrapper-body {
   background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.836);
+  border-top: 1px solid #15436842;
   padding: 1.5rem;
   max-width: 1200px;
   margin: auto;
@@ -464,7 +464,7 @@ Tables of content
     border-radius: 8px 8px 0 0;
   }
   #projects section {
-    margin: 1rem 0;
+    margin-bottom: 2rem;
   }
   #about {
     -webkit-box-pack: justify;
@@ -545,7 +545,7 @@ header {
 }
 
 .wrapper-header {
-  padding: .8rem 1.5rem;
+  padding: .5rem 1.5rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,7 +566,7 @@ header {
   .wrapper-header {
     max-width: 1200px;
     margin: auto;
-    padding: .8rem 3rem;
+    padding: .5rem 3rem;
     max-width: 800px;
   }
 }
@@ -667,7 +667,7 @@ body {
   padding: 2rem 1.5rem;
   max-width: 1200px;
   margin: auto;
-  padding: .8rem 3rem;
+  padding: .5rem 3rem;
 }
 
 .wrapper-aside div p {
@@ -689,7 +689,7 @@ aside {
   .wrapper-aside {
     max-width: 1200px;
     margin: auto;
-    padding: .8rem 3rem;
+    padding: .5rem 3rem;
     max-width: 800px;
   }
 }
@@ -907,6 +907,9 @@ footer ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #menu ul li {
+    padding: .5rem 0;
   }
   #menu ul {
     display: -webkit-box;
@@ -1328,6 +1331,10 @@ input:focus {
   color: white;
 }
 
+#contact .wrapper-body {
+  border-top: 1px solid rgba(255, 255, 255, 0);
+}
+
 textarea {
   margin: 2rem 0;
   padding: 0.5rem;
@@ -1343,18 +1350,23 @@ textarea:focus {
 }
 
 #contact h2 {
-  margin-top: 0;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   #contact h2 {
-    margin-top: 5rem;
+    margin: 2.5rem 0;
   }
   #contact .wrapper-body {
     display: block;
     padding: 1.5rem 2.5rem;
     max-width: 500px;
     margin: auto;
+  }
+  #contact main {
+    margin-bottom: 5rem;
   }
   form {
     display: -ms-grid;

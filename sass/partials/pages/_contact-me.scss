@@ -35,7 +35,9 @@ input:focus {
     background-color: #154368;
     color: white;
 }
-
+#contact .wrapper-body {
+    border-top: 1px solid rgba(255, 255, 255, 0);
+}
 textarea {
     margin: 2rem 0;
     padding: 0.5rem;
@@ -51,7 +53,9 @@ textarea:focus {
 }
 
 #contact h2 {
-    margin-top: 0;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -62,13 +66,16 @@ textarea:focus {
     
 
     #contact h2 {
-        margin-top: 5rem;
+        margin: 2.5rem 0;
     }
     #contact .wrapper-body {
         display: block;
         padding: 1.5rem 2.5rem;
         max-width: 500px;
         margin: auto;
+    }
+    #contact main {
+        margin-bottom: 5rem;
     }
     form {
         display: grid;
