@@ -1,6 +1,8 @@
+
 #resume main {
     height: 80vh;
-    width: 100vw;
+    max-width: 90%;
+    margin: auto;    
     text-align: center;
     padding: 1.5rem 0;
 }
@@ -8,7 +10,7 @@
 
 @media screen and (min-width:768px) {
     #resume main {
-        padding: 2.5rem 0;
+        padding-top: 2.5rem;
 
     }
 
@@ -18,16 +20,17 @@
 
 
 @media screen and (min-width:1024px) {
-    // #resume main {
-    //     padding: 2.5rem 0;
-    // }
-}
-
-
-
-
-@media screen and (min-width:1440px) {
     #resume main {
-        padding: 2.5rem 0;
+        max-width: 800px;
+        margin: auto;
     }
 }
+
+
+
+
+// @media screen and (min-width:1440px) {
+//     #resume main {
+//         padding: 2.5rem 0;
+//     }
+// }

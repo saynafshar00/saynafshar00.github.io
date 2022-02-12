@@ -76,12 +76,9 @@ Tables of content
   display: none;
 }
 
-.wrapper-aside {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.wrapper-projects, .wrapper-body {
+.wrapper-body {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.836);
   padding: 1.5rem;
   max-width: 1200px;
   margin: auto;
@@ -114,10 +111,6 @@ Tables of content
   font-weight: 400;
   margin: 0;
   color: #154368;
-}
-
-.wrapper-body {
-  background-color: #fff;
 }
 
 .scroll {
@@ -426,7 +419,7 @@ Tables of content
 
 #projects section {
   border: 1px solid rgba(211, 211, 211, 0.459);
-  margin: 3rem 0;
+  margin-bottom: 2rem;
   border-radius: 8px;
   background-color: #f4f3f0a6;
 }
@@ -928,6 +921,12 @@ footer ul li a {
   }
 }
 
+.wrapper-projects {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   header, footer, aside {
     grid-column: 1 / -1;
@@ -1342,19 +1341,21 @@ textarea:focus {
 
 #resume main {
   height: 80vh;
-  width: 100vw;
+  max-width: 90%;
+  margin: auto;
   text-align: center;
   padding: 1.5rem 0;
 }
 
 @media screen and (min-width: 768px) {
   #resume main {
-    padding: 2.5rem 0;
+    padding-top: 2.5rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   #resume main {
-    padding: 2.5rem 0;
+    max-width: 800px;
+    margin: auto;
   }
 }
