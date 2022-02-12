@@ -1256,9 +1256,9 @@ footer ul li a {
   background-image: url(../../../imgs/tenex.jpg);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 4rem;
+  background-position-y: 3rem;
   background-repeat: no-repeat;
-  padding-top: 14rem;
+  padding-top: 12rem;
 }
 
 #tenex h1 a {
@@ -1277,11 +1277,25 @@ footer ul li a {
   color: #81B7AE;
 }
 
+@media screen and (min-width: 375px) {
+  #tenex main {
+    padding-top: 12rem;
+    background-position-y: 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #tenex main {
+    padding-top: 13rem;
+    background-position-y: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #tenex main {
     background-size: contain;
-    padding-top: 28rem;
-    background-color: #D7EAE8;
+    padding-top: 24rem;
+    background-position-y: -1rem;
   }
   #tenex .scale {
     max-width: 100%;
@@ -1293,17 +1307,16 @@ footer ul li a {
 
 @media screen and (min-width: 1024px) {
   #tenex main {
-    background-size: 50%;
+    background-size: 70%;
     padding-top: 22rem;
     background-position-x: 50%;
-    background-position-y: 4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #tenex main {
     background-size: 50%;
-    padding-top: 25rem;
+    padding-top: 23rem;
   }
 }
 
