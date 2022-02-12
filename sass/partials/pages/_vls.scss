@@ -9,9 +9,10 @@
     background-image: url(../vls/hero-img.png);
     background-attachment: fixed;
     background-size: contain;
-    background-position-y: 6rem;
+    background-size: 130%;
+    background-position-y: 3rem;
     background-repeat: no-repeat;
-    padding-top: 9rem;
+    padding-top: 5rem;
 }
 #vls h4 {
     margin: .5rem 0;
@@ -29,13 +30,27 @@
 }
 
 
+@media screen and (min-width:375px) {
+
+    #vls main {
+        padding-top: 6rem;
+    }
+}
+
+
+@media screen and (min-width:425px) {
+
+    #vls main {
+        padding-top: 7rem;
+    }
+}
+
 
 @media screen and (min-width:768px) {
 
     #vls main {
         background-size: 110%;
-        padding-top: 16rem;
-        // background-position-x: 60%;
+        padding-top: 10rem;
     }
     #vls h1 a {
         font-size: 1.4rem;
@@ -48,16 +63,18 @@
 
 @media screen and (min-width:1024px) {
     #vls main {
-        padding-top: 20rem;
-        background-position-x: 1%;
+        padding-top: 10rem;
+        background-position-x: 50%;
+        background-size: 80%;
+
     }
     
 }
 
 @media screen and (min-width:1440px) {
     #vls main {
-        // background-size: 50%;
-        padding-top: 30rem;
+        background-size: 60%;
+        padding-top: 11rem;
         background-position-x: 50%;
     }
     

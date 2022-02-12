@@ -38,7 +38,7 @@
 
     #plantor main {
         padding-top: 20rem;
-        background-position-y: 1rem;
+        background-position-y: -.5rem;
 
     }
     .w-i-p {
@@ -56,17 +56,12 @@
 
 
 
-
-
-
-
-
 @media screen and (min-width:1024px) {
     #plantor main {
         background-color: white;
-        padding-top: 18rem;
-        background-size: 50%;
-        background-position-y: 1rem;
+        padding-top: 20rem;
+        background-size: 80%;
+        background-position-y: -2rem;
         background-position-x: 50%;
     }
 }
@@ -79,6 +74,6 @@
         background-image: url(../imgs/plantor-large.png);
         background-size: auto 300px;
         background-position-y: 2rem;
-        padding-top: 18rem;
+        padding-top: 16rem;
     }
 }
