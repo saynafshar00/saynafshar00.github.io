@@ -7,6 +7,8 @@
     border: none;
     width: 100%;
     margin-top: 1rem;
+    position: relative;
+    top: -2rem;
   }
 
 .read-more i {
@@ -16,11 +18,24 @@
 .read-more i:hover {
     color: #638383;
 } 
-
+#colorTweak {
+    color: #001f33;
+}
 
 .wrapper-aside {
-    padding: 2rem 1.5rem;
-  }
+ @include marginMobile;
+}
   .wrapper-aside div p{
     text-align: left;
+  }
+
+  
+  @media screen and (min-width: 768px) {
+    .read-more {
+        position: relative;
+        top: 0;
+    }
+    .wrapper-aside {
+        @include marginIpad;
+    }
   }

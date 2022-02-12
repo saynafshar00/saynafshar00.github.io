@@ -1,14 +1,14 @@
 #resume main {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     text-align: center;
+    padding: 1.5rem 0;
 }
 
 
 @media screen and (min-width:768px) {
     #resume main {
-        padding: 2.5rem 8rem;
-        height: 90vh;
+        padding: 2.5rem 0;
 
     }
 
@@ -18,9 +18,9 @@
 
 
 @media screen and (min-width:1024px) {
-    #resume main {
-        padding: 2.5rem 8rem;
-    }
+    // #resume main {
+    //     padding: 2.5rem 0;
+    // }
 }
 
 
@@ -28,6 +28,6 @@
 
 @media screen and (min-width:1440px) {
     #resume main {
-        padding: 2.5rem 50rem;
+        padding: 2.5rem 0;
     }
 }

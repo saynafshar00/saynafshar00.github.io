@@ -1,0 +1,9 @@
+
+@mixin marginMobile {
+    padding: 2rem 1.5rem;
+}
+
+@mixin marginIpad {
+    max-width: 1200px;
+    padding: .8rem 3rem;
+}

@@ -459,10 +459,6 @@ Tables of content
   margin: 0;
 }
 
-#colorTweak {
-  color: #001f33;
-}
-
 #dimpledesk #persona h2 {
   margin-bottom: 0;
 }
@@ -557,7 +553,7 @@ header {
 }
 
 .wrapper-header {
-  padding: .8rem 1rem;
+  padding: .8rem 1.5rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +568,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-header {
+    max-width: 1200px;
+    padding: .8rem 3rem;
+  }
 }
 
 /* TABS */
@@ -648,6 +651,8 @@ body {
   border: none;
   width: 100%;
   margin-top: 1rem;
+  position: relative;
+  top: -2rem;
 }
 
 .read-more i {
@@ -660,12 +665,27 @@ body {
   color: #638383;
 }
 
+#colorTweak {
+  color: #001f33;
+}
+
 .wrapper-aside {
   padding: 2rem 1.5rem;
 }
 
 .wrapper-aside div p {
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .read-more {
+    position: relative;
+    top: 0;
+  }
+  .wrapper-aside {
+    max-width: 1200px;
+    padding: .8rem 3rem;
+  }
 }
 
 img {
@@ -1306,26 +1326,20 @@ textarea:focus {
 }
 
 #resume main {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   text-align: center;
+  padding: 1.5rem 0;
 }
 
 @media screen and (min-width: 768px) {
   #resume main {
-    padding: 2.5rem 8rem;
-    height: 90vh;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #resume main {
-    padding: 2.5rem 8rem;
+    padding: 2.5rem 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #resume main {
-    padding: 2.5rem 50rem;
+    padding: 2.5rem 0;
   }
 }
