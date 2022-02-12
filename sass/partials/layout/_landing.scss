@@ -8,8 +8,8 @@
     width: 100%;
     margin-top: 1rem;
     position: relative;
-    top: -2rem;
-  }
+    top: -1rem;
+}
 
 .read-more i {
     color: #91908f;
@@ -24,8 +24,9 @@
 
 .wrapper-aside {
  @include marginMobile;
+ @include marginIpad;
 }
-  .wrapper-aside div p{
+.wrapper-aside div p{
     text-align: left;
   }
   

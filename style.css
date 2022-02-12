@@ -513,7 +513,6 @@ a:hover {
 p, ul li {
   font-weight: 300;
   line-height: 1.5;
-  font-size: .9rem;
 }
 
 section a {
@@ -566,6 +565,7 @@ header {
 @media screen and (min-width: 768px) {
   .wrapper-header {
     max-width: 1200px;
+    margin: auto;
     padding: .8rem 3rem;
     max-width: 800px;
   }
@@ -625,7 +625,7 @@ header {
 }
 
 footer {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
@@ -646,7 +646,7 @@ body {
   width: 100%;
   margin-top: 1rem;
   position: relative;
-  top: -2rem;
+  top: -1rem;
 }
 
 .read-more i {
@@ -665,6 +665,9 @@ body {
 
 .wrapper-aside {
   padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: .8rem 3rem;
 }
 
 .wrapper-aside div p {
@@ -685,6 +688,7 @@ aside {
   }
   .wrapper-aside {
     max-width: 1200px;
+    margin: auto;
     padding: .8rem 3rem;
     max-width: 800px;
   }
@@ -749,6 +753,8 @@ button {
 
 .show-menu {
   display: block;
+  height: 100vh;
+  width: 100%;
 }
 
 nav div {
@@ -767,19 +773,31 @@ nav div {
 
 #close {
   padding: 0;
-  margin: .5rem 1.7rem 0 0;
+  margin: .5rem 0 0 0;
+  position: absolute;
+  right: 1.6rem;
+  top: .7rem;
 }
 
 #menu {
-  background-color: #ffffff;
   position: absolute;
-  right: -.2rem;
-  top: .6rem;
-  z-index: 200;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
 }
 
 #menu ul {
-  margin: 0;
+  margin: 50% auto;
+  text-align: center;
+}
+
+#menu ul li {
+  padding: 1rem 0;
 }
 
 #main-nav li, #footer-nav li {
@@ -792,10 +810,10 @@ nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -807,18 +825,11 @@ nav div {
   display: block;
   -webkit-transition: color .1s ease-in-out;
   transition: color .1s ease-in-out;
+  font-size: 1.5rem;
 }
 
 #main-nav li:hover a {
   color: #154368;
-}
-
-#main-nav li {
-  margin-right: 1rem;
-}
-
-#main-nav li:last-child {
-  margin-right: 0;
 }
 
 #footer-nav ul {
@@ -893,7 +904,19 @@ footer ul li a {
 
 @media screen and (min-width: 768px) {
   nav div {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: unset;
   }
   #menu-button, #close {
     display: none;
@@ -902,9 +925,14 @@ footer ul li a {
     background-color: rgba(255, 255, 255, 0);
     position: relative;
     top: 0;
+    width: unset;
+    height: unset;
   }
   #main-nav li {
     margin-right: 2rem;
+  }
+  #main-nav li a {
+    font-size: 1rem;
   }
   #main-nav li:last-child, #main-nav li:nth-child(3) {
     margin-right: 0;

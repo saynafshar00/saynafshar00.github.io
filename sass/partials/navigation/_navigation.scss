@@ -6,6 +6,8 @@ button {
 }
 .show-menu {
     display: block;
+    height: 100vh;
+    width: 100%;
 }
 nav div {
     display: none;
@@ -15,7 +17,6 @@ nav div {
     color: white;
 }
 
-
 #menu-button, #close {
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -23,20 +24,30 @@ nav div {
 }
 #close {
     padding: 0;
-    margin: .5rem 1.7rem 0 0;
+    margin: .5rem 0 0 0;
+    position: absolute;
+    right: 1.6rem;
+    top: .7rem;
 }
 
 #menu {
-    background-color: #ffffff;
     position: absolute;
-    right: -.2rem;
-    top: .6rem;
-    z-index: 200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
 }
-#menu ul{
-    margin: 0;
+#menu ul {
+    margin: 50% auto;
+    text-align: center;
 }
-
+#menu ul li{
+    padding: 1rem 0;
+}
 #main-nav li, #footer-nav li{
     list-style-type: none;
     font-weight: 500;
@@ -45,7 +56,7 @@ nav div {
 #main-nav ul  {
     padding: 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: center;
 }
 #main-nav li a {
@@ -53,19 +64,12 @@ nav div {
     color: #638383;
     display: block;
     transition: color .1s ease-in-out;
+    font-size: 1.5rem;
 }
+
 #main-nav li:hover a {
     color: #154368;
-
 }
-#main-nav li {
-    margin-right: 1rem;
-    // flex: 1 0 35%;
-}
-#main-nav li:last-child {
-    margin-right: 0;
-}
-
 
 
 #footer-nav ul{
@@ -117,8 +121,15 @@ footer ul li a {
 
 @media screen and (min-width:768px) {
     nav div {
-        display: block;
+        display: flex;
     }
+
+    #menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: unset;
+    }
+  
     #menu-button, #close {
         display: none;
     }
@@ -126,9 +137,15 @@ footer ul li a {
         background-color: rgba(255, 255, 255, 0);
         position: relative;
         top: 0;
+        width: unset;
+        height: unset;
     }
+
     #main-nav li {
         margin-right: 2rem;
+    }
+    #main-nav li a{
+        font-size: 1rem;
     }
     #main-nav li:last-child, #main-nav li:nth-child(3)  {
         margin-right: 0;
