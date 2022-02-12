@@ -6,3 +6,13 @@ header {
     box-shadow: 0 3px 4px rgba(156, 156, 156, 0.192);
 }
 
+.wrapper-header {
+    // max-width: 1200px;
+    padding: .8rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+

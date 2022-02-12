@@ -1,0 +1,26 @@
+// **********************************
+// HOME PAGE 
+// READMORE
+// **********************************
+.read-more {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+.read-more i {
+    color: #91908f;
+    transition: color .1s ease-in-out;
+} 
+.read-more i:hover {
+    color: #638383;
+} 
+
+
+.wrapper-aside {
+    padding: 2rem 1.5rem;
+  }
+  .wrapper-aside div p{
+    text-align: left;
+  }

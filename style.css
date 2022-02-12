@@ -28,7 +28,7 @@ Tables of content
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=DM+Serif+Display&family=Quicksand:wght@300;400;500;700&display=swap");
 .logo {
-  max-width: 28px;
+  max-width: 30px;
 }
 
 /* secondary pages */
@@ -72,14 +72,6 @@ Tables of content
   border-radius: 50%;
 }
 
-.read-more {
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  width: 100%;
-  margin-top: 1rem;
-  color: #91908f;
-}
-
 #more, .tags {
   display: none;
 }
@@ -87,33 +79,6 @@ Tables of content
 .wrapper-aside {
   max-width: 1200px;
   margin: auto;
-}
-
-.wrapper-header {
-  max-width: 1200px;
-  padding: .5rem 1.5rem;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.wrapper-aside {
-  padding: 5rem 1.5rem;
-}
-
-.wrapper-aside div p {
-  text-align: justify;
 }
 
 .wrapper-projects, .wrapper-body {
@@ -591,6 +556,24 @@ header {
           box-shadow: 0 3px 4px rgba(156, 156, 156, 0.192);
 }
 
+.wrapper-header {
+  padding: .8rem 1rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* TABS */
 .tab {
   overflow: hidden;
@@ -658,6 +641,31 @@ body {
   color: #000;
   margin: 0;
   background-color: #ffffff;
+}
+
+.read-more {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.read-more i {
+  color: #91908f;
+  -webkit-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
+}
+
+.read-more i:hover {
+  color: #638383;
+}
+
+.wrapper-aside {
+  padding: 2rem 1.5rem;
+}
+
+.wrapper-aside div p {
+  text-align: left;
 }
 
 img {

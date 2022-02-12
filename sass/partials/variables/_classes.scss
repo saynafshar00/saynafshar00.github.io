@@ -1,14 +1,4 @@
-// **********************************
-// HOME PAGE 
-// READMORE
-// **********************************
-.read-more {
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  width: 100%;
-  margin-top: 1rem;
-  color: #91908f;
-}
+
 #more, .tags {
   display: none;
 }
@@ -20,21 +10,7 @@
 // **********************************
 // BODY
 // **********************************
-.wrapper-header {
-  max-width: 1200px;
-  padding: .5rem 1.5rem;
-  margin: auto;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.wrapper-aside {
-  padding: 5rem 1.5rem;
-}
-.wrapper-aside div p{
-  text-align: justify;
-}
+
 .wrapper-projects, .wrapper-body {
   padding: 1.5rem;
   max-width: 1200px;
