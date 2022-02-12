@@ -5,14 +5,7 @@
 
 .wrapper-body {
   background-color: #fff;
-  @include line;
-}
-
-// **********************************
-// BODY
-// **********************************
-
-.wrapper-projects, .wrapper-body {
+  @include linear;
   padding: 1.5rem;
   max-width: 1200px;
   margin: auto;
