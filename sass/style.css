@@ -47,12 +47,6 @@ Tables of content
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    max-width: 35px;
-  }
-}
-
 .avatar {
   padding: 1rem 0;
   display: -webkit-box;
@@ -78,54 +72,14 @@ Tables of content
   border-radius: 50%;
 }
 
-.read-more {
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  width: 100%;
-  margin-top: 1rem;
-  color: #91908f;
-}
-
 #more, .tags {
   display: none;
 }
 
-.wrapper-aside {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.wrapper-header {
-  max-width: 1200px;
-  padding: 1rem 1.5rem;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.wrapper-aside {
-  padding: 9rem 1.5rem;
-}
-
-.wrapper-aside div p {
-  text-align: justify;
-}
-
-.wrapper-projects, .wrapper-body {
+.wrapper-body {
+  background-color: #fff;
+  border-top: 1px solid #15436818;
   padding: 1.5rem;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .wrapper-projects section {
@@ -155,10 +109,6 @@ Tables of content
   font-weight: 400;
   margin: 0;
   color: #154368;
-}
-
-.wrapper-body {
-  background-color: #fff;
 }
 
 .scroll {
@@ -255,6 +205,10 @@ Tables of content
 
 .fa-chevron-up {
   color: #BDC6CD;
+}
+
+.m-top-min {
+  margin-top: 1rem;
 }
 
 .m-top {
@@ -407,24 +361,23 @@ Tables of content
     gap: 1rem  2rem;
   }
   .wrapper-header {
-    padding: 1rem 2.5rem;
+    padding: .5rem 2.5rem;
   }
   .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body {
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 3rem;
   }
   .wrapper-projects {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 0 2.5rem;
+    gap: 0 2rem;
   }
   .wrapper-body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
-    padding: 1rem;
   }
   .tab {
     -ms-flex-item-align: center;
@@ -451,27 +404,21 @@ Tables of content
   .scale {
     max-width: 100%;
   }
+  .legend {
+    max-width: 10%;
+  }
 }
 
-@media screen and (min-width: 1024px) {
-  .wrapper-header {
-    padding: 1rem 8rem;
-  }
-  .wrapper-projects, .wrapper-contact, .wrapper-aside, .wrapper-body {
-    padding: 1.5rem 8rem;
-  }
-  .wrapper-projects {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 0 5rem;
+@media screen and (min-width: 1000px) {
+  .sub {
+    max-width: 900px;
+    margin: auto;
   }
 }
 
 #projects section {
   border: 1px solid rgba(211, 211, 211, 0.459);
-  margin: 3rem 0;
+  margin-bottom: 2rem;
   border-radius: 8px;
   background-color: #f4f3f0a6;
 }
@@ -514,6 +461,9 @@ Tables of content
   }
   #projects section a img {
     border-radius: 8px 8px 0 0;
+  }
+  #projects section {
+    margin-bottom: 2rem;
   }
   #about {
     -webkit-box-pack: justify;
@@ -562,7 +512,6 @@ a:hover {
 p, ul li {
   font-weight: 300;
   line-height: 1.5;
-  font-size: .9rem;
 }
 
 section a {
@@ -592,6 +541,30 @@ header {
   z-index: 50;
   -webkit-box-shadow: 0 3px 4px rgba(156, 156, 156, 0.192);
           box-shadow: 0 3px 4px rgba(156, 156, 156, 0.192);
+}
+
+.wrapper-header {
+  padding: .5rem 1.5rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-header {
+    max-width: 800px;
+  }
 }
 
 /* TABS */
@@ -637,7 +610,7 @@ header {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 6px 0;
   /* border: 1px solid #ccc; */
   border-top: none;
 }
@@ -648,7 +621,7 @@ header {
 }
 
 footer {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
@@ -661,6 +634,54 @@ body {
   color: #000;
   margin: 0;
   background-color: #ffffff;
+}
+
+.read-more {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+  top: -1rem;
+}
+
+.read-more i {
+  color: #91908f;
+  -webkit-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
+}
+
+.read-more i:hover {
+  color: #638383;
+}
+
+#colorTweak {
+  color: #001f33;
+}
+
+.wrapper-aside {
+  padding: 2rem 1.5rem;
+}
+
+.wrapper-aside div p {
+  text-align: left;
+}
+
+aside {
+  background-color: #001f33;
+  color: #F4F3F0;
+  -webkit-box-shadow: inset 0 3px 4px #000000bb;
+          box-shadow: inset 0 3px 4px #000000bb;
+}
+
+@media screen and (min-width: 768px) {
+  .read-more {
+    position: relative;
+    top: 0;
+  }
+  .wrapper-aside {
+    max-width: 800px;
+  }
 }
 
 img {
@@ -722,6 +743,8 @@ button {
 
 .show-menu {
   display: block;
+  height: 100vh;
+  width: 100%;
 }
 
 nav div {
@@ -740,15 +763,31 @@ nav div {
 
 #close {
   padding: 0;
-  margin: .5rem 1.7rem 0 0;
+  margin: .5rem 0 0 0;
+  position: absolute;
+  right: 1.6rem;
+  top: .7rem;
 }
 
 #menu {
-  background-color: #ffffff;
   position: absolute;
-  right: -.2rem;
-  top: .5rem;
-  z-index: 200;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+#menu ul {
+  margin: 50% auto;
+  text-align: center;
+}
+
+#menu ul li {
+  padding: 1rem 0;
 }
 
 #main-nav li, #footer-nav li {
@@ -761,10 +800,10 @@ nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -776,18 +815,11 @@ nav div {
   display: block;
   -webkit-transition: color .1s ease-in-out;
   transition: color .1s ease-in-out;
+  font-size: 1.5rem;
 }
 
 #main-nav li:hover a {
   color: #154368;
-}
-
-#main-nav li {
-  margin-right: 1rem;
-}
-
-#main-nav li:last-child {
-  margin-right: 0;
 }
 
 #footer-nav ul {
@@ -862,7 +894,22 @@ footer ul li a {
 
 @media screen and (min-width: 768px) {
   nav div {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu ul li {
+    padding: .5rem 0;
+  }
+  #menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: unset;
   }
   #menu-button, #close {
     display: none;
@@ -871,9 +918,14 @@ footer ul li a {
     background-color: rgba(255, 255, 255, 0);
     position: relative;
     top: 0;
+    width: unset;
+    height: unset;
   }
   #main-nav li {
     margin-right: 2rem;
+  }
+  #main-nav li a {
+    font-size: 1rem;
   }
   #main-nav li:last-child, #main-nav li:nth-child(3) {
     margin-right: 0;
@@ -890,11 +942,10 @@ footer ul li a {
   }
 }
 
-aside {
-  background-color: #001f33;
-  color: #F4F3F0;
-  -webkit-box-shadow: inset 0 3px 4px #000000bb;
-          box-shadow: inset 0 3px 4px #000000bb;
+.wrapper-projects {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -917,8 +968,8 @@ aside {
   p {
     font-size: .9rem;
   }
-  section {
-    margin: 5rem auto;
+  .wrapper-projects {
+    max-width: 800px;
   }
 }
 
@@ -938,9 +989,9 @@ aside {
   background-image: url(../imgs/dimpledesk.png);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 8rem;
+  background-position-y: 4rem;
   background-repeat: no-repeat;
-  padding-top: 20rem;
+  padding-top: 14rem;
 }
 
 #dimpledesk .features {
@@ -996,10 +1047,22 @@ aside {
   margin-top: 4rem;
 }
 
+@media screen and (min-width: 375px) {
+  #dimpledesk main {
+    padding-top: 16rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #dimpledesk main {
+    padding-top: 18rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #dimpledesk main {
-    background-size: 50%;
-    padding-top: 18rem;
+    background-size: 60%;
+    padding-top: 20rem;
     background-position-x: 50%;
   }
   #design, #development {
@@ -1032,15 +1095,16 @@ aside {
 @media screen and (min-width: 1024px) {
   #dimpledesk main {
     background-size: 40%;
-    padding-top: 22rem;
+    padding-top: 18rem;
     background-position-x: 50%;
-    background-position-y: 7rem;
+    background-position-y: 4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #dimpledesk main {
-    padding-top: 30rem;
+    background-size: auto 288px;
+    padding-top: 19rem;
   }
 }
 
@@ -1055,7 +1119,8 @@ aside {
   background-attachment: fixed;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 12rem;
+  padding-top: 9rem;
+  background-position-y: 2.5rem;
   background-color: #DFD7C6;
 }
 
@@ -1063,9 +1128,22 @@ aside {
   color: #827344;
 }
 
+@media screen and (min-width: 375px) {
+  #plantor main {
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #plantor main {
+    padding-top: 12rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #plantor main {
-    padding-top: 22rem;
+    padding-top: 20rem;
+    background-position-y: -.5rem;
   }
   .w-i-p {
     grid-column: 1 / -1;
@@ -1080,16 +1158,20 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #plantor main {
-    background-size: 60%;
-    background-position-y: 3rem;
+    background-color: white;
+    padding-top: 20rem;
+    background-size: 80%;
+    background-position-y: -2rem;
     background-position-x: 50%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #plantor main {
-    background-size: 50%;
-    background-position-y: 5rem;
+    background-image: url(../imgs/plantor-large.png);
+    background-size: auto 300px;
+    background-position-y: 2rem;
+    padding-top: 16rem;
   }
 }
 
@@ -1103,9 +1185,10 @@ aside {
   background-image: url(../vls/hero-img.png);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 6rem;
+  background-size: 130%;
+  background-position-y: 3rem;
   background-repeat: no-repeat;
-  padding-top: 9rem;
+  padding-top: 5rem;
 }
 
 #vls h4 {
@@ -1120,10 +1203,22 @@ aside {
   max-width: 20%;
 }
 
+@media screen and (min-width: 375px) {
+  #vls main {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #vls main {
+    padding-top: 7rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #vls main {
     background-size: 110%;
-    padding-top: 16rem;
+    padding-top: 10rem;
   }
   #vls h1 a {
     font-size: 1.4rem;
@@ -1132,14 +1227,16 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #vls main {
-    padding-top: 20rem;
-    background-position-x: 1%;
+    padding-top: 10rem;
+    background-position-x: 50%;
+    background-size: 80%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #vls main {
-    padding-top: 30rem;
+    background-size: 60%;
+    padding-top: 11rem;
     background-position-x: 50%;
   }
 }
@@ -1148,9 +1245,9 @@ aside {
   background-image: url(../../../imgs/tenex.jpg);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 4rem;
+  background-position-y: 3rem;
   background-repeat: no-repeat;
-  padding-top: 14rem;
+  padding-top: 12rem;
 }
 
 #tenex h1 a {
@@ -1169,11 +1266,25 @@ aside {
   color: #81B7AE;
 }
 
+@media screen and (min-width: 375px) {
+  #tenex main {
+    padding-top: 12rem;
+    background-position-y: 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #tenex main {
+    padding-top: 13rem;
+    background-position-y: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #tenex main {
     background-size: contain;
-    padding-top: 28rem;
-    background-color: #D7EAE8;
+    padding-top: 24rem;
+    background-position-y: -1rem;
   }
   #tenex .scale {
     max-width: 100%;
@@ -1185,17 +1296,16 @@ aside {
 
 @media screen and (min-width: 1024px) {
   #tenex main {
-    background-size: 50%;
+    background-size: 70%;
     padding-top: 22rem;
     background-position-x: 50%;
-    background-position-y: 4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #tenex main {
     background-size: 50%;
-    padding-top: 25rem;
+    padding-top: 23rem;
   }
 }
 
@@ -1235,6 +1345,10 @@ input:focus {
   color: white;
 }
 
+#contact .wrapper-body {
+  border-top: 1px solid rgba(255, 255, 255, 0);
+}
+
 textarea {
   margin: 2rem 0;
   padding: 0.5rem;
@@ -1250,12 +1364,14 @@ textarea:focus {
 }
 
 #contact h2 {
-  margin-top: 0;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   #contact h2 {
-    margin-top: 5rem;
+    margin: 2.5rem 0;
   }
   #contact .wrapper-body {
     display: block;
@@ -1263,21 +1379,38 @@ textarea:focus {
     max-width: 500px;
     margin: auto;
   }
+  #contact main {
+    margin-bottom: 5rem;
+  }
   form {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: ()[1fr];
         grid-template-columns: repeat(1fr);
   }
+  .wrapper-contact {
+    min-width: 800px;
+  }
 }
 
 #resume main {
-  padding: 2.5rem 1rem;
+  height: 80vh;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
 @media screen and (min-width: 768px) {
   #resume main {
-    padding: 2.5rem 8rem;
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #resume main {
+    max-width: 800px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
