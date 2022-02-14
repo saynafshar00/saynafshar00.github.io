@@ -563,7 +563,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .wrapper-header {
-    max-width: 880px;
+    max-width: 860px;
     margin: auto;
   }
 }
@@ -681,7 +681,7 @@ aside {
     top: 0;
   }
   .wrapper-aside {
-    max-width: 880px;
+    max-width: 860px;
     margin: auto;
   }
 }
@@ -971,7 +971,7 @@ footer ul li a {
     font-size: .9rem;
   }
   .wrapper-projects {
-    max-width: 880px;
+    max-width: 860px;
     margin: auto;
   }
 }
