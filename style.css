@@ -80,8 +80,6 @@ Tables of content
   background-color: #fff;
   border-top: 1px solid #15436818;
   padding: 1.5rem;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .wrapper-projects section {
@@ -411,9 +409,10 @@ Tables of content
   }
 }
 
-@media screen and (min-width: 1020px) {
-  .wrapper-body {
-    max-width: 800px;
+@media screen and (min-width: 1000px) {
+  .sub {
+    max-width: 900px;
+    margin: auto;
   }
 }
 
@@ -564,9 +563,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .wrapper-header {
-    max-width: 1200px;
-    margin: auto;
-    padding: .5rem 3rem;
     max-width: 800px;
   }
 }
@@ -665,9 +661,6 @@ body {
 
 .wrapper-aside {
   padding: 2rem 1.5rem;
-  max-width: 1200px;
-  margin: auto;
-  padding: .5rem 3rem;
 }
 
 .wrapper-aside div p {
@@ -687,9 +680,6 @@ aside {
     top: 0;
   }
   .wrapper-aside {
-    max-width: 1200px;
-    margin: auto;
-    padding: .5rem 3rem;
     max-width: 800px;
   }
 }
@@ -1060,7 +1050,6 @@ footer ul li a {
 @media screen and (min-width: 375px) {
   #dimpledesk main {
     padding-top: 16rem;
-    background-position-y: 5rem;
   }
 }
 
@@ -1106,16 +1095,12 @@ footer ul li a {
 @media screen and (min-width: 1024px) {
   #dimpledesk main {
     background-size: 40%;
-    padding-top: 18rem;
-    background-position-x: 50%;
-    background-position-y: 4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #dimpledesk main {
     background-size: auto 288px;
-    padding-top: 19rem;
   }
 }
 
