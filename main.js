@@ -20,6 +20,18 @@ closeButton.addEventListener('click', () => {
     menu.classList.toggle("show-menu");
 })
 
+
+$('.hamburger').on('click', function () {
+
+  $('.menu').toggleClass('open');
+  
+  });
+  
+  $( '.menu a' ).on("click", function(){
+  $('.menu').hide();
+  });
+
+  
 // Tabs
 function openButton(evt, buttonName) {
     var i, tabcontent, tablinks;
