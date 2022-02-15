@@ -67,7 +67,7 @@ Tables of content
 }
 
 .small {
-  max-width: 10%;
+  max-width: 15%;
   padding-right: .5rem;
   border-radius: 50%;
 }
@@ -445,6 +445,12 @@ Tables of content
   margin: 0;
 }
 
+#overview section:not(:last-of-type), #userExperience section:not(:last-of-type), #userInterface section:not(:last-of-type) {
+  padding: 0 0 5rem 0;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.445);
+}
+
 #dimpledesk #persona h2 {
   margin-bottom: 0;
 }
@@ -557,6 +563,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .wrapper-header {
+    padding: .5rem 3rem;
     max-width: 870px;
     margin: auto;
   }
@@ -662,6 +669,7 @@ body {
 
 .wrapper-aside {
   padding: 2rem 1.5rem;
+  padding: .5rem 3rem;
 }
 
 .wrapper-aside div p {
@@ -681,6 +689,7 @@ aside {
     top: 0;
   }
   .wrapper-aside {
+    padding: .5rem 3rem;
     max-width: 870px;
     margin: auto;
   }
@@ -991,6 +1000,7 @@ footer ul li a {
 #dimpledesk h1 a, .title {
   font-family: "Poppins", sans-serif;
   color: #4176FF;
+  font-size: 2rem;
 }
 
 #illustrations div {
@@ -1004,8 +1014,8 @@ footer ul li a {
   background-image: url(../imgs/dimpledesk.png);
   background-attachment: fixed;
   background-size: contain;
-  background-position-y: 4rem;
   background-repeat: no-repeat;
+  background-position-y: 4rem;
   padding-top: 14rem;
 }
 
@@ -1016,12 +1026,6 @@ footer ul li a {
 #dimpledesk .features img {
   max-width: 50%;
   margin: auto;
-}
-
-#overview section:not(:last-of-type), #userExperience section:not(:last-of-type), #userInterface section:not(:last-of-type) {
-  padding: 0 0 5rem 0;
-  margin-bottom: 5rem;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.445);
 }
 
 .search, .contact {
@@ -1115,7 +1119,7 @@ footer ul li a {
 
 @media screen and (min-width: 1440px) {
   #dimpledesk main {
-    background-size: auto 288px;
+    background-size: auto 400px;
   }
 }
 

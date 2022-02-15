@@ -6,5 +6,11 @@
 @mixin marginIpad {
     // max-width: 1200px;
     // margin: auto;
-    // padding: .5rem 3rem;
+    padding: .5rem 3rem;
+}
+
+@mixin backgroundImage {
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
