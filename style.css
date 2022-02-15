@@ -48,7 +48,7 @@ Tables of content
 }
 
 .avatar {
-  padding: 1rem 0;
+  padding: .5rem 0 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,12 +74,6 @@ Tables of content
 
 #more, .tags {
   display: none;
-}
-
-.wrapper-body {
-  background-color: #fff;
-  border-top: 1px solid #15436818;
-  padding: 1.5rem;
 }
 
 .wrapper-projects section {
@@ -580,7 +574,7 @@ header {
   float: left;
   border: none;
   outline: none;
-  padding: .4rem .6rem;
+  padding: .4rem .3rem .4rem 0;
   margin-right: .3rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -619,6 +613,12 @@ header {
 .tablinks {
   font-size: .3rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 425px) {
+  .tab button {
+    padding: .4rem .6rem .4rem 0;
+  }
 }
 
 footer {
@@ -684,6 +684,18 @@ aside {
     max-width: 870px;
     margin: auto;
   }
+}
+
+.main-wrapper {
+  border-top: 1px solid #15436818;
+  background-color: #fff;
+}
+
+.wrapper-body {
+  max-width: 870px;
+  margin: auto;
+  background-color: #fff;
+  padding: 1.5rem;
 }
 
 img {
@@ -1110,7 +1122,7 @@ footer ul li a {
 #plantor h1 a {
   color: #8F8F57;
   font-family: "Amatic SC", serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 #plantor main {
@@ -1142,7 +1154,7 @@ footer ul li a {
 @media screen and (min-width: 768px) {
   #plantor main {
     padding-top: 20rem;
-    background-position-y: -.5rem;
+    background-position-y: 1rem;
   }
   .w-i-p {
     grid-column: 1 / -1;
@@ -1157,20 +1169,16 @@ footer ul li a {
 
 @media screen and (min-width: 1024px) {
   #plantor main {
+    background-image: url(../imgs/plantor-large.png);
     background-color: white;
     padding-top: 20rem;
-    background-size: 80%;
-    background-position-y: -2rem;
     background-position-x: 50%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #plantor main {
-    background-image: url(../imgs/plantor-large.png);
-    background-size: auto 300px;
-    background-position-y: 2rem;
-    padding-top: 16rem;
+    background-position-y: -5rem;
   }
 }
 

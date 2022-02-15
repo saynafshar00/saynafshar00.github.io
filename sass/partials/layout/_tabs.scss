@@ -3,7 +3,7 @@
 .tab {
     overflow: hidden;
     /* border: 1px solid #ccc; */
-    background-color: #ffffff;
+    background-color: #ffffff;  
   }
   
   /* Style the buttons inside the tab */
@@ -11,7 +11,7 @@
     float: left;
     border: none;
     outline: none;
-    padding: .4rem .6rem;
+    padding: .4rem .3rem .4rem 0;
     margin-right: .3rem;
     transition: 0.3s;
     font-size: .9rem;
@@ -49,3 +49,12 @@
       cursor: pointer;
   }
   
+
+  
+@media screen and (min-width:425px) {
+
+  .tab button {
+
+    padding: .4rem .6rem .4rem 0;
+  }
+}

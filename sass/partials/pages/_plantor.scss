@@ -1,7 +1,7 @@
 #plantor h1 a{
     color: #8F8F57;
     font-family: "Amatic SC", serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #plantor main {
@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
     padding-top: 9rem;
     background-position-y: 2.5rem;
-
     background-color: #DFD7C6;
 }
 .primary {
@@ -38,7 +37,7 @@
 
     #plantor main {
         padding-top: 20rem;
-        background-position-y: -.5rem;
+        background-position-y: 1rem;
 
     }
     .w-i-p {
@@ -58,22 +57,16 @@
 
 @media screen and (min-width:1024px) {
     #plantor main {
+        background-image: url(../imgs/plantor-large.png);
         background-color: white;
         padding-top: 20rem;
-        background-size: 80%;
-        background-position-y: -2rem;
         background-position-x: 50%;
     }
 }
 
 
-
-
 @media screen and (min-width:1440px) {
     #plantor main {
-        background-image: url(../imgs/plantor-large.png);
-        background-size: auto 300px;
-        background-position-y: 2rem;
-        padding-top: 16rem;
+        background-position-y: -5rem;
     }
 }
