@@ -296,8 +296,12 @@ Tables of content
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   gap: .5rem;
   padding: .3rem 0;
 }
@@ -1196,6 +1200,7 @@ footer ul li a {
 
 #vls main {
   background-image: url(../vls/hero-img.png);
+  background-color: #BEC5CD;
   background-attachment: fixed;
   background-size: contain;
   background-size: 130%;

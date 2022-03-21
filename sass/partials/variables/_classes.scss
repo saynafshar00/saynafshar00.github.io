@@ -196,7 +196,8 @@
 .row {
     display: flex;
     flex-flow: row nowrap;
-    align-content: center;
+    align-items: end;
+    justify-content: start;
     gap: .5rem;
     padding: .3rem 0;
 }
