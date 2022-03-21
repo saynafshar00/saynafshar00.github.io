@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayena Einafshar - Plantor Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/favicon-16x16.png" sizes="16x16" type="image/png">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
+</head>
+<body id="blockaday">
+    <header> 
+        <div class="wrapper-header">
+            <a href="index.html"><img class="logo" src="imgs/branding/Logo.jpg" alt="Personal Branding, Triangular Shaped Logo"></a>
+
+            <nav id="main-nav">
+                <button id="menu-button">
+                    <span class="visually-hidden">Menu</span>
+                    <img class="menu-icon" src="imgs/branding/menu-icon.svg" alt="">
+                </button>
+                
+                <div id="menu" class="hamburger">
+                    <button id="close"><span class="visually-hidden">close</span><img class="menu-icon" src="imgs/branding/close.svg" alt=""></button>
+                    <ul class="menu">
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="https://einafshar.ca/#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <main>
+        <div class="main-wrapper">
+            <div class="wrapper-body">
+                <!-- AVATAR -->
+                <div class="avatar">
+                    <img class="small" src="imgs/blockaday-avatar.png" alt="">
+                    <h1><a href="http://www.blockaday.ca/" target=”_blank”>Blockaday</a></h1>
+                  
+                </div>
+
+                <!-- CONTENT -->
+                <div class="tab">
+                    <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
+                    <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
+                    <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
+                    <!-- <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button> -->
+                </div>
+                
+                <!-- OVERVIEW -->
+                <div id="overview" class="tabcontent" style="display:block;">
+                    <nav class="tag-nav scroll">
+                        <ul>
+                            <li><a href="#b-problem">Problem</a></li>
+                            <li><a href="#b-solution">Solution</a></li>
+                        </ul>
+                    </nav>
+
+                    <section>
+                        <div class="two">
+                            <h2 class="expand">Project Overview</h2>
+                            <p>The project is in the agriculture industry. We will be solving the problem of users who are new to gardening not knowing what plants they can grow at home. We will be solving this problem by creating a mobile app to provide users with suggestions on plants they can grow at home based on location, season & light exposure.</p>
+
+                            <p>Via our Android Native Application, users can get top 10 plant suggestions suitable to their inputted information about the environment, whether looking for plants to grow indoor or outdoor. These suggestions can be filtered upon users preference, to view pet-friendly/non-pet-friendly and edible/non-edible options.</p>
+    
+                        </div>
+                        <article id="#b-problem" class="three">
+                            <h3 class="expand">Problem</h3>
+                            <div class="expand two">
+                                <p>Rooted in the digital agriculture industry, Plantor will be solving this problem by creating a mobile experience that will provide users with suggestions on what plants they can grow well at their place based on temperature, lighting, location, and season.</p>
+                                <p>Via this platform, we help users, whether a beginner or experienced, to get plant recommendations based on the mentioned factors. Therefore, users can grow suggested plants and receive weather hazard notification to maintain a safe environment for their plants to grow.</p>
+                            </div>
+                        </article>
+                        <article id="#b-solution" class="three">
+                            <h3 class="expand">Solution</h3>
+                            <p class="expand">
+                                Rooted in the digital agriculture industry, Plantor will be solving this problem by creating a mobile experience that will provide users with suggestions on what plants they can grow well at their place based on temperature, lighting, location, and season. 
+                            </p>
+                        </article>
+                    </section>
+                </div>
+
+                <!-- USER EXPERIENCE -->
+                <div id="userExperience" class="tabcontent">
+                    <nav class="tag-nav scroll">
+                        <ul>
+                            <li><a href="#b-user-research">Survey</a></li>
+                            <li><a href="#b-analysis">Survey Analysis</a></li>
+                            <li><a href="#b-info-arch">Information Architecture</a></li>
+                            <li><a href="#b-userflow">User Task Flow</a></li>
+                            <li><a href="#b-prototyping">Prototyping</a></li>
+                            <li><a href="#p-wireframes">Hi-fidelity Wireframes</a></li>
+                        </ul>
+                    </nav>
+ 
+                <div class="w-i-p">
+                    <h2>Work in progress...</h2>
+                    <img src="/imgs/work-in-progress.svg" alt="">
+                </div>
+
+                </div>
+
+                <!-- INTERFACE -->
+                <div id="userInterface" class="tabcontent">
+                    <!-- <h2>User Interface</h2> -->
+                    <div class="w-i-p">
+                        <h2>Work in progress...</h2>
+                        <img src="/imgs/work-in-progress.svg" alt="">
+                    </div>
+                </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <footer>
+        <nav id="footer-nav">
+            <ul>                
+                <li><a href="mailto:saynafshar@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a></li>
+                <li><a href="https://www.linkedin.com/in/einafshar/"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a></li>
+                <li><a href="https://www.behance.net/einafshar/"><i class="fab fa-behance-square" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a></li>
+            </ul>
+        </nav>
+        <p>Ⓒ 2020 All Rights Reserved.</p>
+        <p>Designed & Coded by Sayena Einafshar</p>
+    </footer>
+
+    
+</body>
+</html>
