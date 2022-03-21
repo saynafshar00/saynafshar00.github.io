@@ -624,11 +624,12 @@ header {
 
 @media screen and (min-width: 425px) {
   .tab button {
-    padding: .4rem .6rem .4rem 0;
+    padding: .4rem .6rem .4rem .4rem;
   }
 }
 
 footer {
+  margin-top: 5rem;
   padding-bottom: 4rem;
   text-align: center;
 }
