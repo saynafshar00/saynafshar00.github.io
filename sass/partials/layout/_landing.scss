@@ -1,26 +1,36 @@
+
+// **********************************
+// ASIDE
+// **********************************
+// aside {
+//   background-color: #001f33;
+//   color: #F4F3F0;
+//   box-shadow: inset 0 3px 4px #000000bb;
+// }
+
 // **********************************
 // HOME PAGE 
 // READMORE
 // **********************************
-.read-more {
-    background: rgba(255, 255, 255, 0);
-    border: none;
-    width: 100%;
-    margin-top: 1rem;
-    position: relative;
-    top: -1rem;
-}
+// .read-more {
+//     background: rgba(255, 255, 255, 0);
+//     border: none;
+//     width: 100%;
+//     margin-top: 1rem;
+//     position: relative;
+//     top: -1rem;
+// }
 
-.read-more i {
-    color: #91908f;
-    transition: color .1s ease-in-out;
-} 
-.read-more i:hover {
-    color: #638383;
-} 
-#colorTweak {
-    color: #001f33;
-}
+// .read-more i {
+//     color: #91908f;
+//     transition: color .1s ease-in-out;
+// } 
+// .read-more i:hover {
+//     color: #638383;
+// } 
+// #colorTweak {
+//     color: #001f33;
+// }
 
 .wrapper-aside {
  @include marginMobile;
@@ -30,26 +40,28 @@
     text-align: left;
   }
   
-
-// **********************************
-// ASIDE
-// **********************************
-aside {
-  background-color: #001f33;
-  color: #F4F3F0;
-  box-shadow: inset 0 3px 4px #000000bb;
+#me button {
+  margin-top: 1rem;
+  outline: none;
+  padding: .5rem 1.5rem;
+  background-color: #154368;
+  color: white;
+  border-radius: 500px;
+  box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
+  border: none;
+  font-size: 1rem;
 }
 
   
   @media screen and (min-width: 768px) {
-    .read-more {
-        position: relative;
-        top: 0;
-    }
+    // .read-more {
+    //     position: relative;
+    //     top: 0;
+    // }
     .wrapper-aside {
-        @include marginIpad;
-        max-width: 870px;
-        margin: auto;
+      padding:  3rem;
+      max-width: 870px;
+      margin: auto;
     }
   }
 

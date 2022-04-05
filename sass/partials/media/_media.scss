@@ -5,14 +5,14 @@ img {
     height: auto;
 }
 #index section img {
-    opacity: .8;
-    filter: grayscale(100%);
+    // opacity: .8;
+    // filter: grayscale(100%);
     // filter: saturate(150%);
     // filter: invert(50%);
 }
 #index section img:hover {
-    opacity: 1;
-    filter: grayscale(0);
+    // opacity: 1;
+    // filter: grayscale(0);
     // filter: saturate(150%);
     // filter: invert(50%);
 }

@@ -7,4 +7,13 @@
     margin: auto;
     background-color: #fff;
     padding: 1.5rem;
-  }
+    border-top: 1px solid rgba(255, 255, 255, 0);
+}
+.wrapper-projects, .wrapper-body  {
+    border-top: 1px solid rgba(124, 124, 124, 0.445);
+}
+
+.wrapper-projects h3 {
+    margin: 0;
+    color: #154368;
+}

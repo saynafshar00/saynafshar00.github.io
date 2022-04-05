@@ -1,9 +1,7 @@
 // **********************************
 // CONTACT ME
 // **********************************
-// #contact h2 {
-//     margin-top: 3rem;
-// }
+
 form {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -20,23 +18,36 @@ input {
 input:focus {
     outline: none;
 }
-
-#contact .wrapper-body button {
-    padding: 0.5rem 0;
+#contact h2 {
     margin: 1rem 0;
+}
+ #contact button {
+    margin-top: 1rem;
+    outline: none;
+    padding: .5rem 1.5rem;
+    background-color: #fff;
+    color: #154368;
+    border-radius: 500px;
+    box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
     border: none;
     font-size: 1rem;
-    font-weight: 500;
-    color: #638383;
     transition: background-color .4s ease-in-out;
     // transition: color .4s ease-in-out;
 }
-#contact .wrapper-body button:hover, #contact .wrapper-body button:active {
-    background-color: #154368;
-    color: white;
+//  .wrapper-body button:hover,  .wrapper-body button:active {
+//     background-color: #154368;
+//     color: white;
+// }
+#contact button a {
+    text-decoration: none;
+    color: #154368;
 }
-#contact .wrapper-body {
-    border-top: 1px solid rgba(255, 255, 255, 0);
+#contact button:hover {
+    background-color: #154368;
+    color: #fff;
+}
+#contact button:hover a {
+    color: #ffffff;
 }
 textarea {
     margin: 2rem 0;
@@ -52,12 +63,6 @@ textarea:focus {
     // color: #638383;
 }
 
-#contact h2 {
-    margin: 1rem 0;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-}
-
 
 // **********************************
 // TABLETT
@@ -65,16 +70,16 @@ textarea:focus {
 @media screen and (min-width:768px) {
     
 
-    #contact h2 {
+     h2 {
         margin: 2.5rem 0;
     }
-    #contact .wrapper-body {
+     .wrapper-body {
         display: block;
         padding: 1.5rem 2.5rem;
-        max-width: 500px;
+        // max-width: 500px;
         margin: auto;
     }
-    #contact main {
+     main {
         margin-bottom: 5rem;
     }
     form {
@@ -86,7 +91,3 @@ textarea:focus {
     }
 
 }
-
-// **********************************
-// DESKTOP
-// **********************************

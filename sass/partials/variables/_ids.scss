@@ -5,25 +5,27 @@
     border: 1px solid rgba(211, 211, 211, 0.459);
     margin-bottom: 2rem;
     border-radius: 8px;
-    background-color: #f4f3f0a6;
+    // background-color: #f4f3f0a6;
 }
-#projects section:hover {
-    background-color: #fff;
+// #projects section:hover {
+//     background-color: #fff;
+// }
+#projects section:hover h3 {
+    color: rgb(83, 83, 83);
 }
-#projects section:hover h2 {
-    color: black;
-}
-#projects section:hover img {
-    opacity: 1;
-    filter: grayscale(0);
-}
+// #projects section:hover img {
+//     opacity: 1;
+//     filter: grayscale(0);
+// }
 #projects section a img {
     border-radius: 8px 8px 0 0;
 }
 // ****************************
 #index h1 {
-    font-family: "Playfair Display", serif;
+    // font-family: "Playfair Display", serif;
+    line-height: 48px;
     color: #638383;
+    margin: 0;
     margin-bottom: 1rem;
 }
 #index h4 {
@@ -62,7 +64,7 @@
     }
 }
 
-@media screen and (min-width:1020px) {
+// @media screen and (min-width:1020px) {
 
 
-}
+// }
