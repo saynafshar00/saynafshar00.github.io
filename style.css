@@ -1284,6 +1284,7 @@ section:hover .content-wrapper h3 {
 
 #tenex main {
   background-image: url(../../../imgs/tenex.jpg);
+  background-color: #D7EAE8;
   background-attachment: fixed;
   background-size: contain;
   background-position-y: 3rem;
@@ -1337,8 +1338,8 @@ section:hover .content-wrapper h3 {
 
 @media screen and (min-width: 1024px) {
   #tenex main {
-    background-size: 70%;
-    padding-top: 22rem;
+    background-size: 50%;
+    padding-top: 18rem;
     background-position-x: 50%;
   }
 }
