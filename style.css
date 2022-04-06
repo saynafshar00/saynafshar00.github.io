@@ -873,12 +873,16 @@ footer ul li a {
 section .content-wrapper h3 {
   margin: 0;
   color: #154368;
-  -webkit-transition: color ease-in-out .5s;
-  transition: color ease-in-out .5s;
+  -webkit-transition: -webkit-text-decoration ease-in-out .5s;
+  transition: -webkit-text-decoration ease-in-out .5s;
+  transition: text-decoration ease-in-out .5s;
+  transition: text-decoration ease-in-out .5s, -webkit-text-decoration ease-in-out .5s;
+  -webkit-transition: font-weight ease-in-out .5s;
+  transition: font-weight ease-in-out .5s;
 }
 
 section:hover .content-wrapper h3 {
-  color: black;
+  text-decoration: underline;
   font-weight: bold;
 }
 
