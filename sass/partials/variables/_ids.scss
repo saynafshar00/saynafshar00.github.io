@@ -13,7 +13,25 @@
 }
 
 
-
+#myBtnTwo {
+    /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5rem; /* Place the button at the bottom of the page */
+    right: 5rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #1543682a; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: .9rem 1rem; /* Some padding */
+    border-radius: 500px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: background-color ease-in-out .2s;
+}
+#myBtnTwo:hover {
+    background-color: #154368; /* Add a dark-grey background on hover */
+  }
 
 @media screen and (min-width:768px) {
     #overview, #userExperience, #userInterface,  #teamMembers, #uiKit {
