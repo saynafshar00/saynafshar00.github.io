@@ -2,7 +2,8 @@
 .avatar {
     padding: .5rem 0 1rem 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    flex: 0 5 50%;
     align-items: center;
     background-color: #fff;
 }
@@ -12,7 +13,7 @@
 
 // Project page icon 
 .small {
-    max-width: 5%;
+    max-width: 10%;
     padding-right: .5rem;
     border-radius: 50%;
 }

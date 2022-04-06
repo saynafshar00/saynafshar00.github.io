@@ -55,8 +55,11 @@ Tables of content
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 5 50%;
+          flex: 0 5 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -68,7 +71,7 @@ Tables of content
 }
 
 .small {
-  max-width: 5%;
+  max-width: 10%;
   padding-right: .5rem;
   border-radius: 50%;
 }
@@ -312,16 +315,6 @@ Tables of content
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
   }
-  .tab {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-  .read-more {
-    text-align: center;
-  }
   .expand {
     grid-column: 1 / -1;
   }
@@ -339,6 +332,18 @@ Tables of content
   }
   .legend {
     max-width: 10%;
+  }
+  .tab-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -483,13 +488,20 @@ header {
 
 /* TABS */
 .tab {
-  overflow: hidden;
   /* border: 1px solid #ccc; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   background-color: #ffffff;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
+  display: inline;
   float: left;
   border: none;
   outline: none;
@@ -535,8 +547,21 @@ header {
 }
 
 @media screen and (min-width: 425px) {
+  .tab {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
   .tab button {
     padding: .4rem .4rem .4rem .4rem;
+  }
+  .tab {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 

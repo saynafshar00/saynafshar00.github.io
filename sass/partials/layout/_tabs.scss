@@ -1,13 +1,17 @@
 
 /* TABS */
 .tab {
-    overflow: hidden;
+    // overflow: hidden;
     /* border: 1px solid #ccc; */
+    display: flex;
+    flex-flow: row nowrap;
     background-color: #ffffff;  
   }
   
   /* Style the buttons inside the tab */
   .tab button {
+    display: inline;
+    // flex: 2 0 30%;
     float: left;
     border: none;
     outline: none;
@@ -53,7 +57,14 @@
   
 @media screen and (min-width:425px) {
 
+  .tab {
+    flex-flow: row nowrap;
+  }
   .tab button {
     padding: .4rem .4rem .4rem .4rem;
+  }
+  .tab {
+    align-self: center;
+    justify-self: end;
   }
 }
