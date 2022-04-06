@@ -43,14 +43,17 @@
     background-color: #fff;
     color: #154368;
     border-radius: 500px;
-    border: none;
+    border: .5px solid #1543682e;
     font-size: 1rem;
     box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
     transition: background-color .4s ease-in-out;
+    transition: color .4s ease-in-out;
+    transition: border .4s ease-in-out;
 }
 #contact button:hover {
     background-color: #638383;
     color: #fff;
+    border: none;
 }
 #contact button a {
     text-decoration: underline;
