@@ -6,7 +6,7 @@ button {
 }
 .show-menu {
     display: block;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 nav div {
@@ -41,8 +41,18 @@ nav div {
     height: 100vh;
     background-color: #ffffff;
 }
+
+#main-nav ul  {
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
 #menu ul {
-    margin: 50% auto;
+    // margin: auto;
     text-align: center;
 }
 #menu ul li{
@@ -53,12 +63,6 @@ nav div {
     font-weight: 500;
 }
 
-#main-nav ul  {
-    padding: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
 #main-nav li a {
     text-decoration: none;
     color: #638383;
