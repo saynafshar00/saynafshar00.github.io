@@ -119,6 +119,12 @@ section:hover .content-wrapper h3 {
     #projects section {
           margin-bottom: 2rem;
       }
+      .wrapper-projects {
+        padding: 5rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 0 2rem;
+    }
 }
 
 
