@@ -37,20 +37,21 @@
     <main>
        <div class="main-wrapper">
         <div class="wrapper-body">
+            <div class="tab-wrapper">
 
-            <div class="avatar">
-                <img class="small" src="imgs/tenex-avatar.jpg" alt="">
-                <h1><a href="https://www.figma.com/proto/ibwTu0plcnFqFcVLweeGB0/Portfolio?page-id=183%3A7230&node-id=183%3A7358&viewport=241%2C48%2C0.08&scaling=scale-down&starting-point-node-id=183%3A7358&show-proto-sidebar=1" target=”_blank”>Tenex</a></h1>
+                <div class="avatar">
+                    <img class="small" src="imgs/tenex-avatar.jpg" alt="">
+                    <h1><a href="https://www.figma.com/proto/ibwTu0plcnFqFcVLweeGB0/Portfolio?page-id=183%3A7230&node-id=183%3A7358&viewport=241%2C48%2C0.08&scaling=scale-down&starting-point-node-id=183%3A7358&show-proto-sidebar=1" target=”_blank”>Tenex</a></h1>
+                </div>
+
+        <!-- CONTENT -->
+                <div class="tab">
+                    <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
+                    <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
+                    <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
+                    <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button>
+                </div>
             </div>
-
-    <!-- CONTENT -->
-            <div class="tab">
-                <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
-                <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
-                <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
-                <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button>
-            </div>
-
 
     <!-- OVERVIEW -->
             <div id="overview" class="tabcontent" style="display:block;">

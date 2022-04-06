@@ -39,20 +39,23 @@
         <div class="main-wrapper">
             <div class="wrapper-body">
                 <!-- AVATAR -->
-                <div class="avatar">
-                    <img class="small" src="imgs/capstone-avatar.jpg" alt="">
-                    <h1><a href="https://plantor.app/" target=”_blank”>Plantor</a></h1>
-    
+                <div class="tab-wrapper">
+
+                    <div class="avatar">
+                        <img class="small" src="imgs/capstone-avatar.jpg" alt="">
+                        <h1><a href="https://plantor.app/" target=”_blank”>Plantor</a></h1>
+        
+                    </div>
+        
+                    <!-- CONTENT -->
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
+                        <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
+                        <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
+                        <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button>
+                    </div>
                 </div>
-    
-                <!-- CONTENT -->
-                <div class="tab">
-                    <button class="tablinks active" onclick="openButton(event, 'overview')">Overview</button>
-                    <button class="tablinks" onclick="openButton(event, 'userExperience')">User Experience</button>
-                    <button class="tablinks" onclick="openButton(event, 'userInterface')">User Interface</button>
-                    <button class="tablinks" onclick="openButton(event, 'teamMembers')"><span class="visually-hidden">Team Members</span><i class="fas fa-users"></i></button>
-                </div>
-    
+        
                 <!-- OVERVIEW -->
                 <div id="overview" class="tabcontent" style="display:block;">
                     <nav class="tag-nav scroll">
