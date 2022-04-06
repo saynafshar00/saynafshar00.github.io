@@ -1,5 +1,5 @@
 .main-wrapper {
-    border-top: 1px solid #15436818;
+    border-top: 1px solid #6383831f;
     background-color: #fff;
 }
 .wrapper-body {
@@ -9,11 +9,17 @@
     padding: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0);
 }
-.wrapper-projects, #contact  {
-    border-top: 1px solid rgba(124, 124, 124, 0.445);
-}
 
-.wrapper-projects h3 {
-    margin: 0;
-    color: #154368;
+
+@media screen and (min-width:768px) {
+
+    .wrapper-body {
+        display: block;
+        padding: 1.5rem 2.5rem;
+        // max-width: 500px;
+        margin: auto;
+    }
+    main {
+        margin-bottom: 5rem;
+    }
 }

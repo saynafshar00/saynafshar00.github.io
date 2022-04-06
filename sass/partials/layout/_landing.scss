@@ -32,14 +32,20 @@
 //     color: #001f33;
 // }
 
+// ****************************
+#index h1 {
+  // font-family: "Playfair Display", serif;
+  line-height: 48px;
+  color: #638383;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
 .wrapper-aside {
  @include marginMobile;
  @include marginIpad;
 }
-.wrapper-aside div p{
-    text-align: left;
-  }
-  
+
 #me button {
   margin-top: 1rem;
   outline: none;
@@ -50,8 +56,12 @@
   box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
   border: none;
   font-size: 1rem;
+  transform: background-color ease-in-out 5s;
 }
+#me button:hover {
+  background-color: #638383;
 
+}
   
   @media screen and (min-width: 768px) {
     // .read-more {
@@ -59,7 +69,7 @@
     //     top: 0;
     // }
     .wrapper-aside {
-      padding:  3rem;
+      padding: 5rem 3rem;
       max-width: 870px;
       margin: auto;
     }

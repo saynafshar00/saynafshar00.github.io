@@ -65,3 +65,12 @@ section p {
     font-family: "Adelle", serif;
     src: url(../../../fonts/Adelle/Adelle_Semibold.otf);
 }
+
+@media screen and (min-width:768px) {
+    
+
+    h2 {
+        margin: 2.5rem 0;
+    }
+
+}

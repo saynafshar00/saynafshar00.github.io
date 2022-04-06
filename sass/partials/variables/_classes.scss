@@ -11,30 +11,6 @@
 .colored {
   color: #154368;
 }
-.wrapper-projects section {
-  box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
-}
-// **********************************
-// HOME PAGE CARDS TEXT AREA
-// **********************************
-.content-wrapper {
-  display: grid;
-  grid-template-rows: .5fr, 2fr, 3fr;
-  padding: .5rem;
-}
-.content-wrapper a, .content-wrapper p{
-  padding: .5rem 1rem;
-}
-.content-wrapper p {
-  padding-top: 0;
-  padding-bottom: 1.5rem;
-}
-.content-wrapper h2 {
-  // font-family: "Playfair Display", serif;
-  // font-weight: 500;
-  margin: 0;
-  // color: #154368;
-}
 
 
 // **********************************
@@ -52,36 +28,6 @@
 .liner-top {
   border-top: 1px solid rgba(211, 211, 211, 0.473);
 }
-
-// **********************************
-// sCROLLING TAGLINE HOME PAGE CARDS
-// **********************************
-.tagline {
-  font-size: .9rem;
-  font-weight: 200;
-  letter-spacing: 2px;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-
-.tagline span {
-  display: inline-block;
-  padding: 0;
-  animation: tagline 12s linear infinite;
-  width: 280px;
-}
-
-
-@keyframes tagline {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  }
-
 
 // **********************************
 // WORK IN PROGRESS

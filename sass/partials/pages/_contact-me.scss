@@ -2,65 +2,68 @@
 // CONTACT ME
 // **********************************
 
-form {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    // margin: 3rem 0;
-}
-input {
-    font-family: "Lato", sans-serif;
-    width: 100%;
-    padding: 0.5rem 0;
-    margin: 1rem 0;
-    border: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.24);
-}
-input:focus {
-    outline: none;
+// form {
+//     display: grid;
+//     grid-template-columns: repeat(1fr);
+//     // margin: 3rem 0;
+// }
+// input {
+//     font-family: "Lato", sans-serif;
+//     width: 100%;
+//     padding: 0.5rem 0;
+//     margin: 1rem 0;
+//     border: none;
+//     border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+// }
+// textarea {
+//     margin: 2rem 0;
+//     padding: 0.5rem;
+//     font-family: "Lato", sans-serif;
+//     border: none;
+//     background-color: rgba(231, 231, 231, 0.486);
+// }
+// textarea:focus {
+//     background-color: #fff;
+//     border: 1px solid rgba(128, 128, 128, 0.24);
+//     outline: none;
+// }
+// input:focus {
+//     outline: none;
+// }
+#contact {
+    padding: 5rem 1.5rem;
 }
 #contact h2 {
     margin: 1rem 0;
 }
- #contact button {
+#contact button {
     margin-top: 1rem;
     outline: none;
     padding: .5rem 1.5rem;
     background-color: #fff;
     color: #154368;
     border-radius: 500px;
-    box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
     border: none;
     font-size: 1rem;
+    box-shadow: 3px 3px 4px rgba(156, 156, 156, 0.192);
     transition: background-color .4s ease-in-out;
-    // transition: color .4s ease-in-out;
-}
-//  .wrapper-body button:hover,  .wrapper-body button:active {
-//     background-color: #154368;
-//     color: white;
-// }
-#contact button a {
-    text-decoration: none;
-    color: #154368;
 }
 #contact button:hover {
     background-color: #154368;
     color: #fff;
 }
+#contact button a {
+    text-decoration: underline;
+    color: #154368;
+    transition: color .4s ease-in-out;
+}
+#contact button a i {
+    padding-right: .5rem;
+}
 #contact button:hover a {
     color: #ffffff;
-}
-textarea {
-    margin: 2rem 0;
-    padding: 0.5rem;
-    font-family: "Lato", sans-serif;
-    border: none;
-    background-color: rgba(231, 231, 231, 0.486);
-}
-textarea:focus {
-    background-color: #fff;
-    border: 1px solid rgba(128, 128, 128, 0.24);
-    outline: none;
-    // color: #638383;
+    text-decoration: none;
+
 }
 
 
@@ -68,26 +71,16 @@ textarea:focus {
 // TABLETT
 // **********************************
 @media screen and (min-width:768px) {
-    
 
-     h2 {
-        margin: 2.5rem 0;
-    }
-     .wrapper-body {
-        display: block;
-        padding: 1.5rem 2.5rem;
-        // max-width: 500px;
+    // form {
+    //     display: grid;
+    //     grid-template-columns: repeat(1fr);
+    // }
+    #contact {
+        max-width: 800px;
         margin: auto;
-    }
-     main {
-        margin-bottom: 5rem;
-    }
-    form {
-        display: grid;
-        grid-template-columns: repeat(1fr);
-    }
-    .wrapper-contact {
-        min-width: 800px;
+        display: block;
+        padding: 4rem 0;
     }
 
 }
