@@ -773,6 +773,23 @@ nav div {
   background-color: #fff;
 }
 
+#menu nav {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #menu ul {
   text-align: center;
 }
@@ -792,7 +809,7 @@ nav div {
   display: block;
   -webkit-transition: color .1s ease-in-out;
   transition: color .1s ease-in-out;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #main-nav li:hover a {
@@ -870,6 +887,10 @@ footer ul li a {
 }
 
 @media screen and (min-width: 768px) {
+  #menu nav {
+    height: unset;
+    display: unset;
+  }
   nav div {
     display: -webkit-box;
     display: -ms-flexbox;

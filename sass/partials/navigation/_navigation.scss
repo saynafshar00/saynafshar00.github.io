@@ -51,6 +51,13 @@ nav div {
     background-color: #fff;
 }
 
+#menu nav {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
 #menu ul {
     // margin: auto;
     text-align: center;
@@ -68,7 +75,7 @@ nav div {
     color: #638383;
     display: block;
     transition: color .1s ease-in-out;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #main-nav li:hover a {
@@ -124,6 +131,10 @@ footer ul li a {
 
 
 @media screen and (min-width:768px) {
+    #menu nav {
+        height: unset;
+        display: unset;
+    }
     nav div {
         display: flex;
     }
